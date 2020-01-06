@@ -1,0 +1,631 @@
+.animation__box-- {
+  position: absolute;
+  height: 0%;
+  width: 0%;
+  overflow: hidden;
+}
+
+.animation__box--active {
+  position: absolute;
+  height: 25%;
+  width: 35%;
+  top: 4%;
+  right: 5%;
+  z-index: 16;
+}
+
+.first__mac {
+  position: absolute;
+  left: 40%;
+  top: 45%;
+  font-size: 4vmin;
+  height: auto;
+  width: auto;
+  cursor: pointer;
+  font-family: 'Raleway', sans-serif;
+}
+
+.first__cudi {
+  position: absolute;
+  left: 40%;
+  top: 45%;
+  font-size: 4vmin;
+  height: auto;
+  width: auto;
+  cursor: pointer;
+  font-family: 'Raleway', sans-serif;
+}
+
+.first__cudi--active {
+  position: absolute;
+  left: 40%;
+  top: 45%;
+  font-size: 4vmin;
+  height: auto;
+  width: auto;
+  cursor: pointer;
+  font-family: 'Raleway', sans-serif;
+  animation: firstK 1s forwards;
+}
+
+.second__cudi {
+  position: absolute;
+  left: 45%;
+  top: 45%;
+  font-size: 4vmin;
+  height: auto;
+  width: auto;
+  cursor: pointer;
+  font-family: 'Raleway', sans-serif;
+  animation: secondC 1s forwards;
+}
+
+.second__cudi--active {
+  position: absolute;
+  left: 45%;
+  top: 45%;
+  font-size: 4vmin;
+  height: auto;
+  width: auto;
+  cursor: pointer;
+  font-family: 'Raleway', sans-serif;
+  animation: secondC 1s forwards;
+}
+
+.first__chance {
+  position: absolute;
+  left: 40%;
+  top: 45%;
+  font-size: 4vmin;
+  height: auto;
+  width: auto;
+  cursor: pointer;
+  font-family: 'Raleway', sans-serif;
+}
+
+.first__chance--active {
+  position: absolute;
+  left: 40%;
+  top: 45%;
+  font-size: 4vmin;
+  height: auto;
+  width: auto;
+  cursor: pointer;
+  font-family: 'Raleway', sans-serif;
+  animation: firstChance 1s forwards;
+}
+
+.second__chance {
+  position: absolute;
+  left: 45%;
+  top: 45%;
+  font-size: 4vmin;
+  height: auto;
+  width: auto;
+  cursor: pointer;
+  font-family: 'Raleway', sans-serif;
+}
+
+.second__chance--active {
+  position: absolute;
+  left: 45%;
+  top: 45%;
+  font-size: 4vmin;
+  height: auto;
+  width: auto;
+  cursor: pointer;
+  font-family: 'Raleway', sans-serif;
+  animation: secondChance 1s forwards;
+}
+
+.third__chance {
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  font-size: 4vmin;
+  height: auto;
+  width: auto;
+  cursor: pointer;
+  font-family: 'Raleway', sans-serif;
+}
+
+.third__chance--active {
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  font-size: 4vmin;
+  height: auto;
+  width: auto;
+  cursor: pointer;
+  font-family: 'Raleway', sans-serif;
+  animation: thirdChance 1s forwards;
+}
+
+.first__mac--active {
+  position: absolute;
+  left: 40%;
+  top: 30%;
+  font-size: 4vmin;
+  height: auto;
+  width: auto;
+  font-family: 'Raleway', sans-serif;
+  animation: first 1s forwards;
+}
+
+.second__mac {
+  position: absolute;
+  left: 48%;
+  top: 45%;
+  font-size: 4vmin;
+  height: auto;
+  width: auto;
+  font-family: 'Raleway', sans-serif;
+  cursor: pointer;
+}
+
+.second__mac--active {
+  position: absolute;
+  left: 48%;
+  top: 30%;
+  font-size: 4vmin;
+  width: auto;
+  font-family: 'Raleway', sans-serif;
+  animation: second 1s forwards;
+}
+
+.first__travis {
+  position: absolute;
+  left: 40%;
+  top: 45%;
+  font-size: 4vmin;
+  height: auto;
+  width: auto;
+  cursor: pointer;
+  font-family: 'Raleway', sans-serif;
+}
+
+.first__travis--active {
+  position: absolute;
+  left: 40%;
+  top: 45%;
+  font-size: 4vmin;
+  height: auto;
+  width: auto;
+  cursor: pointer;
+  font-family: 'Raleway', sans-serif;
+  animation: firstTravis 1s forwards;
+}
+
+.second__travis {
+  position: absolute;
+  left: 45%;
+  top: 45%;
+  font-size: 4vmin;
+  height: auto;
+  width: auto;
+  cursor: pointer;
+  font-family: 'Raleway', sans-serif;
+}
+
+.second__travis--active {
+  position: absolute;
+  left: 45%;
+  top: 45%;
+  font-size: 4vmin;
+  height: auto;
+  width: auto;
+  cursor: pointer;
+  font-family: 'Raleway', sans-serif;
+  animation: secondTravis 1s forwards;
+}
+
+.AC--active {
+  position: absolute;
+  left: 23.5%;
+  top: 25%;
+  height: 0%;
+  width: auto;
+  overflow: hidden;
+  font-family: 'Raleway', sans-serif;
+  font-size: 3.2vmin;
+  animation: mac 3s 1s forwards;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+}
+
+.AC {
+  position: absolute;
+  height: 0%;
+  width: 0%;
+  overflow: hidden;
+}
+
+.ILLER--active {
+  position: absolute;
+  left: 54.2%;
+  top: 25%;
+  height: 0%;
+  width: auto;
+  overflow: hidden;
+  font-family: 'Raleway', sans-serif;
+  font-size: 3.2vmin;
+  animation: miller 3.5s 1s forwards;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+}
+
+.ILLER {
+  position: absolute;
+  height: 0%;
+  width: 0%;
+  overflow: hidden;
+}
+
+.EMENTO--active {
+  position: absolute;
+  left: 30%;
+  top: 8.5%;
+  height: auto;
+  width: 0%;
+  overflow: hidden;
+  font-family: 'Raleway', sans-serif;
+  font-size: 3vmin;
+  animation: memento 3.5s 1s forwards;
+}
+
+.EMENTO {
+  position: absolute;
+  height: 0%;
+  width: 0%;
+  overflow: hidden;
+}
+
+.ORI {
+  position: absolute;
+  height: 0%;
+  width: 0%;
+  overflow: hidden;
+}
+
+.ORI--active {
+  position: absolute;
+  left: 60%;
+  top: 8.5%;
+  height: auto;
+  width: 0%;
+  overflow: hidden;
+  font-family: 'Raleway', sans-serif;
+  font-size: 3vmin;
+  animation: memento 3s 1s forwards;
+}
+
+.ID--active {
+  position: absolute;
+  left: 39.5%;
+  top: 48%;
+  height: auto;
+  width: 0%;
+  overflow: hidden;
+  font-family: 'Raleway', sans-serif;
+  font-size: 3vmin;
+  animation: memento 3.5s 1s forwards;
+}
+
+.ID {
+  position: absolute;
+  height: 0%;
+  width: 0%;
+  overflow: hidden;
+}
+
+.UDI {
+  position: absolute;
+  height: 0%;
+  width: 0%;
+  overflow: hidden;
+}
+
+.UDI--active {
+  position: absolute;
+  left: 52%;
+  top: 48%;
+  height: auto;
+  width: 0%;
+  overflow: hidden;
+  font-family: 'Raleway', sans-serif;
+  font-size: 3vmin;
+  animation: memento 4s 1s forwards;
+}
+
+.RAVIS--active {
+  position: absolute;
+  left: 32.5%;
+  top: 48%;
+  height: auto;
+  width: 0%;
+  overflow: hidden;
+  font-family: 'Raleway', sans-serif;
+  font-size: 3vmin;
+  animation: ravis 3.5s 1s forwards;
+}
+
+.RAVIS {
+  position: absolute;
+  height: 0%;
+  width: 0%;
+  overflow: hidden;
+}
+
+.COTT {
+  position: absolute;
+  height: 0%;
+  width: 0%;
+  overflow: hidden;
+}
+
+.COTT--active {
+  position: absolute;
+  left: 48.5%;
+  top: 48%;
+  height: auto;
+  width: 0%;
+  overflow: hidden;
+  font-family: 'Raleway', sans-serif;
+  font-size: 3vmin;
+  animation: cott 4s 1s forwards;
+}
+
+.HANCE--active {
+  position: absolute;
+  left: 25%;
+  top: 48%;
+  height: auto;
+  width: 0%;
+  overflow: hidden;
+  font-family: 'Raleway', sans-serif;
+  font-size: 3vmin;
+  animation: hance 3.5s 1s forwards;
+}
+
+.HANCE {
+  position: absolute;
+  height: 0%;
+  width: 0%;
+  overflow: hidden;
+}
+
+.HE {
+  position: absolute;
+  height: 0%;
+  width: 0%;
+  overflow: hidden;
+}
+
+.HE--active {
+  position: absolute;
+  left: 45.5%;
+  top: 48%;
+  height: auto;
+  width: 0%;
+  overflow: hidden;
+  font-family: 'Raleway', sans-serif;
+  font-size: 3vmin;
+  animation: he 4s 1s forwards;
+}
+
+.APPER {
+  position: absolute;
+  height: 0%;
+  width: 0%;
+  overflow: hidden;
+}
+
+.APPER--active {
+  position: absolute;
+  left: 57%;
+  top: 48%;
+  height: auto;
+  width: 0%;
+  overflow: hidden;
+  font-family: 'Raleway', sans-serif;
+  font-size: 3vmin;
+  animation: apper 4s 1s forwards;
+}
+
+@keyframes first {
+    from {
+        top: 45%;
+        left: 40%;
+    }
+    to {
+      top: 5%;
+      left: 25%;
+    }
+}
+
+@keyframes second {
+    from {
+        top: 45%;
+        left: 48%;
+    }
+    to {
+      top: 5%;
+      left: 55%;
+    }
+}
+
+@keyframes mac {
+    from {
+        height: 0%;
+    }
+    to {
+      height: 50%;
+    }
+}
+
+@keyframes miller {
+    from {
+        height: 0%;
+    }
+    to {
+      height: 100%;
+    }
+}
+
+@keyframes memento {
+    from {
+        width: 0%;
+    }
+    to {
+      width: 30%;
+    }
+}
+
+@keyframes mori {
+    from {
+        width: 0%;
+    }
+    to {
+      width: 5%;
+    }
+}
+
+@keyframes firstK {
+    from {
+        top: 45%;
+        left: 40%;
+    }
+    to {
+      top: 45%;
+      left: 35%;
+    }
+}
+
+@keyframes secondC {
+    from {
+        top: 45%;
+        left: 48%;
+    }
+    to {
+      top: 45%;
+      left: 48%;
+    }
+}
+
+@keyframes kid {
+    from {
+        width: 0%;
+    }
+    to {
+      width: 20%;
+    }
+}
+
+@keyframes cudi {
+    from {
+        width: 0%;
+    }
+    to {
+      width: 30%;
+    }
+}
+
+@keyframes firstChance {
+    from {
+        top: 45%;
+        left: 40%;
+    }
+    to {
+      top: 45%;
+      left: 21%;
+    }
+}
+
+@keyframes secondChance {
+    from {
+        top: 45%;
+        left: 48%;
+    }
+    to {
+      top: 45%;
+      left: 42%;
+    }
+}
+
+@keyframes thirdChance {
+    from {
+        top: 45%;
+        left: 54%;
+    }
+    to {
+      top: 45%;
+      left: 53%;
+    }
+}
+
+@keyframes firstTravis {
+    from {
+        top: 45%;
+        left: 40%;
+    }
+    to {
+      top: 45%;
+      left: 29%;
+    }
+}
+
+@keyframes secondTravis {
+    from {
+        top: 45%;
+        left: 45%;
+    }
+    to {
+      top: 45%;
+      left: 45%;
+    }
+}
+
+@keyframes ravis {
+    from {
+        width: 0%;
+    }
+    to {
+      width: 30%;
+    }
+}
+
+@keyframes cott {
+    from {
+        width: 0%;
+    }
+    to {
+      width: 30%;
+    }
+}
+
+@keyframes hance {
+    from {
+        width: 0%;
+    }
+    to {
+      width: 30%;
+    }
+}
+
+@keyframes he {
+    from {
+        width: 0%;
+    }
+    to {
+      width: 30%;
+    }
+}
+
+@keyframes apper {
+    from {
+        width: 0%;
+    }
+    to {
+      width: 30%;
+    }
+}

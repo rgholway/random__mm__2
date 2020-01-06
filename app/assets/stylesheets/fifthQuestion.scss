@@ -1,0 +1,486 @@
+.vote__fifthQuestion--title--fifth {
+  position: absolute;
+  top: 5%;
+  left: 15%;
+  color: #5F6065;
+  width: 70%;
+  text-align: center;
+  height: 20%;
+  font-size: 3vh;
+  font-family: 'Raleway', sans-serif;
+}
+
+.vote__fifthQuestion--title--first {
+  position: absolute;
+  height: 0%;
+  width: 0%;
+  overflow: hidden;
+}
+
+.vote__fifthQuestion--title--third {
+  position: absolute;
+  height: 0%;
+  width: 0%;
+  overflow: hidden;
+}
+
+.vote__fifthQuestion--title--fourth {
+  position: absolute;
+  height: 0%;
+  width: 0%;
+  overflow: hidden;
+}
+
+.vote__fifthQuestion--title--second {
+  position: absolute;
+  height: 0%;
+  width: 0%;
+  overflow: hidden;
+}
+
+.vote__fifthQuestion--info--fifth {
+  position: absolute;
+  top: 10%;
+  left: 15%;
+  color: #5F6065;
+  width: 70%;
+  text-align: center;
+  height: 20%;
+  font-size: 2vh;
+  font-family: 'Raleway', sans-serif;
+}
+
+.vote__fifthQuestion--info--first {
+  position: absolute;
+  height: 0%;
+  width: 0%;
+  overflow: hidden;
+}
+
+.vote__fifthQuestion--info--third {
+  position: absolute;
+  height: 0%;
+  width: 0%;
+  overflow: hidden;
+}
+
+.vote__fifthQuestion--info--fourth {
+  position: absolute;
+  height: 0%;
+  width: 0%;
+  overflow: hidden;
+}
+
+.vote__fifthQuestion--info--second {
+  position: absolute;
+  height: 0%;
+  width: 0%;
+  overflow: hidden;
+}
+
+.vote__fifthQuestion--fifth {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.vote__fifthQuestion--first {
+  position: absolute;
+  width: 0%;
+  height: 0%;
+  overflow: hidden;
+}
+
+.vote__fifthQuestion--second {
+  position: absolute;
+  width: 0%;
+  height: 0%;
+  overflow: hidden;
+}
+
+.vote__fifthQuestion--third {
+  position: absolute;
+  width: 0%;
+  height: 0%;
+  overflow: hidden;
+}
+
+.vote__fifthQuestion--fourth {
+  position: absolute;
+  width: 0%;
+  height: 0%;
+  overflow: hidden;
+}
+
+.timeline {
+  position: absolute;
+  top: 40%;
+  left: 2.5%;
+  height: 25%;
+  width: 95%;
+}
+
+.first__line {
+  position: absolute;
+  top: 50%;
+  width: 48%;
+  height: 2.5%;
+  border: solid 1px black;
+  background: black;
+}
+
+.first__line--newActive {
+  position: absolute;
+  top: 50%;
+  width: 48%;
+  height: 2.5%;
+  border: solid 1px black;
+  background: black;
+}
+
+.first__line--oldActive {
+  position: absolute;
+  top: 50%;
+  width: 48%;
+  height: 2.5%;
+  border: solid 1px black;
+  background:  #ED953C;
+}
+
+.second__line--oldActive {
+  position: absolute;
+  top: 50%;
+  left: 48%;
+  width: 52%;
+  height: 2.5%;
+  border: solid 1px black;
+  background: black;
+}
+
+.second__line {
+  position: absolute;
+  top: 50%;
+  left: 48%;
+  width: 52%;
+  height: 2.5%;
+  border: solid 1px black;
+  background: black;
+}
+
+.second__line--newActive {
+  position: absolute;
+  top: 50%;
+  left: 48%;
+  width: 52%;
+  height: 2.5%;
+  border: solid 1px black;
+  background: #5CC532;
+}
+
+.first__year {
+  position: absolute;
+  bottom: 42.5%;
+  left: 5%;
+  height: 7.5%;
+  width: 0.3%;
+  background: black;
+}
+
+.first__year--year {
+  position: absolute;
+  bottom: 55%;
+  left: 0%;
+  font-family: 'Raleway', sans-serif;
+  font-size: 2vh;
+  width: 10%;
+  text-align: center;
+}
+
+.first__year--album {
+  position: absolute;
+  bottom: -27%;
+  left: 0.5%;
+  width: 10%;
+  height: 70%;
+}
+
+.second__year {
+  position: absolute;
+  bottom: 42.5%;
+  left: 19%;
+  height: 7.5%;
+  width: 0.3%;
+  background: black;
+}
+
+.second__year--year {
+  position: absolute;
+  bottom: 55%;
+  left: 14%;
+  font-family: 'Raleway', sans-serif;
+  font-size: 2vh;
+  width: 10%;
+  text-align: center;
+}
+
+.second__year--album {
+  position: absolute;
+  bottom: -27%;
+  left: 14%;
+  width: 10%;
+  height: 70%;
+}
+
+.third__year {
+  position: absolute;
+  bottom: 42.5%;
+  left: 32%;
+  height: 7.5%;
+  width: 0.3%;
+  background: black;
+}
+
+.third__year--year {
+  position: absolute;
+  bottom: 55%;
+  left: 27%;
+  font-family: 'Raleway', sans-serif;
+  font-size: 2vh;
+  text-align: center;
+  width: 10%;
+}
+
+.third__year--album {
+  position: absolute;
+  bottom: -27%;
+  left: 27%;
+  width: 10%;
+  height: 70%;
+}
+
+.fourth__year {
+  position: absolute;
+  bottom: 42.5%;
+  left: 44%;
+  height: 7.5%;
+  width: 0.3%;
+  background: black;
+}
+
+.fourth__year--year {
+  position: absolute;
+  bottom: 55%;
+  left: 39%;
+  font-family: 'Raleway', sans-serif;
+  font-size: 2vh;
+  text-align: center;
+  width: 10%;
+}
+
+.fourth__year--album {
+  position: absolute;
+  bottom: -27%;
+  left: 39%;
+  width: 10%;
+  height: 70%;
+}
+
+.fifth__year {
+  position: absolute;
+  bottom: 50%;
+  left: 52%;
+  height: 7.5%;
+  width: 0.3%;
+  background: black;
+}
+
+.fifth__year--year {
+  position: absolute;
+  top: 55%;
+  left: 47%;
+  font-family: 'Raleway', sans-serif;
+  font-size: 2vh;
+  text-align: center;
+  width: 10%;
+}
+
+.fifth__year--album {
+  position: absolute;
+  top: -27%;
+  left: 47%;
+  width: 10%;
+  height: 70%;
+}
+
+.sixth__year {
+  position: absolute;
+  bottom: 50%;
+  left: 65%;
+  height: 7.5%;
+  width: 0.3%;
+  background: black;
+}
+
+.sixth__year--year {
+  position: absolute;
+  top: 55%;
+  left: 60%;
+  font-family: 'Raleway', sans-serif;
+  font-size: 2vh;
+  text-align: center;
+  width: 10%;
+}
+
+.sixth__year--album {
+  position: absolute;
+  top: -27%;
+  left: 60%;
+  width: 10%;
+  height: 70%;
+}
+
+.seventh__year {
+  position: absolute;
+  bottom: 50%;
+  left: 76%;
+  height: 7.5%;
+  width: 0.3%;
+  background: black;
+  z-index: 20;
+}
+
+.seventh__year--year {
+  position: absolute;
+  top: 55%;
+  left: 71%;
+  font-family: 'Raleway', sans-serif;
+  font-size: 2vh;
+  text-align: center;
+  width: 10%;
+}
+
+.seventh__year--album {
+  position: absolute;
+  top: -27%;
+  left: 71%;
+  width: 10%;
+  height: 70%;
+}
+
+.eigth__year {
+  position: absolute;
+  bottom: 50%;
+  left: 88%;
+  height: 7.5%;
+  width: 0.3%;
+  background: black;
+  z-index: 20;
+}
+
+.eigth__year--year {
+  position: absolute;
+  top: 55%;
+  left: 83%;
+  font-family: 'Raleway', sans-serif;
+  font-size: 2vh;
+  text-align: center;
+  width: 10%;
+}
+
+.eigth__year--album {
+  position: absolute;
+  top: -27%;
+  left: 83%;
+  width: 10%;
+  height: 70%;
+}
+
+.ninth__year {
+  position: absolute;
+  bottom: 50%;
+  left: 99%;
+  height: 7.5%;
+  width: 0.3%;
+  background: black;
+  z-index: 20;
+}
+
+.ninth__year--year {
+  position: absolute;
+  top: 55%;
+  left: 94%;
+  font-family: 'Raleway', sans-serif;
+  font-size: 2vh;
+  text-align: center;
+  width: 10%;
+}
+
+.ninth__year--album {
+  position: absolute;
+  top: -27%;
+  left: 94%;
+  width: 10%;
+  height: 70%;
+}
+
+.old__vote {
+  position: absolute;
+  left: 0%;
+  height: 100%;
+  width: 50%;
+}
+
+.new__vote {
+  position: absolute;
+  left: 50%;
+  height: 100%;
+  width: 50%;
+}
+
+.old__title {
+  position: absolute;
+  height: 0%;
+  width: 0%;
+  overflow: hidden;
+}
+
+.old__title--newActive {
+  position: absolute;
+  height: 0%;
+  width: 0%;
+  overflow: hidden;
+}
+
+.old__title--oldActive {
+  position: absolute;
+  top: 80%;
+  left: 5%;
+  width: 40%;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-size: 2.5vh;
+}
+
+.new__title {
+  position: absolute;
+  height: 0%;
+  width: 0%;
+  overflow: hidden;
+}
+
+.new__title--oldActive {
+  position: absolute;
+  height: 0%;
+  width: 0%;
+  overflow: hidden;
+}
+
+.new__title--newActive {
+  position: absolute;
+  bottom: 80%;
+  right: 5%;
+  width: 40%;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-size: 2.5vh;
+}

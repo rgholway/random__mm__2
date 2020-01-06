@@ -1,0 +1,1001 @@
+@media screen and (max-width:700px){
+  @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+  @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+  .white {
+    position: absolute;
+    overflow: hidden;
+    height: 170%;
+    width: 100%;
+  }
+
+  .youtube-- {
+    position: absolute;
+    top: 30%;
+    right: 5%;
+    height: 0%;
+    width: 0%;
+    overflow: hidden;
+  }
+
+  .youtube--active {
+    position: absolute;
+    height: 45%;
+    width: 90%;
+    top: 50%;
+    left: 5%;
+    z-index: 20;
+  }
+
+  .songs__queue--active {
+    position: absolute;
+    top: 85%;
+    left: 5%;
+    width: 90%;
+    text-align: center;
+    height: 20%;
+    overflow: scroll;
+  }
+
+  .songs__queue-- {
+    position: absolute;
+    height: 0%;
+    width: 0%;
+    overflow: scroll;
+  }
+
+  .queue__title {
+    position: absolute;
+    height: 20%;
+    width: 100%;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 4vmin;
+  }
+
+  .queued__tracks {
+    position: relative;
+    top: 5%;
+    height: 25%;
+    width: 100%;
+    margin-top: 10%;
+  }
+
+  .queued__song--mobile {
+    position: absolute;
+    height: auto;
+    width: auto;
+    top: 55%;
+    left: 35%;
+    color: black;
+    font-size: 2vmin;
+    z-index: 15;
+    text-align: center;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+  }
+
+  .queued__song--desktop {
+    position: absolute;
+    height: 0%;
+    width: 0%;
+    overflow: hidden;
+  }
+
+  .click__song {
+    position: absolute;
+    height: auto;
+    width: auto;
+    top: 58.5%;
+    left: 35.5%;
+    color: black;
+    font-size: 2vmin;
+    z-index: 15;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+  }
+
+  .artists {
+    position: absolute;
+    top: 2%;
+    left: 7.5%;
+    height: 8%;
+    width: 100%;
+    font-size: 2.5vmin;
+    font-family: 'Raleway', sans-serif;
+    color: black;
+  }
+
+  .cover {
+    position: absolute;
+    height: 0%;
+    width: 0%;
+    overflow: hidden;
+  }
+
+  .circle__text {
+    position: absolute;
+    height: 0%;
+    width: 0%;
+    overflow: hidden;
+  }
+
+  .artist__text {
+    position: absolute;
+    height: 0%;
+    width: 0%;
+    overflow: hidden;
+  }
+
+  .links {
+    position: relative;
+    height: auto;
+    width: auto;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+    z-index: 3;
+    padding-left: 3%;
+    float: left;
+  }
+
+  .home__link {
+    margin-left: 0.75%;
+    color: black;
+  }
+
+  .home__link:hover {
+    color: #F0E4E4;
+  }
+
+  .links:hover {
+    color: #F0E4E4;
+  }
+
+  .random__mac {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    height: 80vmin;
+    width: 80vmin;
+    border-radius: 50%;
+    background: black;
+    border: solid .5px black;
+  }
+
+  .random__chance {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    height: 80vmin;
+    width: 80vmin;
+    border-radius: 50%;
+    background: black;
+    border: solid .5px black;
+  }
+
+  .random__travis {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    height: 80vmin;
+    width: 80vmin;
+    border-radius: 50%;
+    background: black;
+    border: solid .5px black;
+  }
+
+  .random__cudi {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    height: 80vmin;
+    width: 80vmin;
+    border-radius: 50%;
+    background: #363534;
+    border: solid .5px black;
+  }
+
+  .play__song {
+    position: absolute;
+    height: auto;
+    width: auto;
+    top: 62%;
+    left: 37%;
+    color: black;
+    font-size: 2vmin;
+    z-index: 15;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+  }
+
+  .swimming {
+    position: absolute;
+    top: 5%;
+    left: 41%;
+    height: 18%;
+    width: 18%;
+    z-index: 12;
+    border: solid 2px black;
+    cursor: pointer;
+  }
+
+  .divine {
+    position: absolute;
+    top: 17%;
+    left: 67%;
+    height: 18%;
+    width: 18%;
+    z-index: 12;
+    cursor: pointer;
+  }
+
+  .hover--1 {
+    position: absolute;
+    height: 18%;
+    top: 5%;
+    left: 41%;
+    width: 18%;
+    z-index: 14;
+    background: white;
+    color: black;
+    font-size: 2.3vmin;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+  }
+
+  .hover--2 {
+    position: absolute;
+    height: 18%;
+    top: 42%;
+    left: 79%;
+    width: 18%;
+    z-index: 14;
+    font-size: 2.3vmin;
+    background: #F9C647;
+    color: black;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+  }
+
+  .hover--3 {
+    position: absolute;
+    height: 18%;
+    bottom: 2.5%;
+    left: 40%;
+    width: 18%;
+    z-index: 14;
+    background: #B92A28;
+    color: white;
+    font-size: 2.3vmin;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+  }
+
+  .hover--4 {
+    position: absolute;
+    height: 18%;
+    top: 40%;
+    left: 3%;
+    width: 18%;
+    z-index: 14;
+    background: white;
+    color: black;
+    cursor: pointer;
+    font-size: 2.3vmin;
+    font-family: 'Raleway', sans-serif;
+    z-index: 17;
+  }
+
+  .hover--5 {
+    position: absolute;
+    height: 18%;
+    top: 17%;
+    left: 67%;
+    width: 18%;
+    z-index: 14;
+    font-size: 1.9vmin;
+    background: #DCC0BD;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+  }
+
+  .hover--6 {
+    position: absolute;
+    height: 18%;
+    top: 68%;
+    left: 65%;
+    width: 18%;
+    z-index: 22;
+    background: #2F46F6;
+    font-size: 1.8vmin;
+    color: white;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+  }
+
+  .hover--7 {
+    position: absolute;
+    height: 18%;
+    top: 66%;
+    left: 16%;
+    width: 18%;
+    z-index: 22;
+    background: #E2BC9C;
+    font-size: 2.5vmin;
+    color: black;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+  }
+
+  .hover--8 {
+    position: absolute;
+    height: 18%;
+    top: 16%;
+    left: 17%;
+    width: 18%;
+    z-index: 22;
+    background: #3C3D42;
+    font-size: 1.5vmin;
+    color: white;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+  }
+
+  .hover--9 {
+    position: absolute;
+    height: 18%;
+    top: 16%;
+    left: 17%;
+    width: 18%;
+    z-index: 22;
+    background: white;
+    font-size: 2.2vmin;
+    color: black;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+  }
+
+  .hover--10 {
+    position: absolute;
+    height: 18%;
+    top: 16%;
+    left: 17%;
+    width: 18%;
+    z-index: 22;
+    background: #E84E4B;
+    font-size: 1.6vmin;
+    color: white;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+  }
+
+  .hover--11 {
+    position: absolute;
+    height: 18%;
+    top: 16%;
+    left: 17%;
+    width: 18%;
+    z-index: 22;
+    background: #A2369A;
+    font-size: 2vmin;
+    color: black;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+  }
+
+  .hover--12 {
+    position: absolute;
+    height: 18%;
+    top: 66%;
+    left: 16%;
+    width: 18%;
+    z-index: 22;
+    background: #FFEF4F;
+    font-size: 1.4vmin;
+    color: black;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+  }
+
+  .hover--13 {
+    position: absolute;
+    height: 18%;
+    top: 66%;
+    left: 16%;
+    width: 18%;
+    z-index: 22;
+    background: #2046F6;
+    font-size: 1.7vmin;
+    color: white;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+  }
+
+  .hover--14 {
+    position: absolute;
+    height: 18%;
+    top: 66%;
+    left: 16%;
+    width: 18%;
+    z-index: 22;
+    background: #684B74;
+    font-size: 1.8vmin;
+    color: white;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+  }
+
+  .hover-- {
+    height: 0%;
+    width: 0%;
+    overflow: hidden;
+  }
+
+  .title__hover {
+    padding: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 50%;
+    z-index: 20;
+  }
+
+  .title__ {
+    padding: absolute;
+    top: 0%;
+    overflow: hidden;
+    width: 0%;
+    height: 0%;
+  }
+
+  .songs__ {
+    padding: absolute;
+    top: 0%;
+    overflow: hidden;
+    width: 0%;
+    height: 0%;
+  }
+
+  .songs__hover {
+    position: absolute;
+    top: 20%;
+    height: 80%;
+    width: 100%;
+    background: white;
+    color: red;
+    z-index: 20;
+    overflow: scroll;
+  }
+
+  .tracks {
+    position: relative;
+    margin-top: 5%;
+    float: left;
+    color: black;
+    display: inline-block;
+    background-color: white;
+    z-index: 19;
+    font-size: 2vmin;
+    font-family: 'Raleway', sans-serif;
+    left: 0%;
+    width: 100%;
+    cursor: pointer;
+    -webkit-touch-callout: default;
+    -webkit-user-select: none;
+   -khtml-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+  }
+
+  .song__next--mobile {
+    position: relative;
+    text-align: center;
+    height: auto;
+    width: 100%;
+    font-size: 2vmin;
+    font-family: 'Raleway', sans-serif;
+    cursor: pointer;
+    color: black;
+    background: #EAE8E8;
+    overflow: hidden;
+  }
+
+  .tracks:hover {
+    background: black;
+    color: white;
+  }
+
+  .blue {
+    position: absolute;
+    top: 68%;
+    left: 65%;
+    height: 18%;
+    width: 18%;
+    z-index: 12;
+    cursor: pointer;
+  }
+
+  .kids {
+    position: absolute;
+    top: 66%;
+    right: 75%;
+    height: 9%;
+    width: 9%;
+    z-index: 12;
+    cursor: pointer;
+  }
+
+  .v1 {
+    position: absolute;
+    top: 66%;
+    right: 66%;
+    height: 9%;
+    width: 9%;
+    z-index: 12;
+    cursor: pointer;
+  }
+
+  .everything {
+    position: absolute;
+    top: 75%;
+    right: 66%;
+    height: 9%;
+    width: 9%;
+    z-index: 12;
+    cursor: pointer;
+  }
+
+  .stolen {
+    position: absolute;
+    top: 75%;
+    right: 75%;
+    height: 9%;
+    width: 9%;
+    z-index: 12;
+    cursor: pointer;
+  }
+
+  .macadelic {
+    position: absolute;
+    top: 16%;
+    right: 74%;
+    height: 9%;
+    width: 9%;
+    z-index: 12;
+    cursor: pointer;
+  }
+
+  .delusional {
+    position: absolute;
+    top: 25%;
+    right: 74%;
+    height: 9%;
+    width: 9%;
+    z-index: 12;
+    cursor: pointer;
+  }
+
+  .bde {
+    position: absolute;
+    top: 25%;
+    right: 65.2%;
+    height: 9%;
+    width: 9%;
+    z-index: 12;
+    cursor: pointer;
+  }
+
+  .space {
+    position: absolute;
+    top: 16%;
+    right: 65.2%;
+    height: 9%;
+    width: 9%;
+    z-index: 12;
+    cursor: pointer;
+  }
+
+  .faces {
+    position: absolute;
+    right: 3%;
+    top: 42%;
+    height: 18%;
+    width: 18%;
+    z-index: 12;
+    cursor: pointer;
+  }
+
+  .wmtso {
+    position: absolute;
+    bottom: 2.5%;
+    left: 40%;
+    height: 18%;
+    width: 18%;
+    z-index: 12;
+    cursor: pointer;
+  }
+
+  .good__am {
+    position: absolute;
+    left: 3%;
+    top: 40%;
+    height: 18%;
+    width: 18%;
+    z-index: 12;
+    cursor: pointer;
+  }
+
+  .title {
+    position: absolute;
+    height: auto;
+    width: 32vmin;
+    top: 43%;
+    left: 31%;
+    color: black;
+    font-size: 5vmin;
+    z-index: 15;
+    text-align: center;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+  }
+
+  .circle-- {
+    position: absolute;
+    height: 34vmin;
+    width: 34vmin;
+    top: 30%;
+    left: 30%;
+    border-top: solid 3px #6DEA75;
+    border-right: solid 3px black;
+    border-left: solid 3px black;
+    border-bottom: solid 3px black;
+    border-radius: 100%;
+    z-index: 13;
+    background: white;
+    cursor: pointer;
+  }
+
+  .circle--album1 {
+    position: absolute;
+    height: 34vmin;
+    width: 34vmin;
+    top: 30%;
+    left: 30%;
+    border-top: solid 3px #6DEA75;
+    border-right: solid 3px black;
+    border-left: solid 3px black;
+    border-bottom: solid 3px black;
+    border-radius: 100%;
+    z-index: 13;
+    background: white;
+    animation: swimming 3s ease-out forwards;
+    cursor: pointer;
+  }
+
+  .circle--album2 {
+    position: absolute;
+    height: 34vmin;
+    width: 34vmin;
+    top: 30%;
+    left: 30%;
+    border-top: solid 3px #6DEA75;
+    border-right: solid 3px black;
+    border-left: solid 3px black;
+    border-bottom: solid 3px black;
+    border-radius: 100%;
+    z-index: 13;
+    background: white;
+    cursor: pointer;
+    animation: faces 3s ease-out forwards
+  }
+
+  .circle--album3 {
+    position: absolute;
+    height: 34vmin;
+    width: 34vmin;
+    top: 30%;
+    left: 30%;
+    border-top: solid 3px #6DEA75;
+    border-right: solid 3px black;
+    border-left: solid 3px black;
+    border-bottom: solid 3px black;
+    border-radius: 100%;
+    z-index: 13;
+    background: white;
+    cursor: pointer;
+    animation: wmwtso 3s ease-out forwards
+  }
+
+  .circle--album4 {
+    position: absolute;
+    height: 34vmin;
+    width: 34vmin;
+    top: 30%;
+    left: 30%;
+    border-top: solid 3px #6DEA75;
+    border-right: solid 3px black;
+    border-left: solid 3px black;
+    border-bottom: solid 3px black;
+    border-radius: 100%;
+    z-index: 13;
+    background: white;
+    cursor: pointer;
+    animation: am 3s ease-out forwards
+  }
+
+  .circle--album5 {
+    position: absolute;
+    height: 34vmin;
+    width: 34vmin;
+    top: 30%;
+    left: 30%;
+    border-top: solid 3px #6DEA75;
+    border-right: solid 3px black;
+    border-left: solid 3px black;
+    border-bottom: solid 3px black;
+    border-radius: 100%;
+    z-index: 13;
+    background: white;
+    cursor: pointer;
+    animation: divine 3s ease-out forwards
+  }
+
+  .circle--album6 {
+    position: absolute;
+    height: 34vmin;
+    width: 34vmin;
+    top: 30%;
+    left: 30%;
+    border-top: solid 3px #6DEA75;
+    border-right: solid 3px black;
+    border-left: solid 3px black;
+    border-bottom: solid 3px black;
+    border-radius: 100%;
+    z-index: 13;
+    background: white;
+    cursor: pointer;
+    animation: blue_slide 3s ease-out forwards
+  }
+
+  .circle--album7 {
+    position: absolute;
+    height: 34vmin;
+    width: 34vmin;
+    top: 30%;
+    left: 30%;
+    border-top: solid 3px #6DEA75;
+    border-right: solid 3px black;
+    border-left: solid 3px black;
+    border-bottom: solid 3px black;
+    border-radius: 100%;
+    z-index: 13;
+    background: white;
+    cursor: pointer;
+    animation: kids 3s ease-out forwards
+  }
+
+  .circle--album8 {
+    position: absolute;
+    height: 34vmin;
+    width: 34vmin;
+    top: 30%;
+    left: 30%;
+    border-top: solid 3px #6DEA75;
+    border-right: solid 3px black;
+    border-left: solid 3px black;
+    border-bottom: solid 3px black;
+    border-radius: 100%;
+    z-index: 13;
+    background: white;
+    cursor: pointer;
+    animation: other 3s ease-out forwards
+  }
+
+  .circle--album9 {
+    position: absolute;
+    height: 34vmin;
+    width: 34vmin;
+    top: 30%;
+    left: 30%;
+    border-top: solid 3px #6DEA75;
+    border-right: solid 3px black;
+    border-left: solid 3px black;
+    border-bottom: solid 3px black;
+    border-radius: 100%;
+    z-index: 13;
+    background: white;
+    cursor: pointer;
+    animation: other 3s ease-out forwards
+  }
+
+  .circle--album10 {
+    position: absolute;
+    height: 34vmin;
+    width: 34vmin;
+    top: 30%;
+    left: 30%;
+    border-top: solid 3px #6DEA75;
+    border-right: solid 3px black;
+    border-left: solid 3px black;
+    border-bottom: solid 3px black;
+    border-radius: 100%;
+    z-index: 13;
+    background: white;
+    cursor: pointer;
+    animation: other 3s ease-out forwards
+  }
+
+  .circle--album11 {
+    position: absolute;
+    height: 34vmin;
+    width: 34vmin;
+    top: 30%;
+    left: 30%;
+    border-top: solid 3px #6DEA75;
+    border-right: solid 3px black;
+    border-left: solid 3px black;
+    border-bottom: solid 3px black;
+    border-radius: 100%;
+    z-index: 13;
+    background: white;
+    cursor: pointer;
+    animation: other 3s ease-out forwards
+  }
+
+  .circle--album12 {
+    position: absolute;
+    height: 34vmin;
+    width: 34vmin;
+    top: 30%;
+    left: 30%;
+    border-top: solid 3px #6DEA75;
+    border-right: solid 3px black;
+    border-left: solid 3px black;
+    border-bottom: solid 3px black;
+    border-radius: 100%;
+    z-index: 13;
+    background: white;
+    cursor: pointer;
+    animation: kids 3s ease-out forwards
+  }
+
+  .circle--album13 {
+    position: absolute;
+    height: 34vmin;
+    width: 34vmin;
+    top: 30%;
+    left: 30%;
+    border-top: solid 3px #6DEA75;
+    border-right: solid 3px black;
+    border-left: solid 3px black;
+    border-bottom: solid 3px black;
+    border-radius: 100%;
+    z-index: 13;
+    background: white;
+    cursor: pointer;
+    animation: kids 3s ease-out forwards
+  }
+
+  .circle--album14 {
+    position: absolute;
+    height: 34vmin;
+    width: 34vmin;
+    top: 30%;
+    left: 30%;
+    border-top: solid 3px #6DEA75;
+    border-right: solid 3px black;
+    border-left: solid 3px black;
+    border-bottom: solid 3px black;
+    border-radius: 100%;
+    z-index: 13;
+    background: white;
+    cursor: pointer;
+    animation: kids 3s ease-out forwards
+  }
+
+  .footer {
+    position: absolute;
+    top: 1%;
+    left: 5%;
+    font-size: .5vmin;
+    font-family: 'Raleway', sans-serif;
+    color: rgba(100,100, 100, 0.5)
+  }
+
+  .flash--active {
+    position: absolute;
+    left: 0%;
+    top: 5%;
+    width: 100%;
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.5vmin;
+    background: #DFF3D8;
+    color: black;
+    text-align: center;
+    z-index: 17;
+    border-radius: 15%;
+    animation: disappear 1.5s 2s;
+    padding: 5px 10px 5px 10px;
+  }
+
+  .flash {
+    position: absolute;
+    height: 0%;
+    width: 0%;
+    overflow: hidden;
+  }
+
+  @keyframes swimming {
+      from {
+          transform:rotate(0deg);
+      }
+      to {
+          transform:rotate(1080deg);
+      }
+  }
+
+  @keyframes am {
+      from {
+          transform:rotate(0deg);
+      }
+      to {
+          transform:rotate(990deg);
+      }
+  }
+
+  @keyframes wmwtso {
+      from {
+          transform:rotate(0deg);
+      }
+      to {
+          transform:rotate(900deg);
+      }
+  }
+
+  @keyframes faces {
+      from {
+          transform:rotate(0deg);
+      }
+      to {
+          transform:rotate(810deg);
+      }
+  }
+
+  @keyframes divine {
+      from {
+          transform:rotate(0deg);
+      }
+      to {
+          transform:rotate(765deg);
+      }
+  }
+
+  @keyframes blue_slide {
+      from {
+          transform:rotate(0deg);
+      }
+      to {
+          transform:rotate(855deg);
+      }
+  }
+
+  @keyframes kids {
+      from {
+          transform:rotate(0deg);
+      }
+      to {
+          transform:rotate(945deg);
+      }
+  }
+
+  @keyframes other {
+      from {
+          transform:rotate(0deg);
+      }
+      to {
+          transform:rotate(1035deg);
+      }
+  }
+
+}

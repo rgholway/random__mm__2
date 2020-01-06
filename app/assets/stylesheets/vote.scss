@@ -1,0 +1,645 @@
+.vote {
+  position: absolute;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  z-index: 20;
+}
+
+.vote__songs--second {
+  position: absolute;
+  top: 15%;
+  left: 35%;
+  height: 80%;
+  width: 30%;
+  overflow: scroll;
+}
+
+.vote__songs--first {
+  position: absolute;
+  height: 0%;
+  width: 0%;
+  overflow: hidden;
+}
+
+.vote__songs--third {
+  position: absolute;
+  height: 0%;
+  width: 0%;
+  overflow: hidden;
+}
+
+.vote__songs--fourth {
+  position: absolute;
+  height: 0%;
+  width: 0%;
+  overflow: hidden;
+}
+
+.vote__songs--fifth {
+  position: absolute;
+  height: 0%;
+  width: 0%;
+  overflow: hidden;
+}
+
+.vote__songs--title--third {
+  position: absolute;
+  height: 0%;
+  width: 0%;
+  overflow: hidden;
+}
+
+.vote__songs--title--fourth {
+  position: absolute;
+  height: 0%;
+  width: 0%;
+  overflow: hidden;
+}
+
+.vote__songs--title--fifth {
+  position: absolute;
+  height: 0%;
+  width: 0%;
+  overflow: hidden;
+}
+
+.vote__songs--title--second {
+  position: absolute;
+  top: 5%;
+  left: 35%;
+  height: 10%;
+  width: 30%;
+  text-align: center;
+  font-size: 2.5vh;
+  font-family: 'Raleway', sans-serif;
+}
+
+.vote__songs--title--first {
+  position: absolute;
+  height: 0%;
+  width: 0%;
+  overflow: hidden;
+}
+
+.vote__songs--info--second {
+  position: absolute;
+  top: 10%;
+  left: 35%;
+  color: #5F6065;
+  width: 30%;
+  text-align: center;
+  height: 20%;
+  font-size: 1.75vh;
+  font-family: 'Raleway', sans-serif;
+}
+
+.vote__songs--info--first {
+  position: absolute;
+  height: 0%;
+  width: 0%;
+  overflow: hidden;
+}
+
+.vote__songs--info--third {
+  position: absolute;
+  height: 0%;
+  width: 0%;
+  overflow: hidden;
+}
+
+.vote__songs--info--fourth {
+  position: absolute;
+  height: 0%;
+  width: 0%;
+  overflow: hidden;
+}
+
+.vote__songs--info--fifth {
+  position: absolute;
+  height: 0%;
+  width: 0%;
+  overflow: hidden;
+}
+
+.music__vote {
+  position: relative;
+  padding: 8.5%;
+  border: solid 1px black;
+  cursor: pointer;
+  font-family: 'Raleway', sans-serif;
+}
+
+.vote__click {
+  position: absolute;
+  right: 10%;
+  width: 20%;
+  height: 100%;
+  background: black;
+  cursor: pointer;
+}
+
+.vote--video-- {
+  position: absolute;
+  height: 0%;
+  width: 0%;
+  overflow: hidden;
+}
+
+.vote--video--active {
+  position: absolute;
+  top: 100%;
+  height: 5%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.play__button--playlist {
+  position: absolute;
+  left: 5%;
+  top: 20%;
+  height: 20%;
+  width: 15%;
+  background: black;
+  z-index: 10;
+}
+
+.play__button--play {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+.play__button--play--active {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-top: 5vh solid transparent;
+  border-bottom: 5vh solid transparent;
+  border-left: 5vh solid white;
+  z-index: 30;
+  cursor: pointer;
+}
+
+.play__button--stop--active {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border: 5vh solid transparent;
+  border: 5vh solid transparent;
+  border: 5vh solid white;
+}
+
+.play__button--stop {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+.under {
+  position: absolute;
+  height: 0%;
+  width: 0%;
+  overflow: hidden;
+}
+
+.under--active {
+  position: absolute;
+  top: 85%;
+  left: 42.5%;
+  height: 15%;
+  width: 15%;
+  z-index: 30;
+}
+
+.album__vote {
+  position: relative;
+  height: 10%;
+  width: 25%;
+  float: left;
+  padding: 2.5%;
+  cursor: pointer;
+}
+
+.vote__albums--first {
+  position: absolute;
+  top: 15%;
+  left: 15%;
+  width: 70%;
+  height: 70%;
+  overflow: scroll;
+}
+
+.vote__albums--title--first {
+  position: absolute;
+  top: 5%;
+  left: 15%;
+  color: #5F6065;
+  width: 70%;
+  text-align: center;
+  height: 20%;
+  font-size: 3vh;
+  font-family: 'Raleway', sans-serif;
+}
+
+.vote__albums--info--first {
+  position: absolute;
+  top: 10%;
+  left: 15%;
+  color: #5F6065;
+  width: 70%;
+  text-align: center;
+  height: 20%;
+  font-size: 1.75vh;
+  font-family: 'Raleway', sans-serif;
+}
+
+.vote__albums--title--second {
+  position: absolute;
+  height: 0%;
+  width: 0%;
+  overflow: hidden;
+}
+
+.vote__albums--title--third {
+  position: absolute;
+  height: 0%;
+  width: 0%;
+  overflow: hidden;
+}
+
+.vote__albums--title--fourth {
+  position: absolute;
+  height: 0%;
+  width: 0%;
+  overflow: hidden;
+}
+
+.vote__albums--title--fifth {
+  position: absolute;
+  height: 0%;
+  width: 0%;
+  overflow: hidden;
+}
+
+.vote__albums--info--second {
+  position: absolute;
+  height: 0%;
+  width: 0%;
+  overflow: hidden;
+}
+
+.vote__albums--info--third {
+  position: absolute;
+  height: 0%;
+  width: 0%;
+  overflow: hidden;
+}
+
+.vote__albums--info--fourth {
+  position: absolute;
+  height: 0%;
+  width: 0%;
+  overflow: hidden;
+}
+
+.vote__albums--info--fifth {
+  position: absolute;
+  height: 0%;
+  width: 0%;
+  overflow: hidden;
+}
+
+.vote__albums--second {
+  position: absolute;
+  height: 0%;
+  width: 0%;
+  overflow: hidden;
+}
+
+.vote__albums--third {
+  position: absolute;
+  height: 0%;
+  width: 0%;
+  overflow: hidden;
+}
+
+.vote__albums--fourth {
+  position: absolute;
+  height: 0%;
+  width: 0%;
+  overflow: hidden;
+}
+
+.vote__albums--fifth {
+  position: absolute;
+  height: 0%;
+  width: 0%;
+  overflow: hidden;
+}
+
+.music__vote--art {
+  position: absolute;
+  top: 10%;
+  height: 80%;
+  width: 20%;
+  left: 70%;
+}
+
+.vote__thirdQuestion--third {
+  position: absolute;
+  top: 15%;
+  left: 15%;
+  width: 70%;
+  height: 70%;
+}
+
+.vote__thirdQuestion--first {
+  position: absolute;
+  height: 0%;
+  width: 0%;
+  overflow: hidden;
+}
+
+.vote__thirdQuestion--second {
+  position: absolute;
+  height: 0%;
+  width: 0%;
+  overflow: hidden;
+}
+
+.vote__thirdQuestion--fourth {
+  position: absolute;
+  height: 0%;
+  width: 0%;
+  overflow: hidden;
+}
+
+.vote__thirdQuestion--fifth {
+  position: absolute;
+  height: 0%;
+  width: 0%;
+  overflow: hidden;
+}
+
+.vote__thirdQuestion--title--third {
+  position: absolute;
+  top: 5%;
+  left: 15%;
+  color: #5F6065;
+  width: 70%;
+  text-align: center;
+  height: 20%;
+  font-size: 3vh;
+  font-family: 'Raleway', sans-serif;
+}
+
+.vote__thirdQuestion--title--first {
+  position: absolute;
+  height: 0%;
+  width: 0%;
+  overflow: hidden;
+}
+
+.vote__thirdQuestion--title--fourth {
+  position: absolute;
+  height: 0%;
+  width: 0%;
+  overflow: hidden;
+}
+
+.vote__thirdQuestion--title--fifth {
+  position: absolute;
+  height: 0%;
+  width: 0%;
+  overflow: hidden;
+}
+
+.vote__thirdQuestion--title--second {
+  position: absolute;
+  height: 0%;
+  width: 0%;
+  overflow: hidden;
+}
+
+.vote__thirdQuestion--info--third {
+  position: absolute;
+  top: 10%;
+  left: 15%;
+  color: #5F6065;
+  width: 70%;
+  text-align: center;
+  height: 20%;
+  font-size: 2vh;
+  font-family: 'Raleway', sans-serif;
+}
+
+.vote__thirdQuestion--info--first {
+  position: absolute;
+  height: 0%;
+  width: 0%;
+  overflow: hidden;
+}
+
+.vote__thirdQuestion--info--fourth {
+  position: absolute;
+  height: 0%;
+  width: 0%;
+  overflow: hidden;
+}
+
+.vote__thirdQuestion--info--fifth {
+  position: absolute;
+  height: 0%;
+  width: 0%;
+  overflow: hidden;
+}
+
+.vote__thirdQuestion--info--second {
+  position: absolute;
+  height: 0%;
+  width: 0%;
+  overflow: hidden;
+}
+
+.upper__vote {
+  position: absolute;
+  top: 15%;
+  left: 10%;
+  width: 50%;
+  height: 30%;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  border: solid 1px black;
+  border-radius: 15%;
+  font-size: 3vh;
+  padding: 5%;
+  cursor: pointer;
+}
+
+.downer__vote {
+  position: absolute;
+  bottom: 15%;
+  right: 10%;
+  width: 50%;
+  height: 30%;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  border: solid 1px black;
+  border-radius: 15%;
+  font-size: 3vh;
+  padding: 5%;
+  cursor: pointer;
+}
+
+.vote__fourthQuestion--fourth {
+  position: absolute;
+  top: 15%;
+  left: 15%;
+  width: 70%;
+  height: 70%;
+}
+
+.vote__fourthQuestion--first {
+  position: absolute;
+  width: 0%;
+  height: 0%;
+  overflow: hidden;
+}
+
+.vote__fourthQuestion--second {
+  position: absolute;
+  width: 0%;
+  height: 0%;
+  overflow: hidden;
+}
+
+.vote__fourthQuestion--third {
+  position: absolute;
+  width: 0%;
+  height: 0%;
+  overflow: hidden;
+}
+
+.vote__fourthQuestion--fifth {
+  position: absolute;
+  width: 0%;
+  height: 0%;
+  overflow: hidden;
+}
+
+.funky__vote {
+  position: absolute;
+  top: 15%;
+  left: 10%;
+  width: 50%;
+  height: 30%;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  border: solid 1px black;
+  border-radius: 15%;
+  font-size: 3vh;
+  padding: 5%;
+  cursor: pointer;
+}
+
+.trippy__vote {
+  position: absolute;
+  bottom: 15%;
+  right: 10%;
+  width: 50%;
+  height: 30%;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  border: solid 1px black;
+  border-radius: 15%;
+  font-size: 3vh;
+  padding: 5%;
+  cursor: pointer;
+}
+
+.vote__fourthQuestion--title--fourth {
+  position: absolute;
+  top: 5%;
+  left: 15%;
+  color: #5F6065;
+  width: 70%;
+  text-align: center;
+  height: 20%;
+  font-size: 3vh;
+  font-family: 'Raleway', sans-serif;
+}
+
+.vote__fourthQuestion--title--first {
+  position: absolute;
+  height: 0%;
+  width: 0%;
+  overflow: hidden;
+}
+
+.vote__fourthQuestion--title--third {
+  position: absolute;
+  height: 0%;
+  width: 0%;
+  overflow: hidden;
+}
+
+.vote__fourthQuestion--title--fifth {
+  position: absolute;
+  height: 0%;
+  width: 0%;
+  overflow: hidden;
+}
+
+.vote__fourthQuestion--title--second {
+  position: absolute;
+  height: 0%;
+  width: 0%;
+  overflow: hidden;
+}
+
+.vote__fourthQuestion--info--fourth {
+  position: absolute;
+  top: 10%;
+  left: 15%;
+  color: #5F6065;
+  width: 70%;
+  text-align: center;
+  height: 20%;
+  font-size: 2vh;
+  font-family: 'Raleway', sans-serif;
+}
+
+.vote__fourthQuestion--info--first {
+  position: absolute;
+  height: 0%;
+  width: 0%;
+  overflow: hidden;
+}
+
+.vote__fourthQuestion--info--third {
+  position: absolute;
+  height: 0%;
+  width: 0%;
+  overflow: hidden;
+}
+
+.vote__fourthQuestion--info--fifth {
+  position: absolute;
+  height: 0%;
+  width: 0%;
+  overflow: hidden;
+}
+
+.vote__fourthQuestion--info--second {
+  position: absolute;
+  height: 0%;
+  width: 0%;
+  overflow: hidden;
+}
