@@ -117,7 +117,7 @@ wmwtso_songs = [
   {name: "Youforia", youtube: "lMjQGOfpSo4", album_id: 3, first_characteristic: "sad", art: "https://images.genius.com/c2c579aaf2e5c37b2a5dd74193bb0cdd.600x600x1.jpg"},
   {name: "Goosebumpz", youtube: "M-ev8TFGhGI", album_id: 3, first_characteristic: "upbeat", art: "https://images.genius.com/c2c579aaf2e5c37b2a5dd74193bb0cdd.600x600x1.jpg"},
   {name: "O.K.", youtube: "eXbz4nSnWf8", album_id: 3, first_characteristic: "upbeat", art: "https://images.genius.com/c2c579aaf2e5c37b2a5dd74193bb0cdd.600x600x1.jpg"},
-  {name: "Claymation.", youtube: "qF22BW168tw", album_id: 3, first_characteristic: "funky", art: "https://images.genius.com/c2c579aaf2e5c37b2a5dd74193bb0cdd.600x600x1.jpg"}
+  {name: "Claymation", youtube: "qF22BW168tw", album_id: 3, first_characteristic: "funky", art: "https://images.genius.com/c2c579aaf2e5c37b2a5dd74193bb0cdd.600x600x1.jpg"}
 ]
 
 wmwtso_songs.each do |song|
@@ -207,8 +207,6 @@ kids_songs = [
   {name: "Poppy", youtube: "C_7G48V71m0", album_id: 7, second_characteristic: "older"},
   {name: "Face in the Crowd", youtube: "h3-RhAEgVjU", album_id: 7, second_characteristic: "older"},
   {name: "La La La", youtube: "_MMI1hEScO8", album_id: 7, second_characteristic: "older"},
-
-
 ]
 
 kids_songs.each do |song|
