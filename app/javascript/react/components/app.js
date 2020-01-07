@@ -4,13 +4,13 @@ import Home from './Home'
 import Vote from './Vote'
 import ArtistShow from './ArtistShow'
 import ShowPlaylist from './ShowPlaylist'
-import ThirdQuestion from './ThirdQuestion'
+import FourthQuestion from './FourthQuestion'
 
 export const App = (props) => {
   return (
     <Router history={browserHistory}>
       <Route path="/" component={Home}/>
-      <Route path="/fifth" component={ThirdQuestion}/>
+      <Route path="/fourth" component={FourthQuestion}/>
       <Route path="/vote" component={Vote}/>
       <Route path="/vote/:id" component={ShowPlaylist}/>
       <Route path="/:name" component={ArtistShow}/>
