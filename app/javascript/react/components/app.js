@@ -10,7 +10,6 @@ export const App = (props) => {
   return (
     <Router history={browserHistory}>
       <Route path="/" component={Home}/>
-      <Route path="/fourth" component={FourthQuestion}/>
       <Route path="/vote" component={Vote}/>
       <Route path="/vote/:id" component={ShowPlaylist}/>
       <Route path="/:name" component={ArtistShow}/>

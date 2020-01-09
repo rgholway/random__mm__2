@@ -35,9 +35,6 @@
   border: solid 1px white;
   background: black;
   color: white;
-  font-family: 'Raleway', sans-serif;
-  text-align: center;
-  padding-top: 0.25%;
   overflow: hidden;
 }
 
@@ -240,18 +237,11 @@
 
 .songs__x {
   position: absolute;
-  top: 20%;
-  right: 0%;
-  height: 50%;
-  width: 10%;
+  top: 30%;
+  right: 2.5%;
+  height: 35%;
+  width: 5%;
   z-index: 30;
-  font-family: 'Raleway', sans-serif;
-  text-align: center;
-  font-style: bold;
-  font-size: 3vmin;
-  padding-top: 0.5%;
-  color: red;
-  cursor: pointer;
 }
 
 .songs__in__in__playlist {
@@ -327,4 +317,104 @@
   padding: 2.5%;
   color: white;
   border: solid 1px white;
+}
+
+.song__save {
+  position: absolute;
+  right: 1.5%;
+  top: 17.5%;
+  height: 50%;
+  width: 7.5%;
+  background: white;
+}
+
+.song__playing--dark--words {
+  position: absolute;
+  padding-top: 5%;
+  width: 100%;
+  text-align: center;
+  top: 17.5%;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  padding-top: 0.25%;
+  color: white;
+  font-size: 2.5vmin;
+}
+
+.save__playlist {
+  position: absolute;
+  height: 0%;
+  width: 0%;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.save__playlist--hover {
+  position: absolute;
+  top: 0%;
+  right: 10%;
+  height: 100%;
+  width: 25%;
+  color: white;
+  background: rgba(0, 0, 0, 0.6);
+  font-family: 'Raleway', sans-serif;
+  font-size: 2vmin;
+  text-align: center;
+  padding-top: 2%;
+}
+
+.currentUser {
+  position: absolute;
+  height: 0%;
+  width: 0%;
+  overflow: hidden;
+}
+
+.currentUsernone {
+  position: absolute;
+  top: 40%;
+  left: 30%;
+  height: 25%;
+  width: 40%;
+  background: white;
+  z-index: 30;
+  overflow: hidden;
+}
+
+.currentUser--title {
+  position: absolute;
+  top: 0%;
+  height: 10%;
+  width: 100%;
+  padding-top: 2%;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  color: black;
+}
+
+.currentUser--sign--in {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  height: 40%;
+  width: 20%;
+  background: green;
+}
+
+.currentUser--log--in {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  height: 40%;
+  width: 20%;
+  background: yellow;
+}
+
+.currentUser--nope {
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  height: 40%;
+  width: 20%;
+  background: red;
 }

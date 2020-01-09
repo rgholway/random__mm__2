@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { browserHistory } from 'react-router';
+import { browserHistory, Link } from 'react-router';
 import PlaylistTile from './PlaylistTile';
 import VoteVideo from './VoteVideo';
 import SearchBar from './SearchBar';
@@ -25,7 +25,10 @@ class PlaylistShow extends Component {
       seconds: 0,
       stop: "",
       timer: 0,
-      currentSong: ""
+      currentSong: "",
+      currentUser: "",
+      emailString: "rgholway@gmail.com",
+      passwordString: "baseball"
         }
       this.fetchPlaylist = this.fetchPlaylist.bind(this)
       this.handleClick = this.handleClick.bind(this)
@@ -40,6 +43,10 @@ class PlaylistShow extends Component {
       this.getTime = this.getTime.bind(this)
       this.startTimer = this.startTimer.bind(this)
       this.stopTimer = this.stopTimer.bind(this)
+      this.handleUser = this.handleUser.bind(this)
+      this.onNope = this.onNope.bind(this)
+      this.onSignUp = this.onSignUp.bind(this)
+      this.onLogIn = this.onLogIn.bind(this)
   }
 
   fetchPlaylist() {
@@ -85,7 +92,12 @@ class PlaylistShow extends Component {
 
   handleRight() {
     let index = this.state.index + 1
-    this.setState( { youtube: this.state.playlist[index][2], index: index, currentSong: this.state.playlist[index][1]})
+    if (this.state.index == this.state.playlist.length - 1) {
+      this.setState({youtube: this.state.playlist[0][2], index: 0, currentSong: this.state.playlist[0][1]})
+    }
+    if (this.state.index != this.state.playlist.length - 1) {
+      this.setState( { youtube: this.state.playlist[index][2], index: index, currentSong: this.state.playlist[index][1]})
+    }
   }
 
   handleLeft() {
@@ -164,6 +176,24 @@ class PlaylistShow extends Component {
       this.setState({ stop: "stop"})
     }
 
+    handleUser(currentUser) {
+      this.setState({currentUser: currentUser })
+    }
+
+    onNope() {
+      this.setState({ currentUser: "" })
+    }
+
+    onSignUp() {
+      browserHistory.push('/users/sign_up')
+      location.reload()
+    }
+
+    onLogIn() {
+      browserHistory.push('/users/sign_in')
+      location.reload()
+    }
+
 
   componentWillMount() {
     this.fetchPlaylist()
@@ -228,8 +258,16 @@ class PlaylistShow extends Component {
             stopTimer= {this.stopTimer}
             currentSong= {this.state.currentSong}
             index= {this.state.index}
+            id= {this.props.params.id}
+            currentUser = {this.handleUser}
           />
           <div className={`songs__search${this.state.active}`}> {songsArray} </div>
+          <div className={`currentUser${this.state.currentUser}`}>
+            <div className="currentUser--title">Woah... Sign In First</div>
+            <div className="currentUser--sign--in" onClick={this.onSignUp}></div>
+            <div className="currentUser--log--in" onClick={this.onLogIn}></div>
+            <div className="currentUser--nope" onClick={this.onNope}></div>
+          </div>
       </div>
     )
   }
