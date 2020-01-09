@@ -5,6 +5,7 @@ import pausebutton from '../../../assets/images/pause.png'
 import rightbutton from '../../../assets/images/right.png'
 import leftbutton from '../../../assets/images/left.png'
 import shufflebutton from '../../../assets/images/shuffle.png'
+import save__save from '../../../assets/images/save__save.png'
 
 class VoteVideo extends React.Component {
   constructor(props) {
@@ -17,7 +18,8 @@ class VoteVideo extends React.Component {
       timer: 0.0,
       vidoeTime: 0.00,
       totalTime: 0,
-      timeBar: 0
+      timeBar: 0,
+      save: ""
         }
       this.handleRight = this.handleRight.bind(this)
       this.handleLeft = this.handleLeft.bind(this)
@@ -31,6 +33,9 @@ class VoteVideo extends React.Component {
       this._onPlay = this._onPlay.bind(this)
       this.handlePause = this.handlePause.bind(this)
       this.handleProgress = this.handleProgress.bind(this)
+      this.handleSave = this.handleSave.bind(this)
+      this.handleHover = this.handleHover.bind(this)
+      this.handleLeave = this.handleLeave.bind(this)
   }
 
   handleRight() {
@@ -54,7 +59,6 @@ class VoteVideo extends React.Component {
   }
 
   handleProgress() {
-    debugger;
   }
 
   handleEnd() {
@@ -92,7 +96,30 @@ class VoteVideo extends React.Component {
       this.props.getTime(this.state.timer)
     }
 
+    handleSave() {
+      fetch(`/api/v1/users/${this.props.id}`, {
+        method: 'PUT',
+        headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json' },
+        credentials: 'same-origin'
+      })
+      .then(formPayload => formPayload.json())
+      .then(body => {
+        this.props.currentUser(body[0])
+      })
+    }
+
+    handleHover() {
+      this.setState({ save: "--hover" })
+    }
+
+    handleLeave() {
+      this.setState({ save: "" })
+    }
+
   render() {
+    console.log(this.state.currentUser);
     const opts = {
       height: '100%',
       width: '100%',
@@ -116,7 +143,10 @@ class VoteVideo extends React.Component {
             onStateChange={this._onStateChange}
             status={this.props.status}
           />
-          <div className="song__playing--dark">{this.props.currentSong}
+          <div className="song__playing--dark">
+            <div className="song__playing--dark--words">{this.props.currentSong}</div>
+            <img className="song__save" src={save__save} onClick={this.handleSave} onMouseEnter={this.handleHover} onMouseLeave={this.handleLeave}/>
+            <div className={`save__playlist${this.state.save}`}>Save Playlist</div>
             <div className="progress__bar" onClick={this.handleProgress}></div>
             <div className="progress__cover" style={ { width: `${ this.state.timeBar }%` } }></div>
           </div>

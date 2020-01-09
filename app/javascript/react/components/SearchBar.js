@@ -5,16 +5,23 @@ class SearchBar extends Component {
     super(props);
     this.state = {
       song: "",
-      searchString: ''
+      searchString: "Search"
     }
 
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.handleClear = this.handleClear.bind(this)
   }
 
   handleChange(event) {
     const newSearchString = event.target.value
     this.setState({ searchString: newSearchString })
+  }
+
+  handleClear() {
+    if (this.state.searchString == "Search") {
+      this.setState({ searchString: "" })
+    }
   }
 
     handleSubmit(event) {
@@ -37,7 +44,7 @@ class SearchBar extends Component {
   render() {
     return(
       <form onSubmit={this.handleSubmit}>
-        <input type='text' name='searchString' className="search__bar--bar" value={this.state.searchString} onChange={this.handleChange} />
+        <input type='text' name='searchString' className="search__bar--bar" onClick={this.handleClear} value={this.state.searchString} onChange={this.handleChange} />
         <input type='submit' value='Submit' className="submit__button__search" />
       </form>
     )

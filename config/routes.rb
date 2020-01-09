@@ -5,6 +5,7 @@ Rails.application.routes.draw do
     namespace :v1 do
       post 'songs/search', to: 'songs#search'
       resources :albums, only: [:index, :show]
+      resources :users, only: [:create, :show, :update, :new]
       resources :songs, only: [:show, :update]
       resources :artists, only: [:index, :show]
       resources :tracks, only: [:show, :update]
@@ -15,7 +16,6 @@ Rails.application.routes.draw do
 
   get '/', to: 'homes#index'
   get '/vote', to: 'homes#index'
-  get '/fourth', to: 'homes#index'
   get '/vote/:id', to: 'homes#index'
   get '/mac', to: 'homes#index'
   get '/cudi', to: 'homes#index'

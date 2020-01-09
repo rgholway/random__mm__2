@@ -360,7 +360,8 @@ everything_songs = [
   {name: "Guidelines", youtube: "4WWltsaADBc", album_id: 13},
   {name: "Doodling in the Key of C Sharp", youtube: "w5NAoFDFmb8", album_id: 13},
   {name: "He Who Ate All the Caviar", youtube: "AyNf4k9xIXg", album_id: 13},
-  {name: "Nothing from Nothing (Cover)", youtube: "iZlu6jjdb4A", album_id: 13}
+  {name: "Nothing from Nothing (Cover)", youtube: "iZlu6jjdb4A", album_id: 13},
+  {name: "Day One", youtube: "g08gsd7d87Y", album_id: 13}
 ]
 
 everything_songs.each do |song|

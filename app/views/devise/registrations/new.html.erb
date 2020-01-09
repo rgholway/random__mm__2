@@ -1,29 +1,34 @@
-<h2>Sign up</h2>
-
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= render "devise/shared/error_messages", resource: resource %>
+<div class="white">
+  <div class="signUp__title">Sign Up</div>
+  <div class="sign__up">
+    <div class="email__field">
+      <div class="email__label">Email</div>
+      <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+    </div>
 
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+    <div class="password__field">
+      <div class="password__label">Password</div>
+      <% if @minimum_password_length %>
+      <% end %><br />
+      <%= f.password_field :password, autocomplete: "new-password" %>
+    </div>
+
+    <div class="password__confirm__field">
+      <div class=password__confirm__label>Confirm Password</div>
+      <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
+    </div>
+
+    <div class="actions">
+      <%= f.submit "Sign Up" %>
+    </div>
+  <% end %>
+  </div>
+  <div class="sign__up--privacy">
+    <div class="sign__up--privacy--title">Privacy</div>
+    <div class="sign__up--privacy--info">You should always be wary of sending private info like email addresses and passwords over the internet. If you notice this site is not technically 'secure.' To make the site secure I have to pay for a certificate thats around $50 so I would rather not do that. For sign in purposes I use the Ruby on Rails gem Devise which has its own built in security measures in place. As the creator of the site I can't see any passwords that are put into the form above. However, I understand you may still be skeptical. If you don't feel comfortable signing in with your private information you can still use the site (or just put in a fake email it literally doesnt matter if you use your actual email!) however, if you want to save playlists so you can listen to them later you have to sign in. Thanks for checking out the site!</div>
   </div>
 
-  <div class="field">
-    <%= f.label :password %>
-    <% if @minimum_password_length %>
-    <em>(<%= @minimum_password_length %> characters minimum)</em>
-    <% end %><br />
-    <%= f.password_field :password, autocomplete: "new-password" %>
-  </div>
-
-  <div class="field">
-    <%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
-  </div>
-
-  <div class="actions">
-    <%= f.submit "Sign up" %>
-  </div>
-<% end %>
-
+</div>
 <%= render "devise/shared/links" %>
