@@ -16,7 +16,7 @@ class VoteVideo extends React.Component {
       stop: "",
       play: "pause",
       timer: 0.0,
-      vidoeTime: 0.00,
+      videoTime: 0.00,
       totalTime: 0,
       timeBar: 0,
       save: ""
@@ -39,10 +39,10 @@ class VoteVideo extends React.Component {
   }
 
   handleRight() {
+    this.setState({ timer: 0 })
     if (this.state.status == "paused") {
       this.setState({ status: "" })
     }
-    this.setState({ timer: 0 })
     this.props.handleRight()
     }
 
@@ -119,7 +119,6 @@ class VoteVideo extends React.Component {
     }
 
   render() {
-    console.log(this.state.currentUser);
     const opts = {
       height: '100%',
       width: '100%',

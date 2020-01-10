@@ -29,6 +29,10 @@
 
   <%= yield %>
 
+  <%- if current_user -%>
+      <div class="sign__out--user"><%= link_to 'Sign Out', destroy_user_session_path, method: :delete %></div>
+  <%- end -%>
+
   <%= javascript_include_tag 'application' %>
 
   <%- if Rails.env.development? || Rails.env.test? -%>

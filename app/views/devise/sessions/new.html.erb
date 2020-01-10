@@ -1,25 +1,25 @@
-<h2>Log in</h2>
-
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-  <div class="field">
-    <%= f.label :email %><br />
+<div class="white">
+  <div class="signUp__title">Log In</div>
+  <div class="sign__up">
+  <div class="email__field">
+    <div class="email__label">Email</div>
     <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
   </div>
 
-  <div class="field">
-    <%= f.label :password %><br />
+  <div class="password__field--login">
+    <div class="password__label--login">Password</div>
     <%= f.password_field :password, autocomplete: "current-password" %>
   </div>
 
-  <% if devise_mapping.rememberable? %>
-    <div class="field">
-      <%= f.check_box :remember_me %>
-      <%= f.label :remember_me %>
-    </div>
-  <% end %>
-
-  <div class="actions">
+  <div class="actions--login">
     <%= f.submit "Log in" %>
+  </div>
+  </div>
+  <div class="sign__up--privacy">
+    <div class="sign__up--privacy--title">Privacy</div>
+    <div class="sign__up--privacy--info">You should always be wary of sending private info like email addresses and passwords over the internet. If you notice this site is not technically 'secure.' To make the site secure I have to pay for a certificate thats around $50 so I would rather not do that. For sign in purposes I use the Ruby on Rails gem Devise which has its own built in security measures in place. As the creator of the site I can't see any passwords that are put into the form above. However, I understand you may still be skeptical. If you don't feel comfortable signing in with your private information you can still use the site (or just put in a fake email and password it literally doesnt matter if you use your actual email!) however, if you want to save playlists so you can listen to them later you have to sign in. Thanks for checking out the site!</div>
+  </div>
   </div>
 <% end %>
 

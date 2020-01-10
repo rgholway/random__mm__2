@@ -8,8 +8,13 @@ protect_from_forgery unless: -> { request.format.json? }
   end
 
   def show
-    playlist = Playlist.find(params[:id])
-    render json: playlist.songs
+    if current_user
+      playlist = Playlist.find(params[:id])
+      render json: [playlist.songs, "--user--active"]
+    elsif
+      playlist = Playlist.find(params[:id])
+      render json: [playlist.songs, ""]
+    end
   end
 
   def create
