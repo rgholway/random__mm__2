@@ -5,10 +5,11 @@ Artist.create(name: "Travis Scott", short: "travis", first_letter: "T", second_l
 
 Album.create(title: "Swimming", short: "swimming", css: "first", art: "http://www.getalternative.com/wp-content/uploads/2018/12/mac-miller-self-care-video-reveals-cover-art-tracklist-swimming-album.jpg", color: "#FFFFFF", artist_id: 1, sneak_peek: "_O1qD95xnao")
 Album.create(title: "Faces", short: "faces", css: "two", art: "https://media.pitchfork.com/photos/5929a7d7ea9e61561daa56a2/1:1/w_600/85c259af.jpg", color: "#F9C647", artist_id: 1, sneak_peek: "fuJPkQkhwn8")
+Album.create(title: "Circles", short: "circles", css: "six", art: "https://static.stereogum.com/uploads/2020/01/mac-miller-posthumous-album-circles-1578501176-640x640.jpeg", color: "#A1A1A1", artist_id: 1, sneak_peek: "aIHF7u9Wwiw")
 Album.create(title: "WMWTSO", short: "wmtso", css: "three", art: "https://images.genius.com/c2c579aaf2e5c37b2a5dd74193bb0cdd.600x600x1.jpg", color: "#B92A28", artist_id: 1, sneak_peek: "R_me4SNmGbc")
 Album.create(title: "Go:od AM", short: "good__am", css: "four", art: "https://i2.wp.com/www.parlemag.com/wp-content/uploads/2015/08/Mac-Miller-GOOD-AM.jpg?fit=684%2C684&ssl=1", color: "#FFFFFF", artist_id: 1, sneak_peek: "8RUbM_WSYTI")
 Album.create(title: "Divine Feminine", short: "divine", css: "five", art: "https://media.pitchfork.com/photos/5929bcb3ea9e61561daa752c/1:1/w_600/178c182f.jpg", color: "#DCC0BD", artist_id: 1, sneak_peek: "XL--KSNxfy8")
-Album.create(title: "Blue Slide Park", short: "blue", css: "six", art: "https://images.genius.com/ab260470b208b8984a74e2e42e7d1ff6.600x600x1.jpg", color: "#2F46F6", artist_id: 1, sneak_peek: "T_Mt6Isew_0")
+Album.create(title: "Blue Slide Park", short: "blue", css: "fourteen", art: "https://images.genius.com/ab260470b208b8984a74e2e42e7d1ff6.600x600x1.jpg", color: "#2F46F6", artist_id: 1, sneak_peek: "T_Mt6Isew_0")
 Album.create(title: "K.I.D.S", short: "kids", css: "seven", art: "https://cdn.shopify.com/s/files/1/0807/4553/products/s-l1600-1_883370e4-02dc-4b8a-8986-22a9bcfe00fa_grande.jpg?v=1544759626", color: "#E2BC9C", artist_id: 1, sneak_peek: "mkGT1c98soU")
 Album.create(title: "Delusional Thomas", short: "delusional", css: "eight",  art: "http://hw-img.datpiff.com/m9019023/Mac_Miller_Delusional_Thomas-front-large.jpg", color: "#3C3D42", artist_id: 1, sneak_peek: "xKpg7bV5ml4")
 Album.create(title: "Macadelic", short: "macadelic", css: "nine",  art: "https://ssla.ulximg.com/image/750x750/cover/1332543471_fcbecdd3c7f506b3e7861654c8153f07.jpg/06a0fb870fc8d7c46f60cb31ddd8297e/1332543471_mac_miller_macadelic.jpg", color: "#ffffff", artist_id: 1, sneak_peek: "As_cvwAMYi4")
@@ -16,7 +17,6 @@ Album.create(title: "Live From Space", short: "space", css: "ten", art: "http://
 Album.create(title: "Best Day Ever", short: "bde", css:"eleven", art: "https://cps-static.rovicorp.com/3/JPG_500/MI0004/067/MI0004067757.jpg?partner=allrovi.com", color: "#A2369A", artist_id: 1, sneak_peek: "QtTXIoy48XU")
 Album.create(title: "Run on Sentences", short: "v1", css: "twelve", art: "https://ssla.ulximg.com/image/750x750/cover/1362407226_b378446d8c5acfc033c85e8662022663.jpg/54af3da11b8c521d4244cf9ef9d30f7d/1362407226_abc57058448d2a15b4159a5d07b228c6.jpg", color: "#FFEF4F", artist_id: 1, sneak_peek: "gLroLUKBpTU")
 Album.create(title: "Everything Else", short: "everything", css: "thirteen", art: "https://pbs.twimg.com/profile_images/1035265948192653312/4WYg4YiA.jpg", color: "#2046F6", artist_id: 1, sneak_peek: "oUz16GKrdQc")
-Album.create(title: "Stolen Youth", short: "stolen", css: "fourteen", art: "https://earmilk-com.exactdn.com/wp-content/uploads/2013/07/Vince_Staples_Larry_Fisherman_Stolen_Youth-front-large.jpg?strip=all&lossy=1&ssl=1", color: "#A2369A", artist_id: 1, sneak_peek: "Ma5Ai5IrFSc")
 
 Album.create(title: "Man on the Moon I", short: "motm", css: "first", art: "https://images.rapgenius.com/90661b285579da7ab694e7db4cd6abf8.706x700x1.jpg", color: "#EA4133", text: "black", font_size: "1.7vmin", artist_id: 2)
 Album.create(title: "Man on the Moon II", short: "motm2", css: "two", art: "https://images-na.ssl-images-amazon.com/images/I/61xjuDkOiuL.jpg", color: "#9F5526", text: "white", font_size: "1.6vmin",  artist_id: 2)
@@ -99,25 +99,25 @@ faces_songs.each do |song|
 end
 
 wmwtso_songs = [
-  {name: "The Star Room", youtube: "Mos8UiWV6_g", album_id: 3, first_characteristic: "downer", art: "https://images.genius.com/c2c579aaf2e5c37b2a5dd74193bb0cdd.600x600x1.jpg"},
-  {name: "Avian", youtube: "mFWf4Tb5m6Y", album_id: 3, first_characteristic: "upbeat", art: "https://images.genius.com/c2c579aaf2e5c37b2a5dd74193bb0cdd.600x600x1.jpg"},
-  {name: "I'm Not Real", youtube: "GDLFo600vvg", album_id: 3, first_characteristic: "sad", art: "https://images.genius.com/c2c579aaf2e5c37b2a5dd74193bb0cdd.600x600x1.jpg"},
-  {name: "SDS", youtube: "jj4csT4eviU", album_id: 3, first_characteristic: "trippy", art: "https://images.genius.com/c2c579aaf2e5c37b2a5dd74193bb0cdd.600x600x1.jpg"},
-  {name: "Bird Call", youtube: "qGnXnLAXO8c", album_id: 3, first_characteristic: "upbeat", art: "https://images.genius.com/c2c579aaf2e5c37b2a5dd74193bb0cdd.600x600x1.jpg"},
-  {name: "Matches", youtube: "VfSgvNs3irw", album_id: 3, first_characteristic: "upbeat", art: "https://images.genius.com/c2c579aaf2e5c37b2a5dd74193bb0cdd.600x600x1.jpg"},
-  {name: "I Am Who I Am", youtube: "jLTOuvBTLxA", album_id: 3, first_characteristic: "downer", art: "https://images.genius.com/c2c579aaf2e5c37b2a5dd74193bb0cdd.600x600x1.jpg"},
-  {name: "Objects in the Mirror", youtube: "8gOQKSzbG6w", album_id: 3, first_characteristic: "sad", art: "https://images.genius.com/c2c579aaf2e5c37b2a5dd74193bb0cdd.600x600x1.jpg"},
-  {name: "Red Dot Music", youtube: "LD6SbTFy8vs", album_id: 3, first_characteristic: "upbeat", art: "https://images.genius.com/c2c579aaf2e5c37b2a5dd74193bb0cdd.600x600x1.jpg"},
-  {name: "Gees", youtube: "1JGmTalfUQY", album_id: 3, first_characteristic: "upbeat", art: "https://images.genius.com/c2c579aaf2e5c37b2a5dd74193bb0cdd.600x600x1.jpg"},
-  {name: "Watching Movies", youtube: "wdaI7F3Jv5M", album_id: 3, first_characteristic: "upbeat", art: "https://images.genius.com/c2c579aaf2e5c37b2a5dd74193bb0cdd.600x600x1.jpg"},
-  {name: "Suplexes inside of Complexes and Duplexes", youtube: "fJo-Cjq0yjg", album_id: 3, first_characteristic: "trippy", art: "https://images.genius.com/c2c579aaf2e5c37b2a5dd74193bb0cdd.600x600x1.jpg"},
-  {name: "Remember", youtube: "u7MrdaSYvo0", album_id: 3, first_characteristic: "sad", art: "https://images.genius.com/c2c579aaf2e5c37b2a5dd74193bb0cdd.600x600x1.jpg"},
-  {name: "Someone Like You", youtube: "e9iS7zaUeQo", album_id: 3, first_characteristic: "downer", art: "https://images.genius.com/c2c579aaf2e5c37b2a5dd74193bb0cdd.600x600x1.jpg"},
-  {name: "Aquarium", youtube: "R_me4SNmGbc", album_id: 3, first_characteristic: "downer", art: "https://images.genius.com/c2c579aaf2e5c37b2a5dd74193bb0cdd.600x600x1.jpg"},
-  {name: "Youforia", youtube: "lMjQGOfpSo4", album_id: 3, first_characteristic: "sad", art: "https://images.genius.com/c2c579aaf2e5c37b2a5dd74193bb0cdd.600x600x1.jpg"},
-  {name: "Goosebumpz", youtube: "M-ev8TFGhGI", album_id: 3, first_characteristic: "upbeat", art: "https://images.genius.com/c2c579aaf2e5c37b2a5dd74193bb0cdd.600x600x1.jpg"},
-  {name: "O.K.", youtube: "eXbz4nSnWf8", album_id: 3, first_characteristic: "upbeat", art: "https://images.genius.com/c2c579aaf2e5c37b2a5dd74193bb0cdd.600x600x1.jpg"},
-  {name: "Claymation", youtube: "qF22BW168tw", album_id: 3, first_characteristic: "funky", art: "https://images.genius.com/c2c579aaf2e5c37b2a5dd74193bb0cdd.600x600x1.jpg"}
+  {name: "The Star Room", youtube: "Mos8UiWV6_g", album_id: 4, first_characteristic: "downer", art: "https://images.genius.com/c2c579aaf2e5c37b2a5dd74193bb0cdd.600x600x1.jpg"},
+  {name: "Avian", youtube: "mFWf4Tb5m6Y", album_id: 4, first_characteristic: "upbeat", art: "https://images.genius.com/c2c579aaf2e5c37b2a5dd74193bb0cdd.600x600x1.jpg"},
+  {name: "I'm Not Real", youtube: "GDLFo600vvg", album_id: 4, first_characteristic: "sad", art: "https://images.genius.com/c2c579aaf2e5c37b2a5dd74193bb0cdd.600x600x1.jpg"},
+  {name: "SDS", youtube: "jj4csT4eviU", album_id: 4, first_characteristic: "trippy", art: "https://images.genius.com/c2c579aaf2e5c37b2a5dd74193bb0cdd.600x600x1.jpg"},
+  {name: "Bird Call", youtube: "qGnXnLAXO8c", album_id: 4, first_characteristic: "upbeat", art: "https://images.genius.com/c2c579aaf2e5c37b2a5dd74193bb0cdd.600x600x1.jpg"},
+  {name: "Matches", youtube: "VfSgvNs3irw", album_id: 4, first_characteristic: "upbeat", art: "https://images.genius.com/c2c579aaf2e5c37b2a5dd74193bb0cdd.600x600x1.jpg"},
+  {name: "I Am Who I Am", youtube: "jLTOuvBTLxA", album_id: 4, first_characteristic: "downer", art: "https://images.genius.com/c2c579aaf2e5c37b2a5dd74193bb0cdd.600x600x1.jpg"},
+  {name: "Objects in the Mirror", youtube: "8gOQKSzbG6w", album_id: 4, first_characteristic: "sad", art: "https://images.genius.com/c2c579aaf2e5c37b2a5dd74193bb0cdd.600x600x1.jpg"},
+  {name: "Red Dot Music", youtube: "LD6SbTFy8vs", album_id: 4, first_characteristic: "upbeat", art: "https://images.genius.com/c2c579aaf2e5c37b2a5dd74193bb0cdd.600x600x1.jpg"},
+  {name: "Gees", youtube: "1JGmTalfUQY", album_id: 4, first_characteristic: "upbeat", art: "https://images.genius.com/c2c579aaf2e5c37b2a5dd74193bb0cdd.600x600x1.jpg"},
+  {name: "Watching Movies", youtube: "wdaI7F3Jv5M", album_id: 4, first_characteristic: "upbeat", art: "https://images.genius.com/c2c579aaf2e5c37b2a5dd74193bb0cdd.600x600x1.jpg"},
+  {name: "Suplexes inside of Complexes and Duplexes", youtube: "fJo-Cjq0yjg", album_id: 4, first_characteristic: "trippy", art: "https://images.genius.com/c2c579aaf2e5c37b2a5dd74193bb0cdd.600x600x1.jpg"},
+  {name: "Remember", youtube: "u7MrdaSYvo0", album_id: 4, first_characteristic: "sad", art: "https://images.genius.com/c2c579aaf2e5c37b2a5dd74193bb0cdd.600x600x1.jpg"},
+  {name: "Someone Like You", youtube: "e9iS7zaUeQo", album_id: 4, first_characteristic: "downer", art: "https://images.genius.com/c2c579aaf2e5c37b2a5dd74193bb0cdd.600x600x1.jpg"},
+  {name: "Aquarium", youtube: "R_me4SNmGbc", album_id: 4, first_characteristic: "downer", art: "https://images.genius.com/c2c579aaf2e5c37b2a5dd74193bb0cdd.600x600x1.jpg"},
+  {name: "Youforia", youtube: "lMjQGOfpSo4", album_id: 4, first_characteristic: "sad", art: "https://images.genius.com/c2c579aaf2e5c37b2a5dd74193bb0cdd.600x600x1.jpg"},
+  {name: "Goosebumpz", youtube: "M-ev8TFGhGI", album_id: 4, first_characteristic: "upbeat", art: "https://images.genius.com/c2c579aaf2e5c37b2a5dd74193bb0cdd.600x600x1.jpg"},
+  {name: "O.K.", youtube: "eXbz4nSnWf8", album_id: 4, first_characteristic: "upbeat", art: "https://images.genius.com/c2c579aaf2e5c37b2a5dd74193bb0cdd.600x600x1.jpg"},
+  {name: "Claymation", youtube: "qF22BW168tw", album_id: 4, first_characteristic: "funky", art: "https://images.genius.com/c2c579aaf2e5c37b2a5dd74193bb0cdd.600x600x1.jpg"}
 ]
 
 wmwtso_songs.each do |song|
@@ -125,23 +125,23 @@ wmwtso_songs.each do |song|
 end
 
 am_songs = [
-  {name: "Doors", youtube: "wE_KOXiSbI8", album_id: 4, first_characteristic: "instrumental", art: "https://i2.wp.com/www.parlemag.com/wp-content/uploads/2015/08/Mac-Miller-GOOD-AM.jpg?fit=684%2C684&ssl=1", second_characteristic: "newer"},
-  {name: "Brand Name", youtube: "vuCyrtGQhAk", album_id: 4, first_characteristic: "upbeat", art: "https://i2.wp.com/www.parlemag.com/wp-content/uploads/2015/08/Mac-Miller-GOOD-AM.jpg?fit=684%2C684&ssl=1", second_characteristic: "newer"},
-  {name: "Rush Hour", youtube: "L73SaFeTaA8", album_id: 4, first_characteristic: "downer", art: "https://i2.wp.com/www.parlemag.com/wp-content/uploads/2015/08/Mac-Miller-GOOD-AM.jpg?fit=684%2C684&ssl=1", second_characteristic: "newer"},
-  {name: "Two Matches", youtube: "KWtg0BDRl9k", album_id: 4, first_characteristic: "downer", art: "https://i2.wp.com/www.parlemag.com/wp-content/uploads/2015/08/Mac-Miller-GOOD-AM.jpg?fit=684%2C684&ssl=1", second_characteristic: "newer"},
-  {name: "100 Grandkids", youtube: "RDCoM1x7U38", album_id: 4, first_characteristic: "upbeat", art: "https://i2.wp.com/www.parlemag.com/wp-content/uploads/2015/08/Mac-Miller-GOOD-AM.jpg?fit=684%2C684&ssl=1", second_characteristic: "newer"},
-  {name: "Time Flies", youtube: "TOvPYP55FlM", album_id: 4, first_characteristic: "downer", art: "https://i2.wp.com/www.parlemag.com/wp-content/uploads/2015/08/Mac-Miller-GOOD-AM.jpg?fit=684%2C684&ssl=1", second_characteristic: "newer"},
-  {name: "Weekend", youtube: "EAL3PuyulZw", album_id: 4, first_characteristic: "upbeat", art: "https://i2.wp.com/www.parlemag.com/wp-content/uploads/2015/08/Mac-Miller-GOOD-AM.jpg?fit=684%2C684&ssl=1", second_characteristic: "newer"},
-  {name: "Club House", youtube: "d2iONei2b7U", album_id: 4, first_characteristic: "funky", art: "https://i2.wp.com/www.parlemag.com/wp-content/uploads/2015/08/Mac-Miller-GOOD-AM.jpg?fit=684%2C684&ssl=1", second_characteristic: "newer"},
-  {name: "In The Bag", youtube: "cRxpib4eV2E", album_id: 4, first_characteristic: "upbeat", art: "https://i2.wp.com/www.parlemag.com/wp-content/uploads/2015/08/Mac-Miller-GOOD-AM.jpg?fit=684%2C684&ssl=1", second_characteristic: "newer"},
-  {name: "Break the Law", youtube: "IQ49uwe-zv8", album_id: 4, first_characteristic: "upbeat", art: "https://i2.wp.com/www.parlemag.com/wp-content/uploads/2015/08/Mac-Miller-GOOD-AM.jpg?fit=684%2C684&ssl=1", second_characteristic: "newer"},
-  {name: "Perfect Circle/God Speed", youtube: "2UkrJ0YjjUY", album_id: 4, first_characteristic: "downer", art: "https://i2.wp.com/www.parlemag.com/wp-content/uploads/2015/08/Mac-Miller-GOOD-AM.jpg?fit=684%2C684&ssl=1", second_characteristic: "newer"},
-  {name: "When in Rome", youtube: "hGizbKWt7_g", album_id: 4, first_characteristic: "upbeat", art: "https://i2.wp.com/www.parlemag.com/wp-content/uploads/2015/08/Mac-Miller-GOOD-AM.jpg?fit=684%2C684&ssl=1", second_characteristic: "newer"},
-  {name: "ROS", youtube: "-2AfeMnpiRI", album_id: 4, first_characteristic: "sad", art: "https://i2.wp.com/www.parlemag.com/wp-content/uploads/2015/08/Mac-Miller-GOOD-AM.jpg?fit=684%2C684&ssl=1", second_characteristic: "newer"},
-  {name: "Cut the Check", youtube: "K6-8KO5UQQo", album_id: 4, first_characteristic: "upbeat", art: "https://i2.wp.com/www.parlemag.com/wp-content/uploads/2015/08/Mac-Miller-GOOD-AM.jpg?fit=684%2C684&ssl=1", second_characteristic: "newer"},
-  {name: "Ascension", youtube: "8RUbM_WSYTI", album_id: 4, first_characteristic: "downer", art: "https://i2.wp.com/www.parlemag.com/wp-content/uploads/2015/08/Mac-Miller-GOOD-AM.jpg?fit=684%2C684&ssl=1", second_characteristic: "newer"},
-  {name: "Jump", youtube: "x-2Jd9d2GTY", album_id: 4, first_characteristic: "downer", art: "https://i2.wp.com/www.parlemag.com/wp-content/uploads/2015/08/Mac-Miller-GOOD-AM.jpg?fit=684%2C684&ssl=1", second_characteristic: "newer"},
-  {name: "The Festival", youtube: "ZptG-yglvmw", album_id: 4, first_characteristic: "downer", art: "https://i2.wp.com/www.parlemag.com/wp-content/uploads/2015/08/Mac-Miller-GOOD-AM.jpg?fit=684%2C684&ssl=1", second_characteristic: "newer"}
+  {name: "Doors", youtube: "wE_KOXiSbI8", album_id: 5, first_characteristic: "instrumental", art: "https://i2.wp.com/www.parlemag.com/wp-content/uploads/2015/08/Mac-Miller-GOOD-AM.jpg?fit=684%2C684&ssl=1", second_characteristic: "newer"},
+  {name: "Brand Name", youtube: "vuCyrtGQhAk", album_id: 5, first_characteristic: "upbeat", art: "https://i2.wp.com/www.parlemag.com/wp-content/uploads/2015/08/Mac-Miller-GOOD-AM.jpg?fit=684%2C684&ssl=1", second_characteristic: "newer"},
+  {name: "Rush Hour", youtube: "L73SaFeTaA8", album_id: 5, first_characteristic: "downer", art: "https://i2.wp.com/www.parlemag.com/wp-content/uploads/2015/08/Mac-Miller-GOOD-AM.jpg?fit=684%2C684&ssl=1", second_characteristic: "newer"},
+  {name: "Two Matches", youtube: "KWtg0BDRl9k", album_id: 5, first_characteristic: "downer", art: "https://i2.wp.com/www.parlemag.com/wp-content/uploads/2015/08/Mac-Miller-GOOD-AM.jpg?fit=684%2C684&ssl=1", second_characteristic: "newer"},
+  {name: "100 Grandkids", youtube: "RDCoM1x7U38", album_id: 5, first_characteristic: "upbeat", art: "https://i2.wp.com/www.parlemag.com/wp-content/uploads/2015/08/Mac-Miller-GOOD-AM.jpg?fit=684%2C684&ssl=1", second_characteristic: "newer"},
+  {name: "Time Flies", youtube: "TOvPYP55FlM", album_id: 5, first_characteristic: "downer", art: "https://i2.wp.com/www.parlemag.com/wp-content/uploads/2015/08/Mac-Miller-GOOD-AM.jpg?fit=684%2C684&ssl=1", second_characteristic: "newer"},
+  {name: "Weekend", youtube: "EAL3PuyulZw", album_id: 5, first_characteristic: "upbeat", art: "https://i2.wp.com/www.parlemag.com/wp-content/uploads/2015/08/Mac-Miller-GOOD-AM.jpg?fit=684%2C684&ssl=1", second_characteristic: "newer"},
+  {name: "Club House", youtube: "d2iONei2b7U", album_id: 5, first_characteristic: "funky", art: "https://i2.wp.com/www.parlemag.com/wp-content/uploads/2015/08/Mac-Miller-GOOD-AM.jpg?fit=684%2C684&ssl=1", second_characteristic: "newer"},
+  {name: "In The Bag", youtube: "cRxpib4eV2E", album_id: 5, first_characteristic: "upbeat", art: "https://i2.wp.com/www.parlemag.com/wp-content/uploads/2015/08/Mac-Miller-GOOD-AM.jpg?fit=684%2C684&ssl=1", second_characteristic: "newer"},
+  {name: "Break the Law", youtube: "IQ49uwe-zv8", album_id: 5, first_characteristic: "upbeat", art: "https://i2.wp.com/www.parlemag.com/wp-content/uploads/2015/08/Mac-Miller-GOOD-AM.jpg?fit=684%2C684&ssl=1", second_characteristic: "newer"},
+  {name: "Perfect Circle/God Speed", youtube: "2UkrJ0YjjUY", album_id: 5, first_characteristic: "downer", art: "https://i2.wp.com/www.parlemag.com/wp-content/uploads/2015/08/Mac-Miller-GOOD-AM.jpg?fit=684%2C684&ssl=1", second_characteristic: "newer"},
+  {name: "When in Rome", youtube: "hGizbKWt7_g", album_id: 5, first_characteristic: "upbeat", art: "https://i2.wp.com/www.parlemag.com/wp-content/uploads/2015/08/Mac-Miller-GOOD-AM.jpg?fit=684%2C684&ssl=1", second_characteristic: "newer"},
+  {name: "ROS", youtube: "-2AfeMnpiRI", album_id: 5, first_characteristic: "sad", art: "https://i2.wp.com/www.parlemag.com/wp-content/uploads/2015/08/Mac-Miller-GOOD-AM.jpg?fit=684%2C684&ssl=1", second_characteristic: "newer"},
+  {name: "Cut the Check", youtube: "K6-8KO5UQQo", album_id: 5, first_characteristic: "upbeat", art: "https://i2.wp.com/www.parlemag.com/wp-content/uploads/2015/08/Mac-Miller-GOOD-AM.jpg?fit=684%2C684&ssl=1", second_characteristic: "newer"},
+  {name: "Ascension", youtube: "8RUbM_WSYTI", album_id: 5, first_characteristic: "downer", art: "https://i2.wp.com/www.parlemag.com/wp-content/uploads/2015/08/Mac-Miller-GOOD-AM.jpg?fit=684%2C684&ssl=1", second_characteristic: "newer"},
+  {name: "Jump", youtube: "x-2Jd9d2GTY", album_id: 5, first_characteristic: "downer", art: "https://i2.wp.com/www.parlemag.com/wp-content/uploads/2015/08/Mac-Miller-GOOD-AM.jpg?fit=684%2C684&ssl=1", second_characteristic: "newer"},
+  {name: "The Festival", youtube: "ZptG-yglvmw", album_id: 5, first_characteristic: "downer", art: "https://i2.wp.com/www.parlemag.com/wp-content/uploads/2015/08/Mac-Miller-GOOD-AM.jpg?fit=684%2C684&ssl=1", second_characteristic: "newer"}
 ]
 
 am_songs.each do |song|
@@ -149,16 +149,16 @@ am_songs.each do |song|
 end
 
 divine_songs = [
-  {name: "Congratulations", youtube: "JoFkQ7iAQcw", album_id: 5},
-  {name: "Dang!", youtube: "LR3GQfryp9M", album_id: 5},
-  {name: "Stay", youtube: "5WU7oGiwiao", album_id: 5},
-  {name: "Skin", youtube: "GE_iHakWos0", album_id: 5},
-  {name: "Cinderella", youtube: "0fcsGS1dEro", album_id: 5},
-  {name: "Planet God Damn", youtube: "P91dAAsvsPY", album_id: 5},
-  {name: "Soulmate", youtube: "3ADKdqcdNqs", album_id: 5},
-  {name: "We", youtube: "XL--KSNxfy8", album_id: 5},
-  {name: "My Favorite Part", youtube: "J_8xCOSekog", album_id: 5},
-  {name: "God is Fair, Sexy, Nasty", youtube: "YbbaJIpkGMs", album_id: 5}
+  {name: "Congratulations", youtube: "JoFkQ7iAQcw", album_id: 6},
+  {name: "Dang!", youtube: "LR3GQfryp9M", album_id: 6},
+  {name: "Stay", youtube: "5WU7oGiwiao", album_id: 6},
+  {name: "Skin", youtube: "GE_iHakWos0", album_id: 6},
+  {name: "Cinderella", youtube: "0fcsGS1dEro", album_id: 6},
+  {name: "Planet God Damn", youtube: "P91dAAsvsPY", album_id: 6},
+  {name: "Soulmate", youtube: "3ADKdqcdNqs", album_id: 6},
+  {name: "We", youtube: "XL--KSNxfy8", album_id: 6},
+  {name: "My Favorite Part", youtube: "J_8xCOSekog", album_id: 6},
+  {name: "God is Fair, Sexy, Nasty", youtube: "YbbaJIpkGMs", album_id: 6}
 ]
 
 divine_songs.each do |song|
@@ -166,22 +166,22 @@ divine_songs.each do |song|
 end
 
 blue_songs = [
-  {name: "English Lane", youtube: "jenO5Fwp2sI", album_id: 6, second_characteristic: "older"},
-  {name: "Blue Slide Park", youtube: "7Sya2lGMuYE", album_id: 6, second_characteristic: "older"},
-  {name: "Party on Fifth Ave", youtube: "f3GGN51_pjE", album_id: 6, second_characteristic: "older"},
-  {name: "PA Nights", youtube: "BhYubDi_2_k", album_id: 6, second_characteristic: "older"},
-  {name: "Frick Park Market", youtube: "KJ19PJ7-SWc", album_id: 6, second_characteristic: "older"},
-  {name: "Smile Back", youtube: "T_Mt6Isew_0", album_id: 6, second_characteristic: "older"},
-  {name: "Under the Weather", youtube: "T32idaCH3Po", album_id: 6, second_characteristic: "older"},
-  {name: "Of the Soul", youtube: "C9RdmVDxl4I", album_id: 6, second_characteristic: "older"},
-  {name: "My Team", youtube: "cCaSqmdOm04", album_id: 6, second_characteristic: "older"},
-  {name: "Up All Night", youtube: "nGB_FZtHyPI", album_id: 6, second_characteristic: "older"},
-  {name: "Loitering", youtube: "s2OI2F9k4nk", album_id: 6, second_characteristic: "older"},
-  {name: "Hole in my Pocket", youtube: "-tmA3TcLf8c", album_id: 6, second_characteristic: "older"},
-  {name: "Diamonds and Gold", youtube: "sGAGev81uOI", album_id: 6, second_characteristic: "older"},
-  {name: "Missed Calls", youtube: "ys-9b9QI3Q4", album_id: 6, second_characteristic: "older"},
-  {name: "Man in the Hat", youtube: "YeNC1I9wE1U", album_id: 6, second_characteristic: "older"},
-  {name: "One Last Thing", youtube: "QBk8fXaFSMs", album_id: 6, second_characteristic: "older"},
+  {name: "English Lane", youtube: "jenO5Fwp2sI", album_id: 7, second_characteristic: "older"},
+  {name: "Blue Slide Park", youtube: "7Sya2lGMuYE", album_id: 7, second_characteristic: "older"},
+  {name: "Party on Fifth Ave", youtube: "f3GGN51_pjE", album_id: 7, second_characteristic: "older"},
+  {name: "PA Nights", youtube: "BhYubDi_2_k", album_id: 7, second_characteristic: "older"},
+  {name: "Frick Park Market", youtube: "KJ19PJ7-SWc", album_id: 7, second_characteristic: "older"},
+  {name: "Smile Back", youtube: "T_Mt6Isew_0", album_id: 7, second_characteristic: "older"},
+  {name: "Under the Weather", youtube: "T32idaCH3Po", album_id: 7, second_characteristic: "older"},
+  {name: "Of the Soul", youtube: "C9RdmVDxl4I", album_id: 7, second_characteristic: "older"},
+  {name: "My Team", youtube: "cCaSqmdOm04", album_id: 7, second_characteristic: "older"},
+  {name: "Up All Night", youtube: "nGB_FZtHyPI", album_id: 7, second_characteristic: "older"},
+  {name: "Loitering", youtube: "s2OI2F9k4nk", album_id: 7, second_characteristic: "older"},
+  {name: "Hole in my Pocket", youtube: "-tmA3TcLf8c", album_id: 7, second_characteristic: "older"},
+  {name: "Diamonds and Gold", youtube: "sGAGev81uOI", album_id: 7, second_characteristic: "older"},
+  {name: "Missed Calls", youtube: "ys-9b9QI3Q4", album_id: 7, second_characteristic: "older"},
+  {name: "Man in the Hat", youtube: "YeNC1I9wE1U", album_id: 7, second_characteristic: "older"},
+  {name: "One Last Thing", youtube: "QBk8fXaFSMs", album_id: 7, second_characteristic: "older"},
 ]
 
 blue_songs.each do |song|
@@ -189,24 +189,24 @@ blue_songs.each do |song|
 end
 
 kids_songs = [
-  {name: "Kicking Incredibly Dope Shit", youtube: "FV9_ND7CrYs", album_id: 7, second_characteristic: "older"},
-  {name: "Outside", youtube: "g-Nj1LIKo3U", album_id: 7, second_characteristic: "older"},
-  {name: "Get em Up", youtube: "jwj_4kbcUHY", album_id: 7, second_characteristic: "older"},
-  {name: "Nikes on my Feet", youtube: "a-rqu-hjobc", album_id: 7, second_characteristic: "older"},
-  {name: "Senior Skip Day", youtube: "h7NJfuVk9hY", album_id: 7, second_characteristic: "older"},
-  {name: "The Spins", youtube: "mkGT1c98soU", album_id: 7, second_characteristic: "older"},
-  {name: "Traffic in the Sky", youtube: "WIUJXgvwgZ0", album_id: 7, second_characteristic: "older"},
-  {name: "Dont Mind if I Do", youtube: "VbjhM3Bmusw", album_id: 7, second_characteristic: "older"},
-  {name: "Paper Route", youtube: "uF__NW16rT4", album_id: 7, second_characteristic: "older"},
-  {name: "Good Evening", youtube: "ST4HeGPuw8Y", album_id: 7, second_characteristic: "older"},
-  {name: "Ride Around", youtube: "qrxkiAf0sl8", album_id: 7, second_characteristic: "older"},
-  {name: "Knock Knock", youtube: "6bMmhKz6KXg", album_id: 7, second_characteristic: "older"},
-  {name: "Mad Flava Heavy Flow", youtube: "sDgBUU8-4QE", album_id: 7, second_characteristic: "older"},
-  {name: "Kool Aid and Frozen Pizza", youtube: "UnAbszcy3bs", album_id: 7, second_characteristic: "older"},
-  {name: "All I Want is You", youtube: "8ZbD-rqHOr0", album_id: 7, second_characteristic: "older"},
-  {name: "Poppy", youtube: "C_7G48V71m0", album_id: 7, second_characteristic: "older"},
-  {name: "Face in the Crowd", youtube: "h3-RhAEgVjU", album_id: 7, second_characteristic: "older"},
-  {name: "La La La", youtube: "_MMI1hEScO8", album_id: 7, second_characteristic: "older"},
+  {name: "Kicking Incredibly Dope Shit", youtube: "FV9_ND7CrYs", album_id: 8, second_characteristic: "older"},
+  {name: "Outside", youtube: "g-Nj1LIKo3U", album_id: 8, second_characteristic: "older"},
+  {name: "Get em Up", youtube: "jwj_4kbcUHY", album_id: 8, second_characteristic: "older"},
+  {name: "Nikes on my Feet", youtube: "a-rqu-hjobc", album_id: 8, second_characteristic: "older"},
+  {name: "Senior Skip Day", youtube: "h7NJfuVk9hY", album_id: 8, second_characteristic: "older"},
+  {name: "The Spins", youtube: "mkGT1c98soU", album_id: 8, second_characteristic: "older"},
+  {name: "Traffic in the Sky", youtube: "WIUJXgvwgZ0", album_id: 8, second_characteristic: "older"},
+  {name: "Dont Mind if I Do", youtube: "VbjhM3Bmusw", album_id: 8, second_characteristic: "older"},
+  {name: "Paper Route", youtube: "uF__NW16rT4", album_id: 8, second_characteristic: "older"},
+  {name: "Good Evening", youtube: "ST4HeGPuw8Y", album_id: 8, second_characteristic: "older"},
+  {name: "Ride Around", youtube: "qrxkiAf0sl8", album_id: 8, second_characteristic: "older"},
+  {name: "Knock Knock", youtube: "6bMmhKz6KXg", album_id: 8, second_characteristic: "older"},
+  {name: "Mad Flava Heavy Flow", youtube: "sDgBUU8-4QE", album_id: 8, second_characteristic: "older"},
+  {name: "Kool Aid and Frozen Pizza", youtube: "UnAbszcy3bs", album_id: 8, second_characteristic: "older"},
+  {name: "All I Want is You", youtube: "8ZbD-rqHOr0", album_id: 8, second_characteristic: "older"},
+  {name: "Poppy", youtube: "C_7G48V71m0", album_id: 8, second_characteristic: "older"},
+  {name: "Face in the Crowd", youtube: "h3-RhAEgVjU", album_id: 8, second_characteristic: "older"},
+  {name: "La La La", youtube: "_MMI1hEScO8", album_id: 8, second_characteristic: "older"},
 ]
 
 kids_songs.each do |song|
@@ -214,16 +214,16 @@ kids_songs.each do |song|
 end
 
 delusional_songs = [
-  {name: "Larry", youtube: "fxopeGFFw0I", album_id: 8},
-  {name: "Halo", youtube: "yG6KysBKtYE", album_id: 8},
-  {name: "Vertigo", youtube: "sY2Su11-zuE", album_id: 8},
-  {name: "Bill", youtube: "il92krFwM-o", album_id: 8},
-  {name: "72", youtube: "4ekjhYXhno4", album_id: 8},
-  {name: "The Jesuits", youtube: "gALBvI_a7mY", album_id: 8},
-  {name: "Dr. Thomas", youtube: "ZjOeQfMD89w", album_id: 8},
-  {name: "Labido", youtube: "cO8VuIhcA5c", album_id: 8},
-  {name: "Melvin", youtube: "oq1fb3wWpUw", album_id: 8},
-  {name: "Grandpa Used to Carry a Flask", youtube: "xKpg7bV5ml4", album_id: 8},
+  {name: "Larry", youtube: "fxopeGFFw0I", album_id: 9},
+  {name: "Halo", youtube: "yG6KysBKtYE", album_id: 9},
+  {name: "Vertigo", youtube: "sY2Su11-zuE", album_id: 9},
+  {name: "Bill", youtube: "il92krFwM-o", album_id: 9},
+  {name: "72", youtube: "4ekjhYXhno4", album_id: 9},
+  {name: "The Jesuits", youtube: "gALBvI_a7mY", album_id: 9},
+  {name: "Dr. Thomas", youtube: "ZjOeQfMD89w", album_id: 9},
+  {name: "Labido", youtube: "cO8VuIhcA5c", album_id: 9},
+  {name: "Melvin", youtube: "oq1fb3wWpUw", album_id: 9},
+  {name: "Grandpa Used to Carry a Flask", youtube: "xKpg7bV5ml4", album_id: 9},
 ]
 
 delusional_songs.each do |song|
@@ -231,23 +231,23 @@ delusional_songs.each do |song|
 end
 
 macadelic_songs = [
-  {name: "Love Me As I Have Loved You", youtube: "TlS_XHgKjvo", album_id: 9, second_characteristic: "older"},
-  {name: "Desperado", youtube: "C8-L78g10Ag", album_id: 9, second_characteristic: "older"},
-  {name: "Loud", youtube: "_BYIEXzdnlY", album_id: 9, second_characteristic: "older"},
-  {name: "Thoughts from a Balcony", youtube: "nxufWf7dEcM", album_id: 9, second_characteristic: "older"},
-  {name: "Aliens Fighting Robots", youtube: "1ivzb0yl4fg", album_id: 9, second_characteristic: "older"},
-  {name: "Vitamins", youtube: "kcfUxP0yoak", album_id: 9, second_characteristic: "older"},
-  {name: "Fight the Feeling", youtube: "As_cvwAMYi4", album_id: 9, second_characteristic: "older"},
-  {name: "Lucky Ass Bitch", youtube: "XZAU4K9TXBM", album_id: 9, second_characteristic: "older"},
-  {name: "The Mourning After", youtube: "kZk3OhsPYQk", album_id: 9, second_characteristic: "older"},
-  {name: "1 Threw 8", youtube: "_0bqJ1yRaOs", album_id: 9, second_characteristic: "older"},
-  {name: "Ignorant", youtube: "AnMz52URFXc", album_id: 9, second_characteristic: "older"},
-  {name: "The Question", youtube: "DS4dmS-t60Q", album_id: 9, second_characteristic: "older"},
-  {name: "Angels", youtube: "mODR7mL-9pU", album_id: 9, second_characteristic: "older"},
-  {name: "America", youtube: "1nZKwreCVtU", album_id: 9, second_characteristic: "older"},
-  {name: "Sunlight", youtube: "CVSzOsi3sao", album_id: 9, second_characteristic: "older"},
-  {name: "Clarity", youtube: "6CJ4odoWNSs", album_id: 9, second_characteristic: "older"},
-  {name: "Fuck em All", youtube: "FgcAUMz9lzA", album_id: 9, second_characteristic: "older"}
+  {name: "Love Me As I Have Loved You", youtube: "TlS_XHgKjvo", album_id: 10, second_characteristic: "older"},
+  {name: "Desperado", youtube: "C8-L78g10Ag", album_id: 10, second_characteristic: "older"},
+  {name: "Loud", youtube: "_BYIEXzdnlY", album_id: 10, second_characteristic: "older"},
+  {name: "Thoughts from a Balcony", youtube: "nxufWf7dEcM", album_id: 10, second_characteristic: "older"},
+  {name: "Aliens Fighting Robots", youtube: "1ivzb0yl4fg", album_id: 10, second_characteristic: "older"},
+  {name: "Vitamins", youtube: "kcfUxP0yoak", album_id: 10, second_characteristic: "older"},
+  {name: "Fight the Feeling", youtube: "As_cvwAMYi4", album_id: 10, second_characteristic: "older"},
+  {name: "Lucky Ass Bitch", youtube: "XZAU4K9TXBM", album_id: 10, second_characteristic: "older"},
+  {name: "The Mourning After", youtube: "kZk3OhsPYQk", album_id: 10, second_characteristic: "older"},
+  {name: "1 Threw 8", youtube: "_0bqJ1yRaOs", album_id: 10, second_characteristic: "older"},
+  {name: "Ignorant", youtube: "AnMz52URFXc", album_id: 10, second_characteristic: "older"},
+  {name: "The Question", youtube: "DS4dmS-t60Q", album_id: 10, second_characteristic: "older"},
+  {name: "Angels", youtube: "mODR7mL-9pU", album_id: 10, second_characteristic: "older"},
+  {name: "America", youtube: "1nZKwreCVtU", album_id: 10, second_characteristic: "older"},
+  {name: "Sunlight", youtube: "CVSzOsi3sao", album_id: 10, second_characteristic: "older"},
+  {name: "Clarity", youtube: "6CJ4odoWNSs", album_id: 10, second_characteristic: "older"},
+  {name: "Fuck em All", youtube: "FgcAUMz9lzA", album_id: 10, second_characteristic: "older"}
 ]
 
 macadelic_songs.each do |song|
@@ -255,20 +255,20 @@ macadelic_songs.each do |song|
 end
 
 space_songs = [
-  {name: "SDS Live", youtube: "2jcFbup8M_0", album_id: 10},
-  {name: "Star Room Live", youtube: "528ZCmsaJZc", album_id: 10},
-  {name: "Best Day Ever Live", youtube: "Uu3PMT5yDWI", album_id: 10},
-  {name: "Bird Call Live", youtube: "4bcK2mcCw1I", album_id: 10},
-  {name: "Watching Movies Live", youtube: "94u8Dd7AX5M", album_id: 10},
-  {name: "Remember Live", youtube: "2brPdaMXt4g", album_id: 10},
-  {name: "The Question Live", youtube: "jleodeLhexY", album_id: 10},
-  {name: "Objects in the Mirror Live", youtube: "IyIY4wBMowk", album_id: 10},
-  {name: "Youforia Live", youtube: "xhnA-h80um0", album_id: 10},
-  {name: "Eggs Aisle", youtube: "Nd4BkhorZbc", album_id: 10},
-  {name: "Earth", youtube: "arh4rGKdEMk", album_id: 10},
-  {name: "Life", youtube: "p2Ic55PW1Dc", album_id: 10},
-  {name: "Black Bush", youtube: "DGzFVOCnb9c", album_id: 10},
-  {name: "In the Morning", youtube: "YVpRT0_g2FQ", album_id: 10}
+  {name: "SDS Live", youtube: "2jcFbup8M_0", album_id: 11},
+  {name: "Star Room Live", youtube: "528ZCmsaJZc", album_id: 11},
+  {name: "Best Day Ever Live", youtube: "Uu3PMT5yDWI", album_id: 11},
+  {name: "Bird Call Live", youtube: "4bcK2mcCw1I", album_id: 11},
+  {name: "Watching Movies Live", youtube: "94u8Dd7AX5M", album_id: 11},
+  {name: "Remember Live", youtube: "2brPdaMXt4g", album_id: 11},
+  {name: "The Question Live", youtube: "jleodeLhexY", album_id: 11},
+  {name: "Objects in the Mirror Live", youtube: "IyIY4wBMowk", album_id: 11},
+  {name: "Youforia Live", youtube: "xhnA-h80um0", album_id: 11},
+  {name: "Eggs Aisle", youtube: "Nd4BkhorZbc", album_id: 11},
+  {name: "Earth", youtube: "arh4rGKdEMk", album_id: 11},
+  {name: "Life", youtube: "p2Ic55PW1Dc", album_id: 11},
+  {name: "Black Bush", youtube: "DGzFVOCnb9c", album_id: 11},
+  {name: "In the Morning", youtube: "YVpRT0_g2FQ", album_id: 11}
 ]
 
 space_songs.each do |song|
@@ -276,23 +276,23 @@ space_songs.each do |song|
 end
 
 best_songs = [
-  {name: "Best Day Ever", youtube: "AbV-Q6tz4B8", album_id: 11},
-  {name: "Get Up", youtube: "YcXRs-XwA-Y", album_id: 11},
-  {name: "Donald Trump", youtube: "74TFS8r_SMI", album_id: 11},
-  {name: "Oy Vey", youtube: "xhDPVvEY8XM", album_id: 11},
-  {name: "I'll Be There", youtube: "JX2W8d4GMDM", album_id: 11},
-  {name: "Get Up", youtube: "YcXRs-XwA-Y", album_id: 11},
-  {name: "Wear My Hat", youtube: "bbhgzA98IAY", album_id: 11},
-  {name: "Wake Up", youtube: "lhacDi7_c9c", album_id: 11},
-  {name: "All Around the World", youtube: "LO243sHBblw", album_id: 11},
-  {name: "Down the Rabbit Hole", youtube: "n62c2GcQ-NQ", album_id: 11},
-  {name: "In the Air", youtube: "QtTXIoy48XU", album_id: 11},
-  {name: "Play ya Cards", youtube: "sT-RypfNTEc", album_id: 11},
-  {name: "She Said", youtube: "iQdkWnLM8Y8", album_id: 11},
-  {name: "Life Aint Easy", youtube: "p9I35Tav2us", album_id: 11},
-  {name: "Snooze", youtube: "P-EygKhHxmw", album_id: 11},
-  {name: "Keep Floatin", youtube: "KDjxQFpGvNQ", album_id: 11},
-  {name: "BDE Bonus", youtube: "J1z_6XRytak", album_id: 11}
+  {name: "Best Day Ever", youtube: "AbV-Q6tz4B8", album_id: 12},
+  {name: "Get Up", youtube: "YcXRs-XwA-Y", album_id: 12},
+  {name: "Donald Trump", youtube: "74TFS8r_SMI", album_id: 12},
+  {name: "Oy Vey", youtube: "xhDPVvEY8XM", album_id: 12},
+  {name: "I'll Be There", youtube: "JX2W8d4GMDM", album_id: 12},
+  {name: "Get Up", youtube: "YcXRs-XwA-Y", album_id: 12},
+  {name: "Wear My Hat", youtube: "bbhgzA98IAY", album_id: 12},
+  {name: "Wake Up", youtube: "lhacDi7_c9c", album_id: 12},
+  {name: "All Around the World", youtube: "LO243sHBblw", album_id: 12},
+  {name: "Down the Rabbit Hole", youtube: "n62c2GcQ-NQ", album_id: 12},
+  {name: "In the Air", youtube: "QtTXIoy48XU", album_id: 12},
+  {name: "Play ya Cards", youtube: "sT-RypfNTEc", album_id: 12},
+  {name: "She Said", youtube: "iQdkWnLM8Y8", album_id: 12},
+  {name: "Life Aint Easy", youtube: "p9I35Tav2us", album_id: 12},
+  {name: "Snooze", youtube: "P-EygKhHxmw", album_id: 12},
+  {name: "Keep Floatin", youtube: "KDjxQFpGvNQ", album_id: 12},
+  {name: "BDE Bonus", youtube: "J1z_6XRytak", album_id: 12}
 ]
 
 best_songs.each do |song|
@@ -300,68 +300,49 @@ best_songs.each do |song|
 end
 
 ros_songs = [
-  {name: "Birthday v1", youtube: "gLroLUKBpTU", album_id: 12},
-  {name: "If Poseidon had a Surfboard v1", youtube: "Ucnxz_CNpLU", album_id: 12},
-  {name: "Novice Space Travel v1", youtube: "r_5jQBNmeCI", album_id: 12},
-  {name: "Gelato Party v1", youtube: "3EJroHOxC4c", album_id: 12},
-  {name: "I'm Actually a Fish Alien v1", youtube: "kUr_8hg9y7Q", album_id: 12},
-  {name: "She used to Love Me v1", youtube: "oc2OBt_kZNg", album_id: 12},
-  {name: "The Revolution is Coming v1", youtube: "_A9FzckjKDs", album_id: 12},
-  {name: "Avocado v1", youtube: "ekA-bHWxTE4", album_id: 12}
+  {name: "Birthday v1", youtube: "gLroLUKBpTU", album_id: 13},
+  {name: "If Poseidon had a Surfboard v1", youtube: "Ucnxz_CNpLU", album_id: 13},
+  {name: "Novice Space Travel v1", youtube: "r_5jQBNmeCI", album_id: 13},
+  {name: "Gelato Party v1", youtube: "3EJroHOxC4c", album_id: 13},
+  {name: "I'm Actually a Fish Alien v1", youtube: "kUr_8hg9y7Q", album_id: 13},
+  {name: "She used to Love Me v1", youtube: "oc3OBt_kZNg", album_id: 13},
+  {name: "The Revolution is Coming v1", youtube: "_A9FzckjKDs", album_id: 13},
+  {name: "Avocado v1", youtube: "ekA-bHWxTE4", album_id: 13}
 ]
 
 ros_songs.each do |song|
   Song.create(song)
 end
 
-stolen_songs = [
-  {name: "Intro", youtube: "l6TwPSAlwVI", album_id: 14},
-  {name: "Fantoms", youtube: "yvYUnv4cMIU", album_id: 14},
-  {name: "Heaven", youtube: "M7wwauyZU4c", album_id: 14},
-  {name: "Guns and Roses", youtube: "J18g3Tr20AE", album_id: 14},
-  {name: "Back Sellin' Crack", youtube: "CfOeB9YpmcY", album_id: 14},
-  {name: "Stuck in My Ways", youtube: "qgag34NOk-c", album_id: 14},
-  {name: "Killin Y'all", youtube: "8-uZHewurjs", album_id: 14},
-  {name: "Thought About You", youtube: "Ma5Ai5IrFSc", album_id: 14},
-  {name: "Sleep", youtube: "0LSHTlWA6uc", album_id: 14},
-  {name: "Earth Science", youtube: "NcF014iVSUA", album_id: 14},
-  {name: "Progressive 3", youtube: "yf1HtPNGoiE", album_id: 14},
-  {name: "Locked and Loaded", youtube: "arJRoCcTv9s", album_id: 14},
-  {name: "Humble", youtube: "WBfr4Ccpx08", album_id: 14},
-  {name: "45", youtube: "MX1tVoD-E4w", album_id: 14},
-  {name: "Oh You Scared", youtube: "JlcPcMW5Vzw", album_id: 14},
-  {name: "Trunk Rattle", youtube: "wy1SQ2cRKP4", album_id: 14},
-  {name: "Nate", youtube: "snYU9NRCbRs", album_id: 14},
-  {name: "Turn", youtube: "Y2AoYXobIoQ", album_id: 14},
-  {name: "Shots", youtube: "Fm_OW-BwgE4", album_id: 14},
-  {name: "Outro", youtube: "A90PQahFYxQ", album_id: 14}
+circle_songs = [
+  {name: "Good News", youtube: "aIHF7u9Wwiw", album_id: 3},
 ]
 
-stolen_songs.each do |song|
+circle_songs.each do |song|
   Song.create(song)
 end
 
 everything_songs = [
-  {name: "The Star Room OG Version", youtube: "PfRi1xPMflI", album_id: 13},
-  {name: "That's Life", youtube: "4oviKWgwzE4", album_id: 13},
-  {name: "Benji the Dog", youtube: "oUz16GKrdQc", album_id: 13},
-  {name: "Happy", youtube: "tCc12IqBzRE", album_id: 13},
-  {name: "Buttons", youtube: "v2Q9kltRpbE", album_id: 13},
-  {name: "Programs", youtube: "Wvm5GuDfAas", album_id: 13},
-  {name: "Once a Day I Rise", youtube: "ei0aWdzN6c0", album_id: 13},
-  {name: "Inertia", youtube: "qKh8FiKzfvQ", album_id: 13},
-  {name: "Dunno (Live)", youtube: "8aHvZ9eD6vs", album_id: 13},
-  {name: "Her", youtube: "Dx0nk2GA9Xg", album_id: 13},
-  {name: "PlaneCarBoat", youtube: "iAQdqIZQA8c", album_id: 13},
-  {name: "Just Some Raps, Nothing To See Here, Move Along", youtube: "KQcx53rn1Ic", album_id: 13},
-  {name: "Headaches & Migraines", youtube: "ntbhlxpzmAY", album_id: 13},
-  {name: "Melt", youtube: "6hVDwQMc_fM", album_id: 13},
-  {name: "Salamander", youtube: "dpTNzLUW1l8", album_id: 13},
-  {name: "Guidelines", youtube: "4WWltsaADBc", album_id: 13},
-  {name: "Doodling in the Key of C Sharp", youtube: "w5NAoFDFmb8", album_id: 13},
-  {name: "He Who Ate All the Caviar", youtube: "AyNf4k9xIXg", album_id: 13},
-  {name: "Nothing from Nothing (Cover)", youtube: "iZlu6jjdb4A", album_id: 13},
-  {name: "Day One", youtube: "g08gsd7d87Y", album_id: 13}
+  {name: "The Star Room OG Version", youtube: "PfRi1xPMflI", album_id: 14},
+  {name: "That's Life", youtube: "4oviKWgwzE4", album_id: 14},
+  {name: "Benji the Dog", youtube: "oUz16GKrdQc", album_id: 14},
+  {name: "Happy", youtube: "tCc12IqBzRE", album_id: 14},
+  {name: "Buttons", youtube: "v2Q9kltRpbE", album_id: 14},
+  {name: "Programs", youtube: "Wvm5GuDfAas", album_id: 14},
+  {name: "Once a Day I Rise", youtube: "ei0aWdzN6c0", album_id: 14},
+  {name: "Inertia", youtube: "qKh8FiKzfvQ", album_id: 14},
+  {name: "Dunno (Live)", youtube: "8aHvZ9eD6vs", album_id: 14},
+  {name: "Her", youtube: "Dx0nk2GA9Xg", album_id: 14},
+  {name: "PlaneCarBoat", youtube: "iAQdqIZQA8c", album_id: 14},
+  {name: "Just Some Raps, Nothing To See Here, Move Along", youtube: "KQcx53rn1Ic", album_id: 14},
+  {name: "Headaches & Migraines", youtube: "ntbhlxpzmAY", album_id: 14},
+  {name: "Melt", youtube: "6hVDwQMc_fM", album_id: 14},
+  {name: "Salamander", youtube: "dpTNzLUW1l8", album_id: 14},
+  {name: "Guidelines", youtube: "4WWltsaADBc", album_id: 14},
+  {name: "Doodling in the Key of C Sharp", youtube: "w5NAoFDFmb8", album_id: 14},
+  {name: "He Who Ate All the Caviar", youtube: "AyNf4k9xIXg", album_id: 14},
+  {name: "Nothing from Nothing (Cover)", youtube: "iZlu6jjdb4A", album_id: 14},
+  {name: "Day One", youtube: "g08gsd7d87Y", album_id: 14}
 ]
 
 everything_songs.each do |song|

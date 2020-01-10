@@ -4,6 +4,8 @@ import PlaylistTile from './PlaylistTile';
 import VoteVideo from './VoteVideo';
 import SearchBar from './SearchBar';
 import SearchTile from './SearchTile';
+import UserTile from './UserTile';
+import user from '../../../assets/images/user__user.png'
 
 class PlaylistShow extends Component {
   constructor(props) {
@@ -27,8 +29,7 @@ class PlaylistShow extends Component {
       timer: 0,
       currentSong: "",
       currentUser: "",
-      emailString: "rgholway@gmail.com",
-      passwordString: "baseball"
+      userActive: ""
         }
       this.fetchPlaylist = this.fetchPlaylist.bind(this)
       this.handleClick = this.handleClick.bind(this)
@@ -62,7 +63,7 @@ class PlaylistShow extends Component {
     })
     .then(response => response.json())
     .then(body => {
-      this.setState({ playlist: body, youtube: body[0][2], index: 0, currentSong: body[0][1] });
+      this.setState({ playlist: body[0], youtube: body[0][0][2], index: 0, currentSong: body[0][0][1], userActive: body[1] });
     })
   }
 
@@ -267,6 +268,12 @@ class PlaylistShow extends Component {
             <div className="currentUser--sign--in" onClick={this.onSignUp}></div>
             <div className="currentUser--log--in" onClick={this.onLogIn}></div>
             <div className="currentUser--nope" onClick={this.onNope}></div>
+          </div>
+          <img src={user} className="user__image" />
+          <div className={`user__playlist${this.state.userActive}--${this.state.mode}`}>
+            <UserTile
+
+            />
           </div>
       </div>
     )
