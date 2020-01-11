@@ -191,7 +191,8 @@ class VoteVideo extends React.Component {
   }
 
   _onEnd(event) {
-    this.setState({ timer: 0 })
+    this.setState({ timer: 0, timeBar: 0 })
+    this.stopTimer()
     this.props.handleRight()
   }
 
