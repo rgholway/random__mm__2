@@ -74,7 +74,7 @@
   cursor: pointer;
 }
 
-.video--vote--active {
+.video--vote {
   position: absolute;
   top: 7.5%;
   left: 35%;
@@ -83,7 +83,7 @@
   z-index: 30;
 }
 
-.video--vote {
+.video--vote--mobile {
   position: absolute;
   height: 0%;
   width: 0%;

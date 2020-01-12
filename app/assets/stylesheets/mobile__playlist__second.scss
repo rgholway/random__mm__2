@@ -8,12 +8,13 @@
     overflow: hidden;
   }
 
-  .video--vote {
+  .video--vote--mobile {
     position: absolute;
     top: 7.5%;
     left: 35%;
     height: 32.5vh;
     width: 30vw;
+    z-index: 30;
   }
 
 }
