@@ -103,9 +103,6 @@ class Home extends Component {
   }
 
   render() {
-    console.log(this.state.timer);
-    console.log(this.state.homeAd);
-    console.log(this.state.set)
     let artistsArray = this.state.artists.map(artist => {
       return(
         <ArtistTile
