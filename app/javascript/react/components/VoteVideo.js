@@ -125,7 +125,8 @@ class VoteVideo extends React.Component {
       showInfo: 0,
       setSize: 0,
       playerVars: { // https://developers.google.com/youtube/player_parameters
-        autoplay: 1
+        autoplay: 1,
+        playsinline: 1
       }
     };
 
@@ -134,7 +135,7 @@ class VoteVideo extends React.Component {
           <YouTube
             videoId={this.props.youtube}
             opts={opts}
-            className="video--vote"
+            className="video--vote--mobile"
             onReady={this._onReady}
             onPause={this._onPause}
             onPlay={this._onPlay}
