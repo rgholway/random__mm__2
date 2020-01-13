@@ -265,9 +265,9 @@ class PlaylistShow extends Component {
           <div className={`songs__search${this.state.active}`}> {songsArray} </div>
           <div className={`currentUser${this.state.currentUser}`}>
             <div className="currentUser--title">Woah... Sign In First</div>
-            <div className="currentUser--sign--in" onClick={this.onSignUp}></div>
-            <div className="currentUser--log--in" onClick={this.onLogIn}></div>
-            <div className="currentUser--nope" onClick={this.onNope}></div>
+            <div className="currentUser--sign--in" onClick={this.onSignUp}>Sign In</div>
+            <div className="currentUser--log--in" onClick={this.onLogIn}>Log In</div>
+            <div className="currentUser--nope" onClick={this.onNope}>Nope</div>
           </div>
           <img src={user} className="user__image" />
           <div className={`user__playlist${this.state.userActive}--${this.state.mode}`}>

@@ -40,7 +40,9 @@ class UserTile extends Component {
 
   render() {
     let i = 0
-    let playlistsArray = this.state.playlists.map( playlist => {
+    let playlistsArray = this.state.playlists
+    if (this.state.playlists) {
+      playlistsArray = this.state.playlists.map( playlist => {
       i += 1
       return(
         <UserPlaylistTile
@@ -50,6 +52,7 @@ class UserTile extends Component {
         />
       )
     })
+  }
     return (
       <div>
         {playlistsArray}
