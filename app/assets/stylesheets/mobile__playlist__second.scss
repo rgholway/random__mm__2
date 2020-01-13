@@ -10,10 +10,10 @@
 
   .video--vote--mobile {
     position: absolute;
-    bottom: 50%;
+    bottom: 0%;
     left: 0%;
-    height: 0px;
-    width: 0px;
+    height: 1px;
+    width: 1px;
     z-index: 30;
     overflow: hidden;
   }
