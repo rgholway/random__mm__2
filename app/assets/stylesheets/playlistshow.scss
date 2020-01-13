@@ -95,15 +95,6 @@
     z-index: 15;
   }
 
-  .shuffle--button {
-    position: absolute;
-    left: 10%;
-    height: 100%;
-    width: 10%;
-    background: yellow;
-    cursor: pointer;
-  }
-
   .mode--dark {
     position: absolute;
     top: 5%;
@@ -289,10 +280,10 @@
 
   .shuffle__button {
     position: absolute;
-    top: 20%;
-    left: 25%;
+    top: 15%;
+    left: 5%;
     height: 60%;
-    width: 4%;
+    width: 7.5%;
     background: white;
     cursor: pointer;
   }

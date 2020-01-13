@@ -127,7 +127,8 @@ class Home extends Component {
     })
     return(
       <div>
-      <div className={`title__main`}>RANDOMMAC</div>
+      <div className={`title__main`}>RANDOMMAC
+      </div>
         <div className="home__wheel">
         <div className={`home${this.state.circle}`} onClick={this.firstClick}></div>
           {artistsArray}

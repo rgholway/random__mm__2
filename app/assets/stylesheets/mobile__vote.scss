@@ -85,14 +85,9 @@
 
   .vote__songs--info--second {
     position: absolute;
-    top: 10%;
-    left: 35%;
-    color: #5F6065;
-    width: 30%;
-    text-align: center;
-    height: 20%;
-    font-size: 1.75vh;
-    font-family: 'Raleway', sans-serif;
+    height: 0%;
+    width: 0%;
+    overflow: hidden;
   }
 
   .vote__songs--info--first {
@@ -117,6 +112,13 @@
   }
 
   .vote__songs--info--fifth {
+    position: absolute;
+    height: 0%;
+    width: 0%;
+    overflow: hidden;
+  }
+
+  .vote__albums--info--first {
     position: absolute;
     height: 0%;
     width: 0%;
@@ -246,18 +248,6 @@
     text-align: center;
     height: 20%;
     font-size: 3vh;
-    font-family: 'Raleway', sans-serif;
-  }
-
-  .vote__albums--info--first {
-    position: absolute;
-    top: 10%;
-    left: 15%;
-    color: #5F6065;
-    width: 70%;
-    text-align: center;
-    height: 20%;
-    font-size: 1.75vh;
     font-family: 'Raleway', sans-serif;
   }
 
@@ -431,14 +421,9 @@
 
   .vote__thirdQuestion--info--third {
     position: absolute;
-    top: 10%;
-    left: 15%;
-    color: #5F6065;
-    width: 70%;
-    text-align: center;
-    height: 20%;
-    font-size: 2vh;
-    font-family: 'Raleway', sans-serif;
+    height: 0%;
+    width: 0%;
+    overflow: hidden;
   }
 
   .vote__thirdQuestion--info--first {
@@ -720,14 +705,9 @@
 
   .vote__fourthQuestion--info--fourth {
     position: absolute;
-    top: 10%;
-    left: 15%;
-    color: #5F6065;
-    width: 70%;
-    text-align: center;
-    height: 20%;
-    font-size: 2vh;
-    font-family: 'Raleway', sans-serif;
+    height: 0%;
+    width: 0%;
+    overflow: hidden;
   }
 
   .vote__fourthQuestion--info--first {

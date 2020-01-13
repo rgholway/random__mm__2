@@ -149,16 +149,16 @@ am_songs.each do |song|
 end
 
 divine_songs = [
-  {name: "Congratulations", youtube: "JoFkQ7iAQcw", album_id: 6},
-  {name: "Dang!", youtube: "LR3GQfryp9M", album_id: 6},
-  {name: "Stay", youtube: "5WU7oGiwiao", album_id: 6},
-  {name: "Skin", youtube: "GE_iHakWos0", album_id: 6},
-  {name: "Cinderella", youtube: "0fcsGS1dEro", album_id: 6},
-  {name: "Planet God Damn", youtube: "P91dAAsvsPY", album_id: 6},
-  {name: "Soulmate", youtube: "3ADKdqcdNqs", album_id: 6},
-  {name: "We", youtube: "XL--KSNxfy8", album_id: 6},
-  {name: "My Favorite Part", youtube: "J_8xCOSekog", album_id: 6},
-  {name: "God is Fair, Sexy, Nasty", youtube: "YbbaJIpkGMs", album_id: 6}
+  {name: "Congratulations", youtube: "JoFkQ7iAQcw", first_characteristic: "downer", album_id: 6, second_characteristic: "newer"},
+  {name: "Dang!", youtube: "LR3GQfryp9M", first_characteristic: "funky", album_id: 6, second_characteristic: "newer"},
+  {name: "Stay", youtube: "5WU7oGiwiao", album_id: 6, first_characteristic: "funky", second_characteristic: "newer"},
+  {name: "Skin", youtube: "GE_iHakWos0", album_id: 6,  first_characteristic: "downer", second_characteristic: "newer"},
+  {name: "Cinderella", youtube: "0fcsGS1dEro", album_id: 6,  first_characteristic: "upper", second_characteristic: "newer"},
+  {name: "Planet God Damn", youtube: "P91dAAsvsPY", album_id: 6,  first_characteristic: "funky", second_characteristic: "newer"},
+  {name: "Soulmate", youtube: "3ADKdqcdNqs", album_id: 6,  first_characteristic: "funky", second_characteristic: "newer"},
+  {name: "We", youtube: "XL--KSNxfy8", album_id: 6,  first_characteristic: "funky", second_characteristic: "newer"},
+  {name: "My Favorite Part", youtube: "J_8xCOSekog", album_id: 6,  first_characteristic: "funky", second_characteristic: "newer"},
+  {name: "God is Fair, Sexy, Nasty", youtube: "YbbaJIpkGMs", album_id: 6,  first_characteristic: "funky", second_characteristic: "newer"}
 ]
 
 divine_songs.each do |song|
@@ -166,22 +166,22 @@ divine_songs.each do |song|
 end
 
 blue_songs = [
-  {name: "English Lane", youtube: "jenO5Fwp2sI", album_id: 7, second_characteristic: "older"},
-  {name: "Blue Slide Park", youtube: "7Sya2lGMuYE", album_id: 7, second_characteristic: "older"},
-  {name: "Party on Fifth Ave", youtube: "f3GGN51_pjE", album_id: 7, second_characteristic: "older"},
-  {name: "PA Nights", youtube: "BhYubDi_2_k", album_id: 7, second_characteristic: "older"},
-  {name: "Frick Park Market", youtube: "KJ19PJ7-SWc", album_id: 7, second_characteristic: "older"},
-  {name: "Smile Back", youtube: "T_Mt6Isew_0", album_id: 7, second_characteristic: "older"},
-  {name: "Under the Weather", youtube: "T32idaCH3Po", album_id: 7, second_characteristic: "older"},
-  {name: "Of the Soul", youtube: "C9RdmVDxl4I", album_id: 7, second_characteristic: "older"},
-  {name: "My Team", youtube: "cCaSqmdOm04", album_id: 7, second_characteristic: "older"},
-  {name: "Up All Night", youtube: "nGB_FZtHyPI", album_id: 7, second_characteristic: "older"},
-  {name: "Loitering", youtube: "s2OI2F9k4nk", album_id: 7, second_characteristic: "older"},
-  {name: "Hole in my Pocket", youtube: "-tmA3TcLf8c", album_id: 7, second_characteristic: "older"},
-  {name: "Diamonds and Gold", youtube: "sGAGev81uOI", album_id: 7, second_characteristic: "older"},
-  {name: "Missed Calls", youtube: "ys-9b9QI3Q4", album_id: 7, second_characteristic: "older"},
-  {name: "Man in the Hat", youtube: "YeNC1I9wE1U", album_id: 7, second_characteristic: "older"},
-  {name: "One Last Thing", youtube: "QBk8fXaFSMs", album_id: 7, second_characteristic: "older"},
+  {name: "English Lane", youtube: "jenO5Fwp2sI", album_id: 7, first_characteristic: "sad", second_characteristic: "older"},
+  {name: "Blue Slide Park", youtube: "7Sya2lGMuYE", album_id: 7, first_characteristic: "fratty", second_characteristic: "older"},
+  {name: "Party on Fifth Ave", youtube: "f3GGN51_pjE", album_id: 7, first_characteristic: "fratty", second_characteristic: "older"},
+  {name: "PA Nights", youtube: "BhYubDi_2_k", album_id: 7, first_characteristic: "downer", second_characteristic: "older"},
+  {name: "Frick Park Market", youtube: "KJ19PJ7-SWc", album_id: 7, first_characteristic: "fratty", second_characteristic: "older"},
+  {name: "Smile Back", youtube: "T_Mt6Isew_0", album_id: 7, first_characteristic: "upbeat", second_characteristic: "older"},
+  {name: "Under the Weather", youtube: "T32idaCH3Po", album_id: 7, first_characteristic: "upbeat", second_characteristic: "older"},
+  {name: "Of the Soul", youtube: "C9RdmVDxl4I", album_id: 7, first_characteristic: "fratty", second_characteristic: "older"},
+  {name: "My Team", youtube: "cCaSqmdOm04", album_id: 7, first_characteristic: "fratty", second_characteristic: "older"},
+  {name: "Up All Night", youtube: "nGB_FZtHyPI", album_id: 7, first_characteristic: "fratty", second_characteristic: "older"},
+  {name: "Loitering", youtube: "s2OI2F9k4nk", album_id: 7, first_characteristic: "fratty", second_characteristic: "older"},
+  {name: "Hole in my Pocket", youtube: "-tmA3TcLf8c", album_id: 7, first_characteristic: "instrumental", second_characteristic: "older"},
+  {name: "Diamonds and Gold", youtube: "sGAGev81uOI", album_id: 7, first_characteristic: "fratty", second_characteristic: "older"},
+  {name: "Missed Calls", youtube: "ys-9b9QI3Q4", album_id: 7, first_characteristic: "sad", second_characteristic: "older"},
+  {name: "Man in the Hat", youtube: "YeNC1I9wE1U", album_id: 7, first_characteristic: "upbeat", second_characteristic: "older"},
+  {name: "One Last Thing", youtube: "QBk8fXaFSMs", album_id: 7, first_characteristic: "downer",  second_characteristic: "older"},
 ]
 
 blue_songs.each do |song|
