@@ -118,6 +118,7 @@ class PlaylistShow extends Component {
       .then(body => {
         this.setState({ playlist: body });
       })
+      location.reload()
   }
 
   handleMode() {

@@ -115,13 +115,13 @@
 
   .timeline {
     position: absolute;
-    top: 5%;
+    top: -10%;
     left: 2.5%;
     height: 80%;
     width: 95%;
   }
 
-  .first__line {
+  .first__line--oldActive {
     position: absolute;
     top: 50%;
     width: 48%;
@@ -139,7 +139,7 @@
     background: black;
   }
 
-  .first__line--oldActive {
+  .first__line {
     position: absolute;
     top: 50%;
     width: 48%;
@@ -158,7 +158,7 @@
     background: black;
   }
 
-  .second__line {
+  .second__line--newActive {
     position: absolute;
     top: 50%;
     left: 48%;
@@ -168,7 +168,7 @@
     background: black;
   }
 
-  .second__line--newActive {
+  .second__line {
     position: absolute;
     top: 50%;
     left: 48%;
@@ -180,16 +180,16 @@
 
   .first__year {
     position: absolute;
-    bottom: 42.5%;
+    bottom: 46%;
     left: 5%;
-    height: 7.5%;
+    height: 3%;
     width: 0.3%;
     background: black;
   }
 
   .first__year--year {
     position: absolute;
-    bottom: 55%;
+    bottom: 51%;
     left: 0%;
     font-family: 'Raleway', sans-serif;
     font-size: 2vh;
@@ -199,7 +199,7 @@
 
   .first__year--album {
     position: absolute;
-    bottom: 37.5%;
+    bottom: 42.5%;
     left: 0.5%;
     width: 10%;
     height: 5%;
@@ -207,16 +207,16 @@
 
   .second__year {
     position: absolute;
-    bottom: 42.5%;
+    bottom: 46%;
     left: 19%;
-    height: 7.5%;
+    height: 3%;
     width: 0.3%;
     background: black;
   }
 
   .second__year--year {
     position: absolute;
-    bottom: 55%;
+    bottom: 51%;
     left: 14%;
     font-family: 'Raleway', sans-serif;
     font-size: 2vh;
@@ -226,7 +226,7 @@
 
   .second__year--album {
     position: absolute;
-    bottom: 37.5%;
+    bottom: 42.5%;
     left: 14%;
     width: 10%;
     height: 5%;
@@ -234,16 +234,16 @@
 
   .third__year {
     position: absolute;
-    bottom: 42.5%;
+    bottom: 46%;
     left: 32%;
-    height: 7.5%;
+    height: 3%;
     width: 0.3%;
     background: black;
   }
 
   .third__year--year {
     position: absolute;
-    bottom: 55%;
+    bottom: 51%;
     left: 27%;
     font-family: 'Raleway', sans-serif;
     font-size: 2vh;
@@ -253,7 +253,7 @@
 
   .third__year--album {
     position: absolute;
-    bottom: 37.5%;
+    bottom: 42.5%;
     left: 27%;
     width: 10%;
     height: 5%;
@@ -261,16 +261,16 @@
 
   .fourth__year {
     position: absolute;
-    bottom: 42.5%;
+    bottom: 46%;
     left: 44%;
-    height: 7.5%;
+    height: 3%;
     width: 0.3%;
     background: black;
   }
 
   .fourth__year--year {
     position: absolute;
-    bottom: 55%;
+    bottom: 51%;
     left: 39%;
     font-family: 'Raleway', sans-serif;
     font-size: 2vh;
@@ -280,7 +280,7 @@
 
   .fourth__year--album {
     position: absolute;
-    bottom: 37.5%;
+    bottom: 42.5%;
     left: 39%;
     width: 10%;
     height: 5%;
@@ -290,14 +290,14 @@
     position: absolute;
     bottom: 50%;
     left: 52%;
-    height: 7.5%;
+    height: 3%;
     width: 0.3%;
     background: black;
   }
 
   .fifth__year--year {
     position: absolute;
-    top: 55%;
+    top: 52%;
     left: 47%;
     font-family: 'Raleway', sans-serif;
     font-size: 2vh;
@@ -307,7 +307,7 @@
 
   .fifth__year--album {
     position: absolute;
-    top: 37.5%;
+    top: 42%;
     left: 47%;
     width: 10%;
     height: 5%;
@@ -317,14 +317,14 @@
     position: absolute;
     bottom: 50%;
     left: 65%;
-    height: 7.5%;
+    height: 3%;
     width: 0.3%;
     background: black;
   }
 
   .sixth__year--year {
     position: absolute;
-    top: 55%;
+    top: 52%;
     left: 60%;
     font-family: 'Raleway', sans-serif;
     font-size: 2vh;
@@ -334,7 +334,7 @@
 
   .sixth__year--album {
     position: absolute;
-    top: 37.5%;
+    top: 42%;
     left: 60%;
     width: 10%;
     height: 5%;
@@ -344,7 +344,7 @@
     position: absolute;
     bottom: 50%;
     left: 76%;
-    height: 7.5%;
+    height: 3%;
     width: 0.3%;
     background: black;
     z-index: 20;
@@ -352,7 +352,7 @@
 
   .seventh__year--year {
     position: absolute;
-    top: 55%;
+    top: 52%;
     left: 71%;
     font-family: 'Raleway', sans-serif;
     font-size: 2vh;
@@ -362,7 +362,7 @@
 
   .seventh__year--album {
     position: absolute;
-    top: 37.5%;
+    top: 42%;
     left: 71%;
     width: 10%;
     height: 5%;
@@ -372,7 +372,7 @@
     position: absolute;
     bottom: 50%;
     left: 88%;
-    height: 7.5%;
+    height: 3%;
     width: 0.3%;
     background: black;
     z-index: 20;
@@ -380,7 +380,7 @@
 
   .eigth__year--year {
     position: absolute;
-    top: 55%;
+    top: 52%;
     left: 83%;
     font-family: 'Raleway', sans-serif;
     font-size: 2vh;
@@ -390,7 +390,7 @@
 
   .eigth__year--album {
     position: absolute;
-    top: 37.5%;
+    top: 42%;
     left: 83%;
     width: 10%;
     height: 5%;
@@ -400,7 +400,7 @@
     position: absolute;
     bottom: 50%;
     left: 99%;
-    height: 7.5%;
+    height: 3%;
     width: 0.3%;
     background: black;
     z-index: 20;
@@ -408,7 +408,7 @@
 
   .ninth__year--year {
     position: absolute;
-    top: 55%;
+    top: 52%;
     left: 94%;
     font-family: 'Raleway', sans-serif;
     font-size: 2vh;
@@ -418,7 +418,7 @@
 
   .ninth__year--album {
     position: absolute;
-    top: 37.5%;
+    top: 42%;
     left: 94%;
     width: 10%;
     height: 5%;
@@ -438,7 +438,7 @@
     width: 50%;
   }
 
-  .old__title {
+  .old__title--oldActive {
     position: absolute;
     height: 0%;
     width: 0%;
@@ -452,9 +452,9 @@
     overflow: hidden;
   }
 
-  .old__title--oldActive {
+  .old__title {
     position: absolute;
-    top: 80%;
+    top: 40%;
     left: 5%;
     width: 40%;
     text-align: center;
@@ -462,7 +462,7 @@
     font-size: 2.5vh;
   }
 
-  .new__title {
+  .new__title--newActive {
     position: absolute;
     height: 0%;
     width: 0%;
@@ -476,7 +476,7 @@
     overflow: hidden;
   }
 
-  .new__title--newActive {
+  .new__title {
     position: absolute;
     bottom: 80%;
     right: 5%;

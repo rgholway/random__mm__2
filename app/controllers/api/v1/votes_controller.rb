@@ -13,6 +13,8 @@ protect_from_forgery unless: -> { request.format.json? }
     songs << song4[rand(song4.length)]
     song5 = Song.where(first_characteristic: "trippy")
     songs << song5[rand(song5.length)]
+    song6 = Song.where(first_characteristic: "fratty")
+    songs << song6[rand(song6.length)]
     render json: songs
   end
 

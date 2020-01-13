@@ -149,6 +149,7 @@ class VoteVideo extends React.Component {
             <div className={`save__playlist${this.state.save}`}>Save Playlist</div>
             <div className="progress__bar" onClick={this.handleProgress}></div>
             <div className="progress__cover" style={ { width: `${ this.state.timeBar }%` } }></div>
+            <img className="shuffle__button" src={shufflebutton} onClick={this.handleShuffle}/>
           </div>
           <div className={`black__screen--${this.props.mode}`}>
             <div className="left--arrow" onClick={this.handleLeft}></div>
@@ -156,7 +157,6 @@ class VoteVideo extends React.Component {
             <img className={`pause__button--${this.state.play}`} src={pausebutton} onClick={this.handleEnd}/>
             <img className="right--arrow" src={rightbutton} onClick={this.handleRight}/>
             <img className="left--arrow" src={leftbutton} onClick={this.handleLeft}/>
-            <img className="shuffle__button" src={shufflebutton} onClick={this.handleShuffle}/>
           </div>
         </div>
     );
