@@ -1,4 +1,4 @@
-@media screen and (min-width:700px){
+@media screen and (max-width:700px){
   .vote {
     position: absolute;
     overflow: hidden;
@@ -16,10 +16,10 @@
 
   .vote__songs--second {
     position: absolute;
-    top: 25%;
-    left: 35%;
+    top: 20%;
+    left: 20%;
     height: 80%;
-    width: 30%;
+    width: 60%;
     overflow: scroll;
   }
 
@@ -355,7 +355,7 @@
 
   .vote__thirdQuestion--third {
     position: absolute;
-    top: 18%;
+    top: 10%;
     left: 5%;
     width: 90%;
     height: 80%;
@@ -565,57 +565,57 @@
 
   .upper__first--album {
     position: absolute;
-    top: -30%;
+    top: 0%;
     left: 5%;
-    height: 20vh;
-    width: 20vh;
+    height: 20vmin;
+    width: 20vmin;
   }
 
   .upper__second--album {
     position: absolute;
-    top: 5%;
-    left: 45%;
-    height: 20vh;
-    width: 20vh;
+    top: 40%;
+    left: 40%;
+    height: 20vmin;
+    width: 20vmin;
   }
 
   .upper__third--album {
     position: absolute;
-    top: -30%;
+    top: 0%;
     right: 5%;
-    height: 20vh;
-    width: 20vh;
+    height: 20vmin;
+    width: 20vmin;
   }
 
   .downer__first--album {
     position: absolute;
     top: 40%;
     left: 5%;
-    height: 20vh;
-    width: 20vh;
+    height: 20vmin;
+    width: 20vmin;
   }
 
   .downer__second--album {
     position: absolute;
     top: 0%;
-    left: 45%;
-    height: 20vh;
-    width: 20vh;
+    left: 40%;
+    height: 20vmin;
+    width: 20vmin;
   }
 
   .downer__third--album {
     position: absolute;
     top: 40%;
     right: 5%;
-    height: 20vh;
-    width: 20vh;
+    height: 20vmin;
+    width: 20vmin;
   }
 
   .vote__fourthQuestion--fourth {
     position: absolute;
     position: absolute;
     left: 5%;
-    top: 18%;
+    top: 10%;
     width: 90%;
     height: 80%;
   }

@@ -315,7 +315,7 @@ ros_songs.each do |song|
 end
 
 circle_songs = [
-  {name: "Good News", youtube: "aIHF7u9Wwiw", album_id: 3},
+  {name: "Good News", youtube: "GDyN6FgwjGA", album_id: 3},
 ]
 
 circle_songs.each do |song|

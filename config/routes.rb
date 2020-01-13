@@ -15,6 +15,7 @@ Rails.application.routes.draw do
   end
 
   get '/', to: 'homes#index'
+  get '/fifth', to: 'homes#index'
   get '/vote', to: 'homes#index'
   get '/vote/:id', to: 'homes#index'
   get '/mac', to: 'homes#index'
