@@ -276,6 +276,7 @@ class PlaylistShow extends Component {
 
             />
           </div>
+          <a className="home__link--playlist" href='/'>Home</a>
       </div>
     )
   }
