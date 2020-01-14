@@ -8,6 +8,11 @@
     overflow: hidden;
   }
 
+  .playlist__home--add {
+    position: absolute;
+    left: 40%;
+  }
+
   .video--vote--mobile {
     position: absolute;
     bottom: 0%;
@@ -117,8 +122,8 @@
 
   .mode--dark {
     position: absolute;
-    top: 1.5%;
-    left: 2.5%;
+    top: 10%;
+    left: .5%;
     height: 3vmin;
     width: 7.5vmin;
     background: grey;
@@ -129,8 +134,8 @@
 
   .mode--light {
     position: absolute;
-    top: 1.5%;
-    left: 1.5%;
+    top: 10%;
+    left: .5%;
     height: 3vmin;
     width: 7.5vmin;
     background: black;
@@ -482,5 +487,13 @@
     border-top: solid 1px red;
     color: white;
     cursor: pointer;
+  }
+
+  .home__link--playlist {
+    position: absolute;
+    left: 0%;
+    color: blue;
+    height: auto;
+    width: auto;
   }
 }

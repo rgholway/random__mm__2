@@ -375,24 +375,45 @@
     height: 40%;
     width: 20%;
     background: green;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 2vmin;
+    padding-top: 3%;
+    padding-left: .25%;
+    border-radius: 50%;
   }
 
   .currentUser--log--in {
     position: absolute;
     top: 50%;
-    left: 30%;
+    left: 37.5%;
     height: 40%;
     width: 20%;
     background: yellow;
+    font-family: 'Raleway', sans-serif;
+    color: black;
+    text-align: center;
+    font-size: 2vmin;
+    padding-top: 3%;
+    padding-left: .25%;
+    border-radius: 50%;
   }
 
   .currentUser--nope {
     position: absolute;
     top: 50%;
-    left: 60%;
+    left: 70%;
     height: 40%;
     width: 20%;
     background: red;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 2vmin;
+    padding-top: 3%;
+    padding-left: .25%;
+    border-radius: 50%;
   }
 
   .user__image {
@@ -444,5 +465,13 @@
     border-top: solid 1px red;
     color: white;
     cursor: pointer;
+  }
+
+  .home__link--playlist {
+    position: absolute;
+    left: 0.5%;
+    color: blue;
+    height: auto;
+    width: auto;
   }
 }

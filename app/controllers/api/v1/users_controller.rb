@@ -12,7 +12,6 @@ protect_from_forgery unless: -> { request.format.json? }
       playlists = current_user.playlists
       selected_playlist = Playlist.find(user_params[:id])
       playlists.push(selected_playlist.id)
-      binding.pry
       current_user.update(playlists: playlists)
     end
   end

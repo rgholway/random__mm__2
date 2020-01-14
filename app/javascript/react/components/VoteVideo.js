@@ -120,8 +120,8 @@ class VoteVideo extends React.Component {
 
   render() {
     const opts = {
-      height: '100px',
-      width: '100px',
+      height: '00px',
+      width: '00px',
       showInfo: 0,
       setSize: 0,
       playerVars: { // https://developers.google.com/youtube/player_parameters
