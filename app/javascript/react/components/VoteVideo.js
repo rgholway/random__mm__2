@@ -140,6 +140,7 @@ class VoteVideo extends React.Component {
             onPause={this._onPause}
             onPlay={this._onPlay}
             onEnd={this._onEnd}
+            onError={this._onError}
             onStateChange={this._onStateChange}
             status={this.props.status}
           />
@@ -195,6 +196,10 @@ class VoteVideo extends React.Component {
     this.setState({ timer: 0, timeBar: 0 })
     this.stopTimer()
     this.props.handleRight()
+  }
+
+  _onError(event) {
+    console.log(event.data);
   }
 
 
