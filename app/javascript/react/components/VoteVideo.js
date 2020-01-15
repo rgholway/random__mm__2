@@ -143,6 +143,7 @@ class VoteVideo extends React.Component {
             onError={this._onError}
             onStateChange={this._onStateChange}
             status={this.props.status}
+            onPlaybackQualityChange={this._onPlaybackQualityChange}
           />
           <div className="song__playing--dark">
             <div className="song__playing--dark--words">{this.props.currentSong}</div>
@@ -199,14 +200,16 @@ class VoteVideo extends React.Component {
   }
 
   _onError(event) {
-    console.log(event.data + "error");
   }
 
   _onStateChange(event) {
     if (event.data == 3 || event.data == 2) {
       event.target.playVideo()
     }
-    console.log(event.data + "state change");
+  }
+
+  _onPlaybackQualityChange(event) {
+    console.log(event.data);
   }
 
 
