@@ -199,6 +199,9 @@ class VoteVideo extends React.Component {
   }
 
   _onError(event) {
+  }
+
+  _onStateChange(event) {
     console.log(event.data);
   }
 
