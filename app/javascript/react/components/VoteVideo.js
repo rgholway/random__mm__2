@@ -202,7 +202,9 @@ class VoteVideo extends React.Component {
   }
 
   _onStateChange(event) {
-    console.log(event.data);
+    if (event.data == 3) {
+      event.target.playVideo()
+    }
   }
 
 
