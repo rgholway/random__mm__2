@@ -120,7 +120,7 @@ class VoteVideo extends React.Component {
     }
 
   render() {
-    console.log(this.state.timer);
+    console.log(this.state.helper);
     const opts = {
       height: '00px',
       width: '00px',
