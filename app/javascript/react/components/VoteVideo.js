@@ -203,8 +203,10 @@ class VoteVideo extends React.Component {
   }
 
   _onStateChange(event) {
-    if (this.state.helper > 25) {
+    console.log(event.data + "changed");
+    if (this.state.helper > 25 && event.data == 3) {
       this.props.break(this.state.timer)
+      this.stopTimer()
       this.setState({ helper: 0 })
       console.log(this.props.seconds + "seconds");
       event.target.seekTo(this.props.seconds)
