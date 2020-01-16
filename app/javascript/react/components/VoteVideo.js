@@ -171,6 +171,7 @@ class VoteVideo extends React.Component {
   }
 
   _onPause(event) {
+    console.log("pause");
     this.stopTimer()
   }
 
@@ -194,6 +195,7 @@ class VoteVideo extends React.Component {
   }
 
   _onEnd(event) {
+    console.log("end");
     this.setState({ timer: 0, timeBar: 0 })
     this.stopTimer()
     this.props.handleRight()
@@ -203,13 +205,12 @@ class VoteVideo extends React.Component {
   }
 
   _onStateChange(event) {
-    if (event.data == 3 || event.data == 2) {
+    if (event.data == 3) {
       event.target.playVideo()
     }
   }
 
   _onPlaybackQualityChange(event) {
-    console.log(event.data);
   }
 
 
