@@ -19,7 +19,8 @@ class VoteVideo extends React.Component {
       videoTime: 0.00,
       totalTime: 0,
       timeBar: 0,
-      save: ""
+      save: "",
+      helper: 0
         }
       this.handleRight = this.handleRight.bind(this)
       this.handleLeft = this.handleLeft.bind(this)
@@ -85,7 +86,7 @@ class VoteVideo extends React.Component {
     }
 
     timerStart() {
-      this.setState({ timer: this.state.timer + 0.5, timeBar: (this.state.timer / this.state.totalTime * 100) })
+      this.setState({ timer: this.state.timer + 0.5, timeBar: (this.state.timer / this.state.totalTime * 100), helper: this.state.helper + 0.5 })
       if (this.state.stop == "stop") {
         clearInterval(this.timer)
       }
@@ -119,6 +120,7 @@ class VoteVideo extends React.Component {
     }
 
   render() {
+    console.log(this.state.timer);
     const opts = {
       height: '00px',
       width: '00px',
@@ -201,10 +203,11 @@ class VoteVideo extends React.Component {
   }
 
   _onStateChange(event) {
-    console.log(event.target.a);
-    console.log(event.data);
-    if (event.data == 3) {
-      event.target.playVideo()
+    if (this.state.helper > 25) {
+      this.props.break(this.state.timer)
+      this.setState({ helper: 0 })
+      console.log(this.props.seconds + "seconds");
+      event.target.seekTo(this.props.seconds)
     }
   }
 
