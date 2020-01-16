@@ -175,9 +175,6 @@ class VoteVideo extends React.Component {
     this.stopTimer()
   }
 
-  _onStateChange(event) {
-  }
-
   _onPlay(event) {
     let videoTime = event.target.getDuration()
     let correctTime = Math.floor(videoTime / 60);
@@ -204,6 +201,7 @@ class VoteVideo extends React.Component {
   }
 
   _onStateChange(event) {
+    console.log(event.target.a);
     console.log(event.data);
     if (event.data == 3) {
       event.target.playVideo()
