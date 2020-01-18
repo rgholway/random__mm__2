@@ -191,6 +191,9 @@ class VoteVideo extends React.Component {
       this.setState({ status: "" })
       return
     }
+    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+      console.log("hello im a phone");
+    }
   }
 
   _onEnd(event) {
