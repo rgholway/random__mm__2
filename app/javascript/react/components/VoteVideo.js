@@ -191,8 +191,12 @@ class VoteVideo extends React.Component {
       this.setState({ status: "" })
       return
     }
-    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-      console.log("hello im a phone");
+    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) && this.state.helper > 15 ) {
+      this.setState({ helper: 0 })
+      this.props.break(this.state.timer)
+      this.stopTimer()
+      event.target.seekTo(this.state.timer)
+      console.log("hi im here");
     }
   }
 
