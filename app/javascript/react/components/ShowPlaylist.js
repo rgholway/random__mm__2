@@ -48,6 +48,8 @@ class PlaylistShow extends Component {
       this.onNope = this.onNope.bind(this)
       this.onSignUp = this.onSignUp.bind(this)
       this.onLogIn = this.onLogIn.bind(this)
+      this.break = this.break.bind(this)
+      this.help = this.help.bind(this)
   }
 
   fetchPlaylist() {
@@ -186,6 +188,15 @@ class PlaylistShow extends Component {
       this.setState({ currentUser: "" })
     }
 
+    break(seconds) {
+      this.setState({seconds: seconds, youtube: ""})
+      this.help()
+    }
+
+    help() {
+      this.setState({ youtube: this.state.playlist[this.state.index][2]})
+    }
+
     onSignUp() {
       browserHistory.push('/users/sign_up')
       location.reload()
@@ -254,7 +265,7 @@ class PlaylistShow extends Component {
             handleShuffle= {this.handleShuffle}
             mode= {this.state.mode}
             handleEnd= {this.handleEnd}
-            seconds= {this.state.timer}
+            seconds= {this.state.seconds}
             getTime= {this.getTime}
             startTimer= {this.startTimer}
             stopTimer= {this.stopTimer}
@@ -262,6 +273,7 @@ class PlaylistShow extends Component {
             index= {this.state.index}
             id= {this.props.params.id}
             currentUser = {this.handleUser}
+            break = {this.break}
           />
           <div className={`songs__search${this.state.active}`}> {songsArray} </div>
           <div className={`currentUser${this.state.currentUser}`}>

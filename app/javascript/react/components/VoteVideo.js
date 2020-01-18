@@ -19,7 +19,8 @@ class VoteVideo extends React.Component {
       videoTime: 0.00,
       totalTime: 0,
       timeBar: 0,
-      save: ""
+      save: "",
+      helper: 0
         }
       this.handleRight = this.handleRight.bind(this)
       this.handleLeft = this.handleLeft.bind(this)
@@ -85,7 +86,7 @@ class VoteVideo extends React.Component {
     }
 
     timerStart() {
-      this.setState({ timer: this.state.timer + 0.5, timeBar: (this.state.timer / this.state.totalTime * 100) })
+      this.setState({ timer: this.state.timer + 0.5, timeBar: (this.state.timer / this.state.totalTime * 100), helper: this.state.helper + 0.5 })
       if (this.state.stop == "stop") {
         clearInterval(this.timer)
       }
@@ -119,6 +120,7 @@ class VoteVideo extends React.Component {
     }
 
   render() {
+    console.log(this.state.helper);
     const opts = {
       height: '00px',
       width: '00px',
@@ -140,8 +142,10 @@ class VoteVideo extends React.Component {
             onPause={this._onPause}
             onPlay={this._onPlay}
             onEnd={this._onEnd}
+            onError={this._onError}
             onStateChange={this._onStateChange}
             status={this.props.status}
+            onPlaybackQualityChange={this._onPlaybackQualityChange}
           />
           <div className="song__playing--dark">
             <div className="song__playing--dark--words">{this.props.currentSong}</div>
@@ -169,10 +173,8 @@ class VoteVideo extends React.Component {
   }
 
   _onPause(event) {
+    console.log(event.data + " paused");
     this.stopTimer()
-  }
-
-  _onStateChange(event) {
   }
 
   _onPlay(event) {
@@ -195,6 +197,15 @@ class VoteVideo extends React.Component {
     this.setState({ timer: 0, timeBar: 0 })
     this.stopTimer()
     this.props.handleRight()
+  }
+
+  _onError(event) {
+  }
+
+  _onStateChange(event) {
+  }
+
+  _onPlaybackQualityChange(event) {
   }
 
 
