@@ -195,7 +195,7 @@ class VoteVideo extends React.Component {
       this.setState({ helper: 0 })
       this.props.break(this.state.timer)
       this.stopTimer()
-      event.target.seekTo(this.state.timer)
+      event.target.seekTo(this.props.seconds)
       console.log("hi im here");
     }
   }
@@ -210,9 +210,13 @@ class VoteVideo extends React.Component {
   }
 
   _onStateChange(event) {
+    if(event.data == 3) {
+      event.target.playVideo()
+    }
   }
 
   _onPlaybackQualityChange(event) {
+
   }
 
 
