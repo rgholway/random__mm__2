@@ -203,14 +203,6 @@ class VoteVideo extends React.Component {
   }
 
   _onStateChange(event) {
-    console.log(event.data + "changed");
-    if (this.state.helper > 19 && event.data == 3) {
-      this.props.break(this.state.timer)
-      this.stopTimer()
-      this.setState({ helper: 0 })
-      console.log(this.props.seconds + "seconds");
-      event.target.seekTo(this.props.seconds)
-    }
   }
 
   _onPlaybackQualityChange(event) {
