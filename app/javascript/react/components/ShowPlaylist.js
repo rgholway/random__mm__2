@@ -164,7 +164,7 @@ class PlaylistShow extends Component {
   startTimer() {
     if (this.state.youtube == "") {
       this.setState({youtube: this.state.playlist[this.state.index][2] })
-      this.break()
+      this.timer = setInterval(this.timerStart.bind(this), 1000)
       }
     }
 
