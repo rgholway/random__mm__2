@@ -162,15 +162,16 @@ class PlaylistShow extends Component {
   }
 
   startTimer() {
-    this.setState({ stop: "" })
-    if (this.state.youtube != "stop") {
-      this.timer = setInterval(this.timerStart.bind(this), 1000)
-    }
+    if (this.state.youtube == "") {
+      this.setState({youtube: this.state.playlist[this.state.index][2] })
+      this.break()
+      }
     }
 
     timerStart() {
       this.setState({ timer: this.state.timer + 1 })
-      if (this.state.stop == "stop") {
+      if (this.state.timer > 15) {
+        this.setState({timer: 0, youtube: ""})
         clearInterval(this.timer)
         return
       }
@@ -188,9 +189,9 @@ class PlaylistShow extends Component {
       this.setState({ currentUser: "" })
     }
 
-    break(seconds) {
-      this.setState({seconds: seconds, youtube: ""})
-      this.help()
+    break() {
+      console.log("Im in break");
+      this.timer = setInterval(this.timerStart.bind(this), 1000)
     }
 
     help() {
@@ -213,6 +214,8 @@ class PlaylistShow extends Component {
   }
 
   render() {
+    console.log(this.state.youtube);
+    console.log(this.state.timer);
     let songsArray = this.state.songs.map( song => {
       return(
         <SearchTile

@@ -120,7 +120,6 @@ class VoteVideo extends React.Component {
     }
 
   render() {
-    console.log(this.state.helper);
     const opts = {
       height: '00px',
       width: '00px',
@@ -173,7 +172,6 @@ class VoteVideo extends React.Component {
   }
 
   _onPause(event) {
-    console.log(event.data + " paused");
     this.stopTimer()
   }
 
@@ -191,12 +189,8 @@ class VoteVideo extends React.Component {
       this.setState({ status: "" })
       return
     }
-    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) && this.state.helper > 15 ) {
-      this.setState({ helper: 0 })
-      this.props.break(this.state.timer)
-      this.stopTimer()
-      event.target.seekTo(this.props.seconds)
-      console.log("hi im here");
+    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) {
+      this.props.break()
     }
   }
 
