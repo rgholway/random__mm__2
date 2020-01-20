@@ -163,6 +163,7 @@ class PlaylistShow extends Component {
 
   startTimer() {
     if (this.state.youtube == "") {
+      console.log("Hi im inside timer");
       this.setState({youtube: this.state.playlist[this.state.index][2] })
       this.timer = setInterval(this.timerStart.bind(this), 1000)
       }
@@ -173,7 +174,7 @@ class PlaylistShow extends Component {
       if (this.state.timer > 15) {
         this.setState({timer: 0, youtube: ""})
         clearInterval(this.timer)
-        this.startTimer
+        this.startTimer()
         return
       }
     }
