@@ -173,6 +173,7 @@ class PlaylistShow extends Component {
       if (this.state.timer > 15) {
         this.setState({timer: 0, youtube: ""})
         clearInterval(this.timer)
+        this.startTimer
         return
       }
     }
