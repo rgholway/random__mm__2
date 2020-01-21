@@ -120,7 +120,6 @@ class VoteVideo extends React.Component {
     }
 
   render() {
-    console.log(this.state.helper);
     const opts = {
       height: '00px',
       width: '00px',
@@ -173,7 +172,6 @@ class VoteVideo extends React.Component {
   }
 
   _onPause(event) {
-    console.log(event.data + " paused");
     this.stopTimer()
   }
 
@@ -182,7 +180,6 @@ class VoteVideo extends React.Component {
     let correctTime = Math.floor(videoTime / 60);
     let minutes = (videoTime - correctTime * 60) / 100
     this.setState({ play: "pause", videoTime: (correctTime + minutes).toFixed(2), totalTime: videoTime})
-
     if (this.state.status == "") {
       this.startTimer()
     }
@@ -206,6 +203,7 @@ class VoteVideo extends React.Component {
   }
 
   _onPlaybackQualityChange(event) {
+
   }
 
 

@@ -24,7 +24,6 @@ class PlaylistShow extends Component {
       activeSearch: "inactive",
       active: "",
       index: "",
-      seconds: 0,
       stop: "",
       timer: 0,
       currentSong: "",
@@ -48,7 +47,6 @@ class PlaylistShow extends Component {
       this.onNope = this.onNope.bind(this)
       this.onSignUp = this.onSignUp.bind(this)
       this.onLogIn = this.onLogIn.bind(this)
-      this.break = this.break.bind(this)
       this.help = this.help.bind(this)
   }
 
@@ -162,16 +160,19 @@ class PlaylistShow extends Component {
   }
 
   startTimer() {
-    this.setState({ stop: "" })
-    if (this.state.youtube != "stop") {
+    if (this.state.youtube == "") {
+      console.log("Hi im inside timer");
+      this.setState({youtube: this.state.playlist[this.state.index][2] })
       this.timer = setInterval(this.timerStart.bind(this), 1000)
-    }
+      }
     }
 
     timerStart() {
       this.setState({ timer: this.state.timer + 1 })
-      if (this.state.stop == "stop") {
+      if (this.state.timer > 15) {
+        this.setState({timer: 0, youtube: ""})
         clearInterval(this.timer)
+        this.startTimer()
         return
       }
     }
@@ -186,11 +187,6 @@ class PlaylistShow extends Component {
 
     onNope() {
       this.setState({ currentUser: "" })
-    }
-
-    break(seconds) {
-      this.setState({seconds: seconds, youtube: ""})
-      this.help()
     }
 
     help() {
@@ -265,7 +261,6 @@ class PlaylistShow extends Component {
             handleShuffle= {this.handleShuffle}
             mode= {this.state.mode}
             handleEnd= {this.handleEnd}
-            seconds= {this.state.seconds}
             getTime= {this.getTime}
             startTimer= {this.startTimer}
             stopTimer= {this.stopTimer}
@@ -273,7 +268,6 @@ class PlaylistShow extends Component {
             index= {this.state.index}
             id= {this.props.params.id}
             currentUser = {this.handleUser}
-            break = {this.break}
           />
           <div className={`songs__search${this.state.active}`}> {songsArray} </div>
           <div className={`currentUser${this.state.currentUser}`}>
