@@ -7,7 +7,7 @@ class Api::V1::SongsController < ApplicationController
 
   def show
     album = Album.find(params[:id])
-    songs = album.songs.reverse
+    songs = album.songs
     render json: songs
   end
 
