@@ -314,15 +314,15 @@ end
 
 circle_songs = [
   {name: "Circles", youtube: "V4BFGSZ_1ls", album_id: 3, first_characteristic: "sad", second_characteristic: "newer", art: "https://static.stereogum.com/uploads/2020/01/mac-miller-posthumous-album-circles-1578501176-640x640.jpeg"},
-  {name: "Complicated", youtube: "Q-NUaixkovQ", album_id: 3, first_characteristic: "sad", second_characteristic: "newer", art: "https://static.stereogum.com/uploads/2020/01/mac-miller-posthumous-album-circles-1578501176-640x640.jpeg"},
-  {name: "Blue World", youtube: "_GC2wFTCAGY", album_id: 3, first_characteristic: "sad", second_characteristic: "newer", art: "https://static.stereogum.com/uploads/2020/01/mac-miller-posthumous-album-circles-1578501176-640x640.jpeg"},
+  {name: "Complicated", youtube: "Q-NUaixkovQ", album_id: 3, first_characteristic: "funky", second_characteristic: "newer", art: "https://static.stereogum.com/uploads/2020/01/mac-miller-posthumous-album-circles-1578501176-640x640.jpeg"},
+  {name: "Blue World", youtube: "_GC2wFTCAGY", album_id: 3, first_characteristic: "funky", second_characteristic: "newer", art: "https://static.stereogum.com/uploads/2020/01/mac-miller-posthumous-album-circles-1578501176-640x640.jpeg"},
   {name: "Good News", youtube: "GDyN6FgwjGA", album_id: 3, first_characteristic: "sad", second_characteristic: "newer", art: "https://static.stereogum.com/uploads/2020/01/mac-miller-posthumous-album-circles-1578501176-640x640.jpeg"},
-  {name: "I Can See", youtube: "rGxOUnlHpGI", album_id: 3, first_characteristic: "sad", second_characteristic: "newer", art: "https://static.stereogum.com/uploads/2020/01/mac-miller-posthumous-album-circles-1578501176-640x640.jpeg"},
-  {name: "Everybody", youtube: "_-Ig0aeJ6jc", album_id: 3, first_characteristic: "sad", second_characteristic: "newer", art: "https://static.stereogum.com/uploads/2020/01/mac-miller-posthumous-album-circles-1578501176-640x640.jpeg"},
-  {name: "Woods", youtube: "g8sX6wZHhD0", album_id: 3, first_characteristic: "sad", second_characteristic: "newer", art: "https://static.stereogum.com/uploads/2020/01/mac-miller-posthumous-album-circles-1578501176-640x640.jpeg"},
-  {name: "Hand Me Downs", youtube: "fYEXdCCpfVQ", album_id: 3, first_characteristic: "sad", second_characteristic: "newer", art: "https://static.stereogum.com/uploads/2020/01/mac-miller-posthumous-album-circles-1578501176-640x640.jpeg"},
-  {name: "Thats on Me", youtube: "Eg7vEV5woSk", album_id: 3, first_characteristic: "sad", second_characteristic: "newer", art: "https://static.stereogum.com/uploads/2020/01/mac-miller-posthumous-album-circles-1578501176-640x640.jpeg"},
-  {name: "Hands", youtube: "IHJWYamH5SA", album_id: 3, first_characteristic: "sad", second_characteristic: "newer", art: "https://static.stereogum.com/uploads/2020/01/mac-miller-posthumous-album-circles-1578501176-640x640.jpeg"},
+  {name: "I Can See", youtube: "rGxOUnlHpGI", album_id: 3, first_characteristic: "downer", second_characteristic: "newer", art: "https://static.stereogum.com/uploads/2020/01/mac-miller-posthumous-album-circles-1578501176-640x640.jpeg"},
+  {name: "Everybody", youtube: "_-Ig0aeJ6jc", album_id: 3, first_characteristic: "downer", second_characteristic: "newer", art: "https://static.stereogum.com/uploads/2020/01/mac-miller-posthumous-album-circles-1578501176-640x640.jpeg"},
+  {name: "Woods", youtube: "g8sX6wZHhD0", album_id: 3, first_characteristic: "downer", second_characteristic: "newer", art: "https://static.stereogum.com/uploads/2020/01/mac-miller-posthumous-album-circles-1578501176-640x640.jpeg"},
+  {name: "Hand Me Downs", youtube: "fYEXdCCpfVQ", album_id: 3, first_characteristic: "funky", second_characteristic: "newer", art: "https://static.stereogum.com/uploads/2020/01/mac-miller-posthumous-album-circles-1578501176-640x640.jpeg"},
+  {name: "Thats on Me", youtube: "Eg7vEV5woSk", album_id: 3, first_characteristic: "downer", second_characteristic: "newer", art: "https://static.stereogum.com/uploads/2020/01/mac-miller-posthumous-album-circles-1578501176-640x640.jpeg"},
+  {name: "Hands", youtube: "IHJWYamH5SA", album_id: 3, first_characteristic: "funky", second_characteristic: "newer", art: "https://static.stereogum.com/uploads/2020/01/mac-miller-posthumous-album-circles-1578501176-640x640.jpeg"},
   {name: "Surf", youtube: "blYo4WheVgA", album_id: 3, first_characteristic: "sad", second_characteristic: "newer", art: "https://static.stereogum.com/uploads/2020/01/mac-miller-posthumous-album-circles-1578501176-640x640.jpeg"},
   {name: "Once a Day", youtube: "pFFPIST6Fuo", album_id: 3, first_characteristic: "sad", second_characteristic: "newer", art: "https://static.stereogum.com/uploads/2020/01/mac-miller-posthumous-album-circles-1578501176-640x640.jpeg"}
 ]

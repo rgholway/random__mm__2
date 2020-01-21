@@ -24,7 +24,6 @@ class PlaylistShow extends Component {
       activeSearch: "inactive",
       active: "",
       index: "",
-      seconds: 0,
       stop: "",
       timer: 0,
       currentSong: "",
@@ -48,7 +47,6 @@ class PlaylistShow extends Component {
       this.onNope = this.onNope.bind(this)
       this.onSignUp = this.onSignUp.bind(this)
       this.onLogIn = this.onLogIn.bind(this)
-      this.break = this.break.bind(this)
       this.help = this.help.bind(this)
   }
 
@@ -191,11 +189,6 @@ class PlaylistShow extends Component {
       this.setState({ currentUser: "" })
     }
 
-    break() {
-      console.log("Im in break");
-      this.timer = setInterval(this.timerStart.bind(this), 1000)
-    }
-
     help() {
       this.setState({ youtube: this.state.playlist[this.state.index][2]})
     }
@@ -216,8 +209,6 @@ class PlaylistShow extends Component {
   }
 
   render() {
-    console.log(this.state.youtube);
-    console.log(this.state.timer);
     let songsArray = this.state.songs.map( song => {
       return(
         <SearchTile
@@ -270,7 +261,6 @@ class PlaylistShow extends Component {
             handleShuffle= {this.handleShuffle}
             mode= {this.state.mode}
             handleEnd= {this.handleEnd}
-            seconds= {this.state.seconds}
             getTime= {this.getTime}
             startTimer= {this.startTimer}
             stopTimer= {this.stopTimer}
@@ -278,7 +268,6 @@ class PlaylistShow extends Component {
             index= {this.state.index}
             id= {this.props.params.id}
             currentUser = {this.handleUser}
-            break = {this.break}
           />
           <div className={`songs__search${this.state.active}`}> {songsArray} </div>
           <div className={`currentUser${this.state.currentUser}`}>

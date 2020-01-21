@@ -180,7 +180,6 @@ class VoteVideo extends React.Component {
     let correctTime = Math.floor(videoTime / 60);
     let minutes = (videoTime - correctTime * 60) / 100
     this.setState({ play: "pause", videoTime: (correctTime + minutes).toFixed(2), totalTime: videoTime})
-
     if (this.state.status == "") {
       this.startTimer()
     }
@@ -188,9 +187,6 @@ class VoteVideo extends React.Component {
       event.target.seekTo(this.state.timer)
       this.setState({ status: "" })
       return
-    }
-    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-      this.props.break()
     }
   }
 
@@ -204,9 +200,6 @@ class VoteVideo extends React.Component {
   }
 
   _onStateChange(event) {
-    if(event.data == 3) {
-      event.target.playVideo()
-    }
   }
 
   _onPlaybackQualityChange(event) {
