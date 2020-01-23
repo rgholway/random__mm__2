@@ -20,7 +20,8 @@ class VoteVideo extends React.Component {
       totalTime: 0,
       timeBar: 0,
       save: "",
-      helper: 0
+      helper: 0,
+      progressTime: ""
         }
       this.handleRight = this.handleRight.bind(this)
       this.handleLeft = this.handleLeft.bind(this)
@@ -37,6 +38,7 @@ class VoteVideo extends React.Component {
       this.handleSave = this.handleSave.bind(this)
       this.handleHover = this.handleHover.bind(this)
       this.handleLeave = this.handleLeave.bind(this)
+      this.handleFirstClick = this.handleFirstClick.bind(this)
   }
 
   handleRight() {
@@ -111,13 +113,18 @@ class VoteVideo extends React.Component {
       })
     }
 
-    handleHover() {
-      this.setState({ save: "--hover" })
-    }
+  handleHover() {
+    this.setState({ save: "--hover" })
+  }
 
-    handleLeave() {
-      this.setState({ save: "" })
-    }
+  handleLeave() {
+    this.setState({ save: "" })
+  }
+
+  handleFirstClick() {
+    this.setState({progressTime: "first" })
+    this.props.handleBreak(5)
+  }
 
   render() {
     const opts = {
@@ -150,7 +157,10 @@ class VoteVideo extends React.Component {
             <div className="song__playing--dark--words">{this.props.currentSong}</div>
             <img className="song__save" src={save__save} onClick={this.handleSave} onMouseEnter={this.handleHover} onMouseLeave={this.handleLeave}/>
             <div className={`save__playlist${this.state.save}`}>Save Playlist</div>
-            <div className="progress__bar" onClick={this.handleProgress}></div>
+            <div className="progress__bar" onClick={this.handleProgress}>
+              <div className="progress__bar--one" onClick={this.handleFirstClick}></div>
+              <div className="progress__bar--two"></div>
+            </div>
             <div className="progress__cover" style={ { width: `${ this.state.timeBar }%` } }></div>
             <img className="shuffle__button" src={shufflebutton} onClick={this.handleShuffle}/>
           </div>
@@ -187,6 +197,10 @@ class VoteVideo extends React.Component {
       event.target.seekTo(this.state.timer)
       this.setState({ status: "" })
       return
+    }
+    if (this.state.progressTime == "first") {
+      event.target.seekTo(this.props.seconds)
+      this.setState({ progressTime: "" })
     }
   }
 

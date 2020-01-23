@@ -26,6 +26,7 @@ class PlaylistShow extends Component {
       index: "",
       stop: "",
       timer: 0,
+      seconds: 0,
       currentSong: "",
       currentUser: "",
       userActive: ""
@@ -47,7 +48,8 @@ class PlaylistShow extends Component {
       this.onNope = this.onNope.bind(this)
       this.onSignUp = this.onSignUp.bind(this)
       this.onLogIn = this.onLogIn.bind(this)
-      this.help = this.help.bind(this)
+      this.handleBreak = this.handleBreak.bind(this)
+      this.reset = this.reset.bind(this)
   }
 
   fetchPlaylist() {
@@ -189,8 +191,14 @@ class PlaylistShow extends Component {
       this.setState({ currentUser: "" })
     }
 
-    help() {
-      this.setState({ youtube: this.state.playlist[this.state.index][2]})
+    handleBreak(seconds) {
+      this.setState({ youtube: "", seconds: seconds })
+      setTimeout(() => {
+        this.setState({ youtube: this.state.playlist[this.state.index][2] })
+      }, 250);
+    }
+
+    reset() {
     }
 
     onSignUp() {
@@ -268,6 +276,8 @@ class PlaylistShow extends Component {
             index= {this.state.index}
             id= {this.props.params.id}
             currentUser = {this.handleUser}
+            handleBreak = {this.handleBreak}
+            seconds = {this.state.seconds}
           />
           <div className={`songs__search${this.state.active}`}> {songsArray} </div>
           <div className={`currentUser${this.state.currentUser}`}>

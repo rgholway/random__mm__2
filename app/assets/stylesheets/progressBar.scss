@@ -20,3 +20,26 @@
   font-size: 2vmin;
   color: grey;
 }
+
+.progress__bar--one {
+  position: absolute;
+  height: 100%;
+  width: 50%;
+}
+
+.progress__bar--one:hover {
+  position: absolute;
+  background: orange;
+}
+
+.progress__bar--two {
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  left: 50%;
+}
+
+.progress__bar--two:hover {
+  position: absolute;
+  background: blue;
+}
