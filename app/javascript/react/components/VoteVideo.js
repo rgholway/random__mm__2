@@ -6,6 +6,8 @@ import rightbutton from '../../../assets/images/right.png'
 import leftbutton from '../../../assets/images/left.png'
 import shufflebutton from '../../../assets/images/shuffle.png'
 import save__save from '../../../assets/images/save__save.png'
+import ProgressTile from './ProgressTile';
+let progressBar = [["0.10", "0%", "first"], ["0.20", "10%", "second"], ["0.30", "20%", "third"], ["0.40", "30%", "fourth"], ["0.50", "40%", "fifth"], ["0.60", "50%", "sixth"], ["0.70", "60%", "seventh"], ["0.80", "70%", "eigth"], ["0.90", "80%", "ninth"], ["1", "90%", "tenth"]  ]
 
 class VoteVideo extends React.Component {
   constructor(props) {
@@ -20,7 +22,8 @@ class VoteVideo extends React.Component {
       totalTime: 0,
       timeBar: 0,
       save: "",
-      helper: 0
+      helper: 0,
+      progressTime: ""
         }
       this.handleRight = this.handleRight.bind(this)
       this.handleLeft = this.handleLeft.bind(this)
@@ -37,6 +40,7 @@ class VoteVideo extends React.Component {
       this.handleSave = this.handleSave.bind(this)
       this.handleHover = this.handleHover.bind(this)
       this.handleLeave = this.handleLeave.bind(this)
+      this.handleFirstClick = this.handleFirstClick.bind(this)
   }
 
   handleRight() {
@@ -111,15 +115,33 @@ class VoteVideo extends React.Component {
       })
     }
 
-    handleHover() {
-      this.setState({ save: "--hover" })
-    }
+  handleHover() {
+    this.setState({ save: "--hover" })
+  }
 
-    handleLeave() {
-      this.setState({ save: "" })
-    }
+  handleLeave() {
+    this.setState({ save: "" })
+  }
+
+  handleFirstClick(percent) {
+    this.setState({progressTime: "selected" })
+    this.props.handleBreak(percent)
+  }
 
   render() {
+    let i = 0
+    let progressArray = progressBar.map( progress => {
+      i += 1
+      return(
+        <ProgressTile
+          key= {i}
+          percent= {progress[0]}
+          left= {progress[1]}
+          css= {progress[2]}
+          handlePercent= {this.handleFirstClick}
+        />
+      )
+    })
     const opts = {
       height: '00px',
       width: '00px',
@@ -150,7 +172,9 @@ class VoteVideo extends React.Component {
             <div className="song__playing--dark--words">{this.props.currentSong}</div>
             <img className="song__save" src={save__save} onClick={this.handleSave} onMouseEnter={this.handleHover} onMouseLeave={this.handleLeave}/>
             <div className={`save__playlist${this.state.save}`}>Save Playlist</div>
-            <div className="progress__bar" onClick={this.handleProgress}></div>
+            <div className="progress__bar">
+              <div className="progress__bar--dynamic">{progressArray}</div>
+            </div>
             <div className="progress__cover" style={ { width: `${ this.state.timeBar }%` } }></div>
             <img className="shuffle__button" src={shufflebutton} onClick={this.handleShuffle}/>
           </div>
@@ -166,7 +190,7 @@ class VoteVideo extends React.Component {
   }
 
   _onReady(event) {
-    if(this.state.status != "paused") {
+    if(this.state.status != "paused" || this.state.progressTime != "selected") {
       event.target.playVideo()
     }
   }
@@ -187,6 +211,15 @@ class VoteVideo extends React.Component {
       event.target.seekTo(this.state.timer)
       this.setState({ status: "" })
       return
+    }
+    if (this.state.progressTime == "selected") {
+      debugger;
+      this.stopTimer()
+      let seek = videoTime * this.props.seconds
+      debugger;
+      this.setState({ timer: seek })
+      event.target.seekTo(seek)
+      this.setState({ progressTime: "" })
     }
   }
 
