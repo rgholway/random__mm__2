@@ -27,6 +27,7 @@ class PlaylistShow extends Component {
       stop: "",
       timer: 0,
       seconds: 0,
+      seek: 0,
       currentSong: "",
       currentUser: "",
       userActive: ""
@@ -192,7 +193,7 @@ class PlaylistShow extends Component {
     }
 
     handleBreak(seconds) {
-      this.setState({ youtube: "", seconds: seconds })
+      this.setState({ youtube: "", seek: seconds })
       setTimeout(() => {
         this.setState({ youtube: this.state.playlist[this.state.index][2] })
       }, 250);
@@ -277,7 +278,7 @@ class PlaylistShow extends Component {
             id= {this.props.params.id}
             currentUser = {this.handleUser}
             handleBreak = {this.handleBreak}
-            seconds = {this.state.seconds}
+            seconds = {this.state.seek}
           />
           <div className={`songs__search${this.state.active}`}> {songsArray} </div>
           <div className={`currentUser${this.state.currentUser}`}>
