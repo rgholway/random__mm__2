@@ -8,9 +8,15 @@ class ProgressTile extends Component {
         }
       this.handleHover = this.handleHover.bind(this)
       this.handleClick = this.handleClick.bind(this)
+      this.handleLeave = this.handleLeave.bind(this)
   }
 
   handleHover() {
+    this.props.handleLeft(this.props.left, this.props.percent, "--active")
+  }
+
+  handleLeave() {
+    this.props.handleLeft("0", "0", "")
   }
 
   handleClick() {
@@ -20,7 +26,7 @@ class ProgressTile extends Component {
   render() {
     return (
       <div>
-        <div className={`progress__bar--dynamic--${this.props.css}`} onClick={this.handleClick}></div>
+        <div className={`progress__bar--dynamic--${this.props.css}`} onClick={this.handleClick} onMouseEnter={this.handleHover} onMouseLeave={this.handleLeave}></div>
       </div>
     )
   }

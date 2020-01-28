@@ -4,6 +4,7 @@
   width: 100%;
   height: 5px;
   background: white;
+  overflow: hidden;
 }
 
 .progress__cover {
@@ -54,68 +55,205 @@
   position: absolute;
   left: 0%;
   height: 100%;
-  width: 10%;
+  width: 2.5%;
+  z-index: 10;
 }
 
 .progress__bar--dynamic--second {
   position: absolute;
-  left: 10%;
+  left: 2.5%;
   height: 100%;
-  width: 10%;
+  width: 2.5%;
+  z-index: 10;
 }
 
 .progress__bar--dynamic--third {
   position: absolute;
-  left: 20%;
+  left: 5%;
   height: 100%;
-  width: 10%;
+  width: 5%;
+  z-index: 10;
 }
 
 .progress__bar--dynamic--fourth {
   position: absolute;
-  left: 30%;
+  left: 10%;
   height: 100%;
-  width: 10%;
+  width: 5%;
+  z-index: 10;
 }
 
 .progress__bar--dynamic--fifth {
   position: absolute;
-  left: 40%;
+  left: 15%;
   height: 100%;
-  width: 10%;
+  width: 5%;
+  z-index: 10;
 }
 
 .progress__bar--dynamic--sixth {
   position: absolute;
-  left: 50%;
+  left: 20%;
   height: 100%;
-  width: 10%;
+  width: 5%;
+  z-index: 10;
 }
 
 .progress__bar--dynamic--seventh {
   position: absolute;
-  left: 60%;
+  left: 25%;
   height: 100%;
-  width: 10%;
+  width: 5%;
+  z-index: 10;
 }
 
 .progress__bar--dynamic--eigth {
   position: absolute;
-  left: 70%;
+  left: 30%;
   height: 100%;
-  width: 10%;
+  width: 5%;
+  z-index: 10;
 }
 
 .progress__bar--dynamic--ninth {
   position: absolute;
-  left: 80%;
+  left: 35%;
   height: 100%;
-  width: 10%;
+  width: 5%;
+  z-index: 10;
 }
 
 .progress__bar--dynamic--tenth {
   position: absolute;
+  left: 40%;
+  height: 100%;
+  width: 5%;
+  z-index: 10;
+}
+
+.progress__bar--dynamic--eleventh {
+  position: absolute;
+  left: 45%;
+  height: 100%;
+  width: 5%;
+  z-index: 10;
+}
+
+.progress__bar--dynamic--twelfth {
+  position: absolute;
+  left: 50%;
+  height: 100%;
+  width: 5%;
+  z-index: 10;
+}
+
+.progress__bar--dynamic--thirteenth {
+  position: absolute;
+  left: 55%;
+  height: 100%;
+  width: 5%;
+  z-index: 10;
+}
+
+.progress__bar--dynamic--fourteenth {
+  position: absolute;
+  left: 60%;
+  height: 100%;
+  width: 5%;
+  z-index: 10;
+}
+
+.progress__bar--dynamic--fifteenth {
+  position: absolute;
+  left: 65%;
+  height: 100%;
+  width: 5%;
+  z-index: 10;
+}
+
+.progress__bar--dynamic--sixteenth {
+  position: absolute;
+  left: 70%;
+  height: 100%;
+  width: 5%;
+  z-index: 10;
+}
+
+.progress__bar--dynamic--seventeenth {
+  position: absolute;
+  left: 75%;
+  height: 100%;
+  width: 5%;
+  z-index: 10;
+}
+
+.progress__bar--dynamic--eighteenth {
+  position: absolute;
+  left: 80%;
+  height: 100%;
+  width: 5%;
+  z-index: 10;
+}
+
+.progress__bar--dynamic--nineteenth {
+  position: absolute;
+  left: 85%;
+  height: 100%;
+  width: 5%;
+  z-index: 10;
+}
+
+.progress__bar--dynamic--twentieth {
+  position: absolute;
   left: 90%;
   height: 100%;
-  width: 10%;
+  width: 5%;
+  z-index: 10;
+}
+
+.progress__bar--dynamic--twentyfirst {
+  position: absolute;
+  left: 95%;
+  height: 100%;
+  width: 2.5%;
+  z-index: 10;
+}
+
+.progress__bar--dynamic--twentysecond {
+  position: absolute;
+  left: 97.5%;
+  height: 100%;
+  width: 2.5%;
+  z-index: 10;
+}
+
+.bar--hover {
+  position: absolute;
+  left: 0%;
+  height: 100%;
+  z-index: 10;
+  background: red;
+}
+
+.bar--hover--time--active {
+  position: absolute;
+  top: 40%;
+  left: 0%;
+  height: 35%;
+  width: auto;
+  background: white;
+  color: black;
+  z-index: 12;
+  font-family: 'Raleway', sans-serif;
+  font-size: 2vmin;
+  padding-bottom: 5%;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+.bar--hover--time {
+  position: absolute;
+  height: 0%;
+  width: 0%;
+  overflow: hidden;
 }
