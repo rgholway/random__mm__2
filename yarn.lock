@@ -8175,6 +8175,14 @@ react-router@~3.2.0:
     react-is "^16.8.6"
     warning "^3.0.0"
 
+"react-youtube6@npm:react-youtube@^6.1.0":
+  version "6.1.0"
+  resolved "https://registry.yarnpkg.com/react-youtube/-/react-youtube-6.1.0.tgz#2cbc6095d87547d025e5a3d0d29ac2dad07de6cc"
+  integrity sha1-LLxgldh1R9Al5aPQ0prC2tB95sw=
+  dependencies:
+    lodash "^4.0.0"
+    youtube-player "^3.0.0"
+
 react-youtube@^7.9.0:
   version "7.9.0"
   resolved "https://registry.yarnpkg.com/react-youtube/-/react-youtube-7.9.0.tgz#cf513c253581e1e45aa412a77d03420dfd7f7ba7"
@@ -10468,6 +10476,15 @@ yeoman-generator@^2.0.5:
     text-table "^0.2.0"
     through2 "^2.0.0"
     yeoman-environment "^2.0.5"
+
+youtube-player@^3.0.0:
+  version "3.1.2"
+  resolved "https://registry.yarnpkg.com/youtube-player/-/youtube-player-3.1.2.tgz#67b0fc9595d459caf3065a7c6cfc8e3275f54178"
+  integrity sha1-Z7D8lZXUWcrzBlp8bPyOMnX1QXg=
+  dependencies:
+    load-script "^1.0.0"
+    lodash "^4.3.0"
+    sister "^3.0.0"
 
 youtube-player@^5.5.1:
   version "5.5.2"

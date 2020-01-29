@@ -5,6 +5,7 @@ class ProgressTile extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      youtube: ""
         }
       this.handleHover = this.handleHover.bind(this)
       this.handleClick = this.handleClick.bind(this)
@@ -12,11 +13,12 @@ class ProgressTile extends Component {
   }
 
   handleHover() {
-    this.props.handleLeft(this.props.left, this.props.percent, "--active")
+    let yt = this.props.youtube
+    this.props.handleLeft(this.props.left, this.props.percent, "--active", yt)
   }
 
   handleLeave() {
-    this.props.handleLeft("0", "0", "")
+    this.props.handleLeft("0", "0", "", "")
   }
 
   handleClick() {
