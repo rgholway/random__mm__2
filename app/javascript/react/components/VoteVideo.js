@@ -140,7 +140,12 @@ class VoteVideo extends React.Component {
     let timeHover = this.state.totalTime * percent
     let correctTime = Math.floor(timeHover / 60);
     let minutes = (timeHover - correctTime * 60) / 100
-    this.setState({ left: left, percent: percent, hoverTime: (correctTime + minutes).toFixed(2), hoverActive: active, pausedSeconds: timeHover, pausedYoutube: yt  })
+    if (yt == "stop" || yt == "") {
+      this.setState({ left: left, percent: percent, hoverTime: (correctTime + minutes).toFixed(2), hoverActive: active, pausedSeconds: timeHover  })
+    }
+    if (yt != "stop" && yt != "") {
+      this.setState({ left: left, percent: percent, hoverTime: (correctTime + minutes).toFixed(2), hoverActive: active, pausedSeconds: timeHover, pausedYoutube: yt  })
+    }
   }
 
   render() {
