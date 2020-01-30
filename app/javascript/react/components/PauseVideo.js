@@ -37,11 +37,11 @@ class PauseVideo extends React.Component {
   }
 
   _onPausedReady(event) {
+    event.target.mute()
     event.target.pauseVideo()
   }
 
   __onPausedPlay(event) {
-    event.target.mute()
     event.target.pauseVideo();
   }
 
